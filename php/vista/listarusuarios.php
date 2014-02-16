@@ -41,7 +41,7 @@
 									<?php echo "".$usuarios[$i]['apellido']; ?>
 								</td>
 								<td style="text-align: center; background:#222;  color: #CCC;">
-									<a href="<?php echo "".$usuarios[$i]['idusuario']; ?>">Editar</a>
+									<a href="<?php echo "editarUsuario.php?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
 								</td>
 																
 							</tr>

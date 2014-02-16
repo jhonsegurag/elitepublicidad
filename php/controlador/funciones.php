@@ -170,15 +170,16 @@
 		$conexion= conectar();
 		
 		
-		$resultado=mysql_query("SELECT idusuario,nombre,apellido FROM usuario WHERE idusuario='".mysql_real_escape_string($idusuario)."'",$conexion);
+		$resultado=mysql_query("SELECT idusuario,tipo_idtipo,nombre,apellido,fechacreacion FROM usuario WHERE idusuario='".mysql_real_escape_string($idusuario)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
 		
-			$usuario[$i]['idusuario']=$fila['idusuario'];
-			$usuario[$i]['nombre']=$fila['nombre'];
-			$usuario[$i]['apellido']=$fila['apellido'];
+			$usuario['idusuario']=$fila['idusuario'];
+			$usuario['tipo_idtipo']=$fila['tipo_idtipo'];
+			$usuario['nombre']=$fila['nombre'];
+			$usuario['apellido']=$fila['apellido'];
+			$usuario['fechacreacion']=$fila['fechacreacion'];
 			
-			
-		return $servicio;
+		return $usuario;
 	}
 	
 	
