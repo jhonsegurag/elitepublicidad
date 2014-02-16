@@ -66,40 +66,20 @@
 		?>
 		<nav>
 			<ul>
-				<a href="perfil.php">
-					<li>Inicio</li>
+				<a href="perfil.php" class="nivel1">
+					<li class="nivel1">Inicio</li>
 				</a>
-				<a href="agregarUsuario.php">
-					<li>Gestionar Administradores
-						<ul>
-							<li>Agregar Administrador</li>
-							<li>Buscar Administrador</li>
-						</ul>						
-					</li>
+				<a href="agregarUsuario.php" class="nivel1">
+					<li class="nivel1">Agregar Administradores</li>
 				</a>
-				<a href="agregarTrabajo.php">
-					<li>Gestionar Trabajos Realizados
-						<ul>
-							<li>Agregar Trabajo Realizado</li>
-							<li>Buscar Trabajo Realizado</li>
-						</ul>
-					</li>
+				<a href="agregarTrabajo.php" class="nivel1">
+					<li class="nivel1">Agregar Trabajos Realizados</li>
 				</a>
-				<a href="agregarProducto.php">
-					<li>Gestionar Productos
-						<ul>
-							<li>Agregar Productos</li>
-							<li>Buscar Productos</li>
-						</ul>	
-					</li>
+				<a href="agregarProducto.php" class="nivel1">
+					<li class="nivel1">Agregar Productos</li>
 				</a>
-				<a href="agregarServicio.php">
-					<li>Gestionar Servicios
-						<ul>
-							<li>Agregar Servicio</li>
-							<li>Buscar Servicio</li>
-						</ul>	
-					</li>
+				<a href="agregarServicio.php" class="nivel1">
+					<li class="nivel1">Agregar Servicios</li>
 				</a>
 			</ul>
 		</nav>

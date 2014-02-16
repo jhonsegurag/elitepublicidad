@@ -52,15 +52,15 @@
 				});
 				
 				function posicionarMenu() {
-				    var altura_del_header = $('#logo').outerHeight(true);
+				    var altura_del_logo = $('#logo').outerHeight(true);
 				    var altura_del_menu = $('nav').outerHeight(true);
 				
-				    if ($(window).scrollTop() >= altura_del_header){
+				    if ($(window).scrollTop() >= altura_del_logo + 20){
 				        $('nav').addClass('fixed');
-				        // $('.content').css('margin-top', (altura_del_menu) + 'px');
+				        $('#main').css('margin-top', (altura_del_menu) + 'px');
 				    } else {
 				        $('nav').removeClass('fixed');
-				        // $('.content').css('margin-top', '0');
+				        $('#main').css('margin-top', '0');
 				    }
 				}
 				});

@@ -6,7 +6,7 @@ body{
 	
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, nav, hgroup, section { display: block; }
 
 #main
 {
@@ -16,7 +16,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 .wrapper
 {
     width: 80%;
-    margin:auto;
+    margin: auto;
     box-shadow: 0px 0px 5px #000;
     -webkit-box-shadow: 0px 0px 5px #000;
     -moz-box-shadow: 0px 0px 5px #000;
@@ -26,9 +26,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 .fixed {
     position:fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left:0;
+    width: 79.2%;
+    margin-left: 10.5%;
     z-index: 3000;
+}
+
+.fixed ul{
+	margin: auto;
 }
 
 nav{
@@ -47,7 +52,6 @@ nav ul {
 nav ul li{
 	
 	display: inline-block;
-	
 	color: #CCC;
 	padding: 5px 15px 5px 15px;
 	transition: all 0.5s linear;
@@ -550,10 +554,7 @@ input[type="submit"]
 
 #administrador{
 	width: 100%;
-}
-
-#administrador {
-	width: 100%;
+	display: inline-block;
 }
 
 #administrador article{
@@ -578,6 +579,7 @@ input[type="submit"]
 
 #gestionar {
 	width: 100%;
+	display: inline-block;
 }
 
 #gestionar article{

@@ -14,7 +14,7 @@
 		getImports();
 		?>
 		<body>
-			<div id="main" class="wrapper content">
+			<div id="main" class="wrapper">
 				<?php 
 					getHeader();
 					getMenu("administrador");
