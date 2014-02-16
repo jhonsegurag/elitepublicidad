@@ -28,6 +28,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3000;
 }
 
 nav{
