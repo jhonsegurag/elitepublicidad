@@ -1,0 +1,232 @@
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------EMPRESA---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+
+#empresa
+{
+	display: inline-block;
+	width: 100%;
+	margin: 30px auto 30px auto;
+}
+
+#empresa aside
+{
+	float: left;
+	width: 25%;
+	padding:20px;
+	background-color: rgba(51,51,51,0.8); 
+}
+
+#empresa aside li
+{
+	background:#222;
+	list-style: none;
+	color: #CCC;
+	padding: 5px 0px 5px 10px;
+	margin-bottom: 5px;
+	
+}
+
+#empresa aside h1
+{
+	margin-top: 0px;
+	color: #DDD;
+	border-bottom: 5px solid #9C0;
+	border-radius:5px;
+}
+
+#empresa aside li:hover
+{
+	background: #9C0;
+	color: #333;
+	border-radius:5px;
+	
+}
+
+#empresa article
+{
+	float: right;
+	width: 60%;
+	padding:20px;
+	margin-bottom: 20px;
+	background-color: rgba(51,51,51,0.8); 
+}
+
+#empresa article h1
+{
+	margin-top: 0px;
+	color: #DDD;
+	border-bottom: 5px solid #9C0;
+	border-radius:5px;
+}
+
+#empresa article p
+{
+	color: #CCC;
+	text-align: justify;
+}
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * ----------------------------------------------------FORMULARIO CONTACTO-----------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#contacto
+{
+	display: inline-block;
+	width: 100%;
+	margin: 30px auto 30px auto;
+}
+
+#contacto article
+{
+	float:left;
+	width: 65%;
+	background-color: rgba(51,51,51,0.8);
+}
+
+#contacto article h1
+{
+	color: #9C0;
+	text-align: center;
+}
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------FOOTER---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+#contenedorFooter
+{
+	width: 100%;
+	background-color: rgba(51,51,51,0.9); 
+	display: inline-block;
+}
+
+.panelFooter
+{
+	width: 30%;
+	float: left;
+}
+
+.itemPanelFooter
+{
+	width: 80%;
+	margin: auto;
+}
+
+.itemPanelFooter h3
+{
+	color: #CCC;
+}
+
+.itemPanelFooter h3:hover
+{
+	color: #9C0;
+}
+
+.itemPanelFooter p
+{
+	color: #CCC;
+}
+
+.itemPanelFooter  .imgItemPanelFoter 
+{
+	float:left;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+.itemPanelFooter  .textItemPanelFooter 
+{
+	color: #CCC;
+}
+
+.itemPanelFooter  .imgItemPanelFoter img
+{
+	width: 100%;
+}
+
+#subFooter
+{
+	width: 100%;
+	background: #333;
+	margin-top:5px;
+	display: inline-block;
+}
+
+.itemSubFooter
+{
+	width: 48%;
+	float: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.itemSubFooter p
+{
+	color: #CCC;
+}
+
+.itemSubFooter #logoSubFooter
+{
+	float:right;
+	width: 200px;
+}
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------Perfil---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#administrador article #funciones
+{
+	width: 100%;
+	display: inline-block;
+}
+
+#administrador article .funcion
+{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------LISTAR---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#listar
+{
+	display: inline-block;
+	width: 100%;
+	margin: 30px auto 30px auto;
+}
+
+#listar article
+{
+	width: 80%;
+	margin: auto;
+	background: rgba(51,51,51,0.8);
+	padding: 20px;
+}
+
+#listar article h1
+{
+	color: #9C0;
+	text-align: center;
+}
+
+
