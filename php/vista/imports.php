@@ -25,6 +25,10 @@
 			<link rel="shortcut icon" href="../../favicon.ico">
 			<link rel="apple-touch-icon" href="../../favicon.png">
 			
+			<!-- Dropzonejs file - css -->
+			<link href="../../css/dropzone.css" type="text/css" rel="stylesheet" />
+			<script src="../../js/dropzone.min.js"></script>>
+			
 			<!-- Slider Javascript file -->
 			<script>
 				$(document).ready(function(){

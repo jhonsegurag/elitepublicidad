@@ -70,16 +70,36 @@
 					<li>Inicio</li>
 				</a>
 				<a href="agregarUsuario.php">
-					<li>Gestionar Administradores</li>
+					<li>Gestionar Administradores
+						<ul>
+							<li>Agregar Administrador</li>
+							<li>Buscar Administrador</li>
+						</ul>						
+					</li>
 				</a>
 				<a href="agregarTrabajo.php">
-					<li>Agregar Trabajo Realizado</li>
+					<li>Gestionar Trabajos Realizados
+						<ul>
+							<li>Agregar Trabajo Realizado</li>
+							<li>Buscar Trabajo Realizado</li>
+						</ul>
+					</li>
 				</a>
 				<a href="agregarProducto.php">
-					<li>Agregar Producto</li>
+					<li>Gestionar Productos
+						<ul>
+							<li>Agregar Productos</li>
+							<li>Buscar Productos</li>
+						</ul>	
+					</li>
 				</a>
 				<a href="agregarServicio.php">
-					<li>Agregar Servicio</li>
+					<li>Gestionar Servicios
+						<ul>
+							<li>Agregar Servicio</li>
+							<li>Buscar Servicio</li>
+						</ul>	
+					</li>
 				</a>
 			</ul>
 		</nav>
