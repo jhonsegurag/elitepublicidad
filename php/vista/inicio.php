@@ -41,29 +41,34 @@
 			</section>
 		
 			<section id="productosYServicios">
-				<article>
+				<article id="productos">
 					<hgroup>
 						<h1>
-							Productos y servicios
+							Productos
 						</h1>
 					</hgroup>
 					<div>
+							<?php
+
+						?>
 							<a href="">
 								<li>TEXTO 1</li>
 							</a>
-							<a href="">
-								<li>TEXTO 2</li>
-							</a>
-							<a href="">
-								<li>TEXTO 3</li>
-							</a>
-							<a href="">
-								<li>TEXTO 4</li>
-							</a>
-							<a href="">
-								<li>TEXTO 5</li>
-							</a>
+					</div>
+				</article>
+				<article id="servicios">
+					<hgroup>
+						<h1>
+							Servicios
+						</h1>
+					</hgroup>
+					<div>
+						<?php
 						
+						?>
+							<a href="">
+								<li>TEXTO 1</li>
+							</a>
 					</div>
 				</article>
 				<aside>
