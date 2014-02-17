@@ -39,7 +39,7 @@
 										<label> Tipo: </label>
 									</div>
 									<div class="componente">
-										<select class="textField" name="tipousuario"> 
+										<select class="textField" name="tipo"> 
 											<option value="1">Super Admin</option>
 										</select>
 										<script>
@@ -73,7 +73,7 @@
 
 									
 									<div style="text-align: center;">
-										<input type="submit" value="Editar Usuario" />
+										<input type="submit" value="Guardar Usuario" />
 									</div>
 								</form>
 							</div>		

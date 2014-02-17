@@ -5,14 +5,14 @@
 	if ($_SESSION['idusuario'])
 	{
 		$idusuario=$_POST['idusuario'];		
-		$tipousuario=$_POST['tipousuario'];
+		$tipo=$_POST['tipo'];
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
 		$fechacreacion=$_POST['fechacreacion'];		
 				
 			$conexion=conectar();
-			getUpdate("UPDATE usuario SET tipo_idtipo='$tipousuario' nombre='".$nombre."', apellido='".$apellido."'
-			,fechacreacion='".$fechacreacion."' WHERE idusuario='$idusuario' ",$conexion);
+			getUpdate(" UPDATE usuario SET nombre='".$nombre."', apellido='".$apellido."',
+			fechacreacion='".$fechacreacion."', tipo_idtipo='$tipo' WHERE idusuario='$idusuario' ",$conexion);
 			
 			echo "<script type='text/javascript'>alert('El Usuario ha sido actualizado con exito'); document.location.href='../vista/perfil.php';</script>";
 		

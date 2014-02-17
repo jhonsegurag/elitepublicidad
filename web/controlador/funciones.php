@@ -29,19 +29,38 @@
 		$conexion= conectar();
 		
 		$i=0;
-		$resultado=mysql_query("SELECT idtrabajorealizado,descripcion,ruta FROM trabajorealizado", $conexion);
+		$resultado=mysql_query("SELECT idtrabajorealizado,descripcion,ruta,fechacreacion FROM trabajorealizado", $conexion);
 		while ($fila=mysql_fetch_array($resultado))
 		{
 			$trabajosrealizados[$i]['idtrabajorealizado']=$fila['idtrabajorealizado'];
 			$trabajosrealizados[$i]['descripcion']=$fila['descripcion'];
 			$trabajosrealizados[$i]['ruta']=$fila['ruta'];
-			
+			$trabajosrealizados[$i]['fechacreacion']=$fila['fechacreacion'];
 			$i++;
 		}		
 		return $trabajosrealizados;
 	}
 	
-	
+	/*
+	 * Funcion que permite obtener informacion de un producto
+	 */
+	function getInformacionTrabajo($idtrabajorealizado)
+	{
+		$trabajo=array();
+		$conexion= conectar();
+		
+		
+		$resultado=mysql_query("SELECT idtrabajorealizado,descripcion,fechacreacion FROM trabajorealizado WHERE idtrabajorealizado='".mysql_real_escape_string($idtrabajorealizado)."'",$conexion);
+		$fila=mysql_fetch_array($resultado);
+		
+			$trabajo['idtrabajorealizado']=$fila['idtrabajorealizado'];
+			$trabajo['descripcion']=$fila['descripcion'];
+			$trabajo['fechacreacion']=$fila['fechacreacion'];
+			
+			
+			
+		return $trabajo;
+	}
 	
 	/*
 	 * -------------------------------------------------------------------------------------------------------------------------------
@@ -81,7 +100,7 @@
 		$conexion= conectar();
 		
 		
-		$resultado=mysql_query("SELECT idproducto,nombre,ruta,descripcion FROM servicio WHERE idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
+		$resultado=mysql_query("SELECT idproducto,nombre,ruta,descripcion FROM producto WHERE idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
 		
 			$producto['idproducto']=$fila['idproducto'];
@@ -127,14 +146,14 @@
 		$conexion= conectar();
 		
 		
-		$resultado=mysql_query("SELECT idservicio,nombre,ruta,descripcion FROM servicio WHERE idservicio='".mysql_real_escape_string($idservicio)."'",$conexion);
+		$resultado=mysql_query("SELECT idservicio,nombre,ruta,descripcion,fechacreacion FROM servicio WHERE idservicio='".mysql_real_escape_string($idservicio)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
 		
 			$servicio['idservicio']=$fila['idservicio'];
 			$servicio['nombre']=$fila['nombre'];
 			$servicio['ruta']=$fila['ruta'];
 			$servicio['descripcion']=$fila['descripcion'];
-			
+			$servicio['fechacreacion']=$fila['fechacreacion'];
 			
 		return $servicio;
 	}

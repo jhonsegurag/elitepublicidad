@@ -1,3 +1,3 @@
 <?php 
- 	header("location:php/vista/inicio.php");
+ 	header("location:web/vista/inicio.php");
 ?> 

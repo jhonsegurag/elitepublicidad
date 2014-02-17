@@ -45,7 +45,7 @@
 									<?php echo "".$productos[$i]['fechacreacion']; ?>
 								</td>
 								<td style="text-align: center;background:#222;  color: #CCC;">
-									<a href="<?php echo "".$productos[$i]['idproducto']; ?>">Editar</a>
+									<a href="<?php echo "editarProducto.php?idproducto=".$productos[$i]['idproducto']; ?>">Editar</a>
 								</td>
 																
 							</tr>

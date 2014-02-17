@@ -42,7 +42,7 @@
 									<?php echo "".$trabajosrealizados[$i]['ruta']; ?>
 								</td>
 								<td style="text-align: center;background:#222;  color: #CCC;">
-									<a href="<?php echo "".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
+									<a href="<?php echo "editarTrabajo.php?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
 								</td>
 																
 							</tr>
