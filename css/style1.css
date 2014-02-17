@@ -74,10 +74,12 @@ nav ul a{
  * 
  * ------------------------------------------------------------------------------------------------------------
  */
-#contenedorHeader{
+#contenedorHeader
+{
 	width: 100%;
 }
-.panelHeader{
+.panelHeader
+{
 	width: 48%;
 	float: left;
 	
@@ -506,7 +508,7 @@ nav ul a{
 	font-weight: bold;	
 	text-align: center;
 	padding: 20px;
-	font-size: 30;
+	font-size: 15;
 }
 
 .etiqueta
@@ -517,7 +519,7 @@ nav ul a{
    color: #CCCCCC; 
    display: block;
    padding: 15px 5px 5px 30px;
-   font-size: 20;
+   font-size: 15;
 }
 
 .componente{
@@ -529,7 +531,7 @@ nav ul a{
 
 .textfield
 {
-	font-size: 18;
+	font-size: 15;
     display: block;
     width: 90%;
     height: 40px;
@@ -537,6 +539,7 @@ nav ul a{
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     margin: 5px;
+    background: #CCC;
 }
 
 .textField:focus
@@ -579,7 +582,7 @@ input[type="submit"]
     box-shadow: 1px 5px 8px hsla(0, 0%, 0%, .5);
     color: #222222;
     font-weight: bold;
-    font-size: 16;
+    font-size: 15;
     cursor: pointer;
     border:0;
     border-radius: 5px;

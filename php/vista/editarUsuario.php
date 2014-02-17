@@ -27,12 +27,12 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_usuario">
-								<form action="../controlador/insertarusuario.php" method="post">
+								<form action="../controlador/actualizarUsuario.php" method="post">
 									<div class="etiqueta">
 										<label> Usuario: </label>
 									</div>
 									<div class="componente">
-										<input value="<?php echo $usuario['idusuario']; ?>" class="textField" type="number" name="idusuario" placeholder="999999999" required="required" />
+										<input value="<?php echo $usuario['idusuario']; ?>" class="textField" type="number" name="idusuario"  required="required" readonly />
 									</div>
 									
 									<div class="etiqueta">
@@ -53,7 +53,7 @@
 										<label> Nombre: </label>
 									</div>
 									<div class="componente">
-										<input value="<?php echo $usuario['nombre']; ?>" class="textField" type="text" name="nombreusuario"  placeholder="Nombre" required="required" />
+										<input value="<?php echo $usuario['nombre']; ?>" class="textField" type="text" name="nombre"   required="required" />
 									</div>
 									
 									
@@ -61,19 +61,19 @@
 										<label> Apellido: </label>
 									</div>
 									<div class="componente">
-										<input value="<?php echo $usuario['apellido']; ?>" class="textField" type="text" name="apellidousuario" placeholder="Apellido" required="required" />
+										<input value="<?php echo $usuario['apellido']; ?>" class="textField" type="text" name="apellido"  required="required" />
 									</div>
 													
 									<div class="etiqueta">
 										<label> Fecha de Creación: </label>
 									</div>
 									<div class="componente">
-										<input value="<?php echo $usuario['fechacreacion']; ?>" class="textField" type="date" name="fechausuario" required="required"/>
+										<input value="<?php echo $usuario['fechacreacion']; ?>" class="textField" type="date" name="fechacreacion" required="required"/>
 									</div>
 
 									
 									<div style="text-align: center;">
-										<input type="submit" value="Crear Usuario" />
+										<input type="submit" value="Editar Usuario" />
 									</div>
 								</form>
 							</div>		

@@ -4,15 +4,17 @@
 	
 	if ($_SESSION['idusuario'])
 	{
-		$idservicio=$_POST['idservicio'];			
+		$idusuario=$_POST['idusuario'];		
+		$tipousuario=$_POST['tipousuario'];
 		$nombre=$_POST['nombre'];
-		$descripcion=$_POST['descripcion'];
+		$apellido=$_POST['apellido'];
+		$fechacreacion=$_POST['fechacreacion'];		
 				
 			$conexion=conectar();
-			getUpdate("UPDATE servicio SET nombre='".$nombre."',descripcion='".$descripcion."'
-			WHERE idservicio='$idservicio'",$conexion);
+			getUpdate("UPDATE usuario SET tipo_idtipo='$tipousuario' nombre='".$nombre."', apellido='".$apellido."'
+			,fechacreacion='".$fechacreacion."' WHERE idusuario='$idusuario' ",$conexion);
 			
-			echo "<script type='text/javascript'>alert('El Servicio ha sido actualizado con exito'); document.location.href='../vista/perfil.php';</script>";
+			echo "<script type='text/javascript'>alert('El Usuario ha sido actualizado con exito'); document.location.href='../vista/perfil.php';</script>";
 		
 	} 
 	else
