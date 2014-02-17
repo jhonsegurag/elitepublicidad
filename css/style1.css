@@ -138,16 +138,18 @@ nav ul a{
 
 #productosYServicios{
 	width: 100%;
+	display: inline-block;
 }
 
-#productos {
+#productosYServicios article {
+	float: left;
 	width: 30%;
 	background-color: rgba(51,51,51,0.8);
-	float: left;
+	margin-right:  20px;
 	margin-bottom: 20px;
 }
 
-#productos   h1{
+#productosYServicios  h1{
 	margin:0 auto;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -158,11 +160,11 @@ nav ul a{
 }
 
 
-#productos  a{
+#productosYServicios a{
 	text-decoration: none;
 }
 
-#productos   li{
+#productosYServicios  li{
 	color: #DDD;
 	list-style: none;
 	margin-top: 5px;
@@ -170,51 +172,7 @@ nav ul a{
 	border-radius: 5px;
 }
 
-#productos  li:hover{
-	background-color: #99CC00;
-	color: #000000;
-}
-
-
-/*
- * ------------------------------------------------------------------------------------------------------------
- * 
- * -------------------------------------- INICIO - Servicios. ----------- --------------------------------------
- * 
- * ------------------------------------------------------------------------------------------------------------
- */
-
-#servicios  {
-	width: 30%;
-	background-color: rgba(51,51,51,0.8);
-	float: left;
-	margin-bottom: 20px;
-}
-
-#servicios   h1{
-	margin:0 auto;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
-	color: #333;
-	background-color: #9c0;
-	border-radius: 5px;
-}
-
-
-#servicios  a{
-	text-decoration: none;
-}
-
-#servicios   li{
-	color: #DDD;
-	list-style: none;
-	margin-top: 5px;
-	padding-left: 10px;
-	border-radius: 5px;
-}
-
-#servicios  li:hover{
+#productosYServicios  li:hover{
 	background-color: #99CC00;
 	color: #000000;
 }

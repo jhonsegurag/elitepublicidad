@@ -41,36 +41,33 @@
 			</section>
 		
 			<section id="productosYServicios">
-				<article id="productos">
+				<article>
 					<hgroup>
 						<h1>
 							Productos
 						</h1>
 					</hgroup>
 					<div>
-							<?php
-
-						?>
 							<a href="">
 								<li>TEXTO 1</li>
 							</a>
 					</div>
 				</article>
-				<article id="servicios">
+				
+				
+				<article>
 					<hgroup>
 						<h1>
 							Servicios
 						</h1>
 					</hgroup>
 					<div>
-						<?php
-						
-						?>
 							<a href="">
 								<li>TEXTO 1</li>
 							</a>
 					</div>
 				</article>
+				
 				<aside>
 					<div>
 						<div class="fb-like-box" data-href="http://www.facebook.com/elitepublicidadgroup" data-width="80%" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
