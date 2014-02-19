@@ -48,7 +48,8 @@
 								</div>
 								<div id="streetView">
 									<a href="https://www.google.com/maps/place/Carrera+21+%23+15-3/@4.53881,-75.67379,3a,90y,186h,90t/dat
-									a=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x8e38f5a97708046f:0xd9f7d001201fc8d3!6m1!1e1">
+									a=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x8e38f5a97708046f:0xd9f7d001201fc8d3!6m1!1e1"
+									target="_blank">
 									Encuentranos en Google Street View</a>
 								</div>
 							</aside>

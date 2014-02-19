@@ -18,8 +18,8 @@
 						<div class="itemPanelFooter">
 							<h3>NOSOTROS</h3>
 							<p>Quienes Somos</p>
-							<p>Misio</p>
-							<p>Vision</p>
+							<p>Misión</p>
+							<p>Visión</p>
 						</div>
 					</div>
 					
@@ -30,23 +30,29 @@
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/movil.png" />
 								</div>
-								<div class="textItemPanelFooter"> 999-999-999</div>	
+								<div class="textItemPanelFooter">(6) 731 9926 / 320 285 5536 / 320 629 7474</div>	
 							</p>
 													
 							
 							
 							<p>
 								<div class="imgItemPanelFoter">
-									<img src="../../imagenes/contacto/ubicacion.png" />	
+										<img src="../../imagenes/contacto/ubicacion.png" />	
 								</div>
-								<div class="textItemPanelFooter"> Armenia - Quindío</div>							
+								<a class="enlace" href="https://www.google.com/maps/place/Carrera+21+%23+15-3/@4.53881,-75.67379,3a,90y,186h,90t/dat
+									a=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x8e38f5a97708046f:0xd9f7d001201fc8d3!6m1!1e1"
+									target="_blank">
+									<div class="textItemPanelFooter">Armenia - Quindío</div>
+								</a>							
 							</p>
 							
 							<p>
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/email.png" />
 								</div>
-								<div class="textItemPanelFooter"> elitepublicidad12@gmail.com</div>	
+								<a class="enlace" href="mailto:elitepublicidad12@gmail.com">
+									<div class="textItemPanelFooter"> elitepublicidad12@gmail.com</div>	
+								</a>
 							</p>
 							
 							<p>
