@@ -64,7 +64,7 @@
 					</section>
 					<footer>
 						<div id="verMas">
-							<a href="">
+							<a href="infoProducto.php">
 								<span>Ver más...</span>
 							</a>
 						</div>
