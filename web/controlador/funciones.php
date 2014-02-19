@@ -100,13 +100,14 @@
 		$conexion= conectar();
 		
 		
-		$resultado=mysql_query("SELECT idproducto,nombre,ruta,descripcion FROM producto WHERE idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
+		$resultado=mysql_query("SELECT idproducto,nombre,ruta,descripcion,fechacreacion FROM producto WHERE idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
 		
 			$producto['idproducto']=$fila['idproducto'];
 			$producto['nombre']=$fila['nombre'];
 			$producto['ruta']=$fila['ruta'];
 			$producto['descripcion']=$fila['descripcion'];
+			$producto['fechacreacion']=$fila['fechacreacion'];
 			
 			
 		return $producto;
