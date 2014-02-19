@@ -20,7 +20,6 @@
 						</header>
 						<section>
 							<li id="quienessomos">Quienes Somos</li>
-							<li id="historia">Historia</li>
 							<li id="mision">Mision</li>
 							<li id="vision">Vision</li>
 						</section>
@@ -56,12 +55,6 @@
                     		$("#textoInfoEmpresa").html('<p>Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas.<br><br>Brindamos una atención integral en todos los niveles de complejidad, caracterizada por la calidad humana de un grupo multifuncional de profesionales con prestigio laboral, humano y ético; que responde a las expectativas de nuestros clientes y su entorno.</p>');
                    		});
                     	
-                    	
-                    	$("#historia").click(function(){
-                    		
-                    		$("#textoInfoEmpresa").html('<p>Aqui va Historia </p>');
-                   		});
-                   		
                    		$("#mision").click(function(){
                     		
                     		$("#textoInfoEmpresa").html('<p>Elite Publicidad tiene como fin prestar servicios comprometidos que garanticen la satisfación de los clientes y el logro de los objetivos de la organización mediante la mejora continua de los procesos, la eficaz administración de los recursos y el mantenimiento d elos mismos</p>');
