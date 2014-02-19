@@ -16,20 +16,35 @@
    		?>
    		<nav>
    			<ul>
-   				<a href="inicio.php">
-					<li>Inicio</li> 
+   				<a href="inicio.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'inicio.php')){
+								echo 'seleccionado';
+							}?>">Inicio</li> 
 				</a>
 				<a href="empresa.php" >
-					<li>Empresa</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'empresa.php')){
+								echo 'seleccionado';
+							}?>">Empresa</li> 
 				</a>
 				<a href="productos.php" >
-					<li>Productos</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'productos.php')){
+								echo 'seleccionado';
+							}?>">Productos</li> 
 				</a>
 				<a href="servicios.php" >
-					<li>Servicios</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'servicios.php')){
+								echo 'seleccionado';
+							}?>">Servicios</li> 
 				</a>
 				<a href="contacto.php" >
-					<li>Contáctenos</li>
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'contacto.php')){
+								echo 'seleccionado';
+							}?>">Contáctenos</li>
 				</a>
 		   	</ul>
    			
@@ -42,19 +57,34 @@
    		<nav>
    			<ul>
    				<a href="inicio.php">
-					<li>Inicio</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'inicio.php')){
+								echo 'seleccionado';
+							}?>">Inicio</li> 
 				</a>
 				<a href="empresa.php" >
-					<li>Empresa</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'empresa.php')){
+								echo 'seleccionado';
+							}?>">Empresa</li> 
 				</a>
 				<a href="productos.php" >
-					<li>Productos</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'productos.php')){
+								echo 'seleccionado';
+							}?>">Productos</li> 
 				</a>
 				<a href="servicios.php" >
-					<li>Servicios</li> 
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'servicios.php')){
+								echo 'seleccionado';
+							}?>">Servicios</li> 
 				</a>
 				<a href="contacto.php" >
-					<li>Contáctenos</li>
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'contacto.php')){
+								echo 'seleccionado';
+							}?>">Contáctenos</li>
 				</a>
 		   	</ul>
    			
@@ -66,20 +96,35 @@
 		?>
 		<nav>
 			<ul>
-				<a href="perfil.php" class="nivel1">
-					<li class="nivel1">Inicio</li>
+				<a href="perfil.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'perfil.php')){
+								echo 'seleccionado';
+							}?>">Inicio</li>
 				</a>
-				<a href="agregarUsuario.php" class="nivel1">
-					<li class="nivel1">Agregar Administradores</li>
+				<a href="agregarUsuario.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'agregarUsuario.php')){
+								echo 'seleccionado';
+							}?>">Agregar Administradores</li>
 				</a>
-				<a href="agregarTrabajo.php" class="nivel1">
-					<li class="nivel1">Agregar Trabajos Realizados</li>
+				<a href="agregarTrabajo.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'agregarTrabajo.php')){
+								echo 'seleccionado';
+							}?>">Agregar Trabajos Realizados</li>
 				</a>
-				<a href="agregarProducto.php" class="nivel1">
-					<li class="nivel1">Agregar Productos</li>
+				<a href="agregarProducto.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'agregarProducto.php')){
+								echo 'seleccionado';
+							}?>">Agregar Productos</li>
 				</a>
-				<a href="agregarServicio.php" class="nivel1">
-					<li class="nivel1">Agregar Servicios</li>
+				<a href="agregarServicio.php" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'agregarServicio.php')){
+								echo 'seleccionado';
+							}?>">Agregar Servicios</li>
 				</a>
 			</ul>
 		</nav>
