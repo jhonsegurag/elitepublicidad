@@ -79,13 +79,44 @@
 {
 	display: inline-block;
 	width: 100%;
-	margin: 30px auto 30px auto;
+	margin: 20px auto 20px auto;
 }
 
-#contacto article
+#contacto{
+	width: 100%;
+}
+
+#contacto article aside #map{
+	float: right;
+	width: 48%;
+}
+
+#contacto article aside #map iframe{
+	float: right;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#contacto article aside #streetView{
+	margin: 20px;
+	clear: both;
+	width: 48%;
+	background-color: rgba(51,51,51, 0.8);
+	float: right;
+	text-align: center;
+}
+
+#contacto article aside #streetView a{
+	color:#99CC00;
+	text-decoration: none;
+	font-size: 23;
+}
+
+#contacto article #formularioContacto
 {
 	float:left;
-	width: 65%;
+	width: 48%;
 	background-color: rgba(51,51,51,0.8);
 }
 
