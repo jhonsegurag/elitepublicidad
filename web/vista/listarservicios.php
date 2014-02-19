@@ -26,13 +26,18 @@
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
-						<tr><th>Id</th><th>Nombre</th><th>Descripcion</th><th>Fecha</th><th>Editar</th></tr>
+						<thead>
+							<th>Id</th>
+							<th>Nombre</th>
+							<th>Descripcion</th>
+							<th>Fecha</th>
+							<th>Editar</th>
+						</thead>
 						<?php
 						for ($i=0; $i <sizeof($servicios) ; $i++)
 						{ 
 						?>
 							<tr>
-								
 								<td style="text-align: center;background:#222;  color: #CCC;">
 									<?php echo "".$servicios[$i]['idservicio']; ?>
 								</td> 

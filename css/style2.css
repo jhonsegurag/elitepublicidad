@@ -235,4 +235,8 @@
 	text-align: center;
 }
 
-
+#listar table thead th
+{
+	color: #000;
+	background-color: rgba(214,214,214,0.9);
+}
