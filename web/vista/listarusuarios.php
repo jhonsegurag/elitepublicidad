@@ -20,7 +20,7 @@
 			<section id="listar">
 			<article>
 				<header>
-					<h2>Lista De Usuarios</h2>
+					<h1>Lista De Usuarios</h2>
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
