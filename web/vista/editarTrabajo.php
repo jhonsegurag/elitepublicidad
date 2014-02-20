@@ -12,7 +12,7 @@
 		getImports();
 		
 		$idtrabajorealizado=$_GET['idtrabajo'];
-		$trabajo=getInformacionTrabajo($idtrabajorealizado)
+		$trabajo=getInformacionTrabajo($idtrabajorealizado);
 		?>
 		<body>
 			<div id="main" class="wrapper">

@@ -5,6 +5,8 @@
 	include_once ("footer.php");
 	include_once ("../controlador/funciones.php");
 	getImports();
+	$idservicio=$_GET['idservicio'];
+	$servicio=getInformacionServicio($idservicio);
 ?>
 	<body>
 		<div id="main" class="wrapper">
@@ -15,7 +17,31 @@
 			?>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->		
 			<section id="infoServicio">
-				
+				<article>
+					<header>
+						<hgroup>
+							<h1><?php echo $servicio['nombre'] ?></h1>
+						</hgroup>
+					</header>
+					
+					<section>
+						<div class="imagenServicio">
+							<img src="<?php echo $servicio['ruta'] ?>" />
+						</div>
+					</section>
+					
+					<aside>
+						<div class="textoServicio">
+							<p><?php echo $servicio['descripcion'] ?></p>
+						</div>
+					</aside>
+					
+					<footer>
+						<div class="imagenesServicio">
+							Aquí irian las imagenes del servicio Aquí irian las imagenes del servicio Aquí irian las imagenes del servicio 
+						</div>
+					</footer>
+				</article>
 			</section>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
 			<?php

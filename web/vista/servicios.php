@@ -65,7 +65,7 @@
 					</section>
 					<footer>
 						<div id="verMas">
-							<a href="infoServicio.php">
+							<a href="<?php echo "infoServicio.php?idservicio=".$servicios[$i]['idservicio'] ?>">
 								<span>Ver más...</span>
 							</a>
 						</div>

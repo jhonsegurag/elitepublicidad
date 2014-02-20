@@ -449,7 +449,132 @@ nav ul a{
 /*
  * ------------------------------------------------------------------------------------------------------------
  * 
- * ----------------------------------------- LOGIN - ADMINISTRADOR  ------------------------------------------------------
+ * -----------------------------------------INFORMACION PRODUCTOS  --------------------------------------------
+ * 
+ * ------------------------------------------------------------------------------------------------------------
+ */
+
+#infoProducto{
+	width: 100%;
+}
+
+#infoProducto article{
+	width: 80%;
+	margin: auto;
+}
+
+#infoProducto article header hgroup{
+	background-color: rgba(51,51,51,0.8);
+}
+
+#infoProducto article header hgroup h1{
+	padding: 10px;
+	text-align: center;
+	color: #9c0;
+}
+
+#infoProducto article section{
+	width: 30%;
+	display: inline-block;
+}
+
+#infoProducto article section .imagenProducto{
+	float: left;
+	margin: auto;
+}
+
+#infoProducto article aside{
+	width: 69%;
+	float: right;
+	background-color: rgba(51,51,51,0.8);
+	display: inline-block;
+}
+
+#infoProducto article aside .textoProducto {
+	color: #CCCCCC;
+	padding: 15px;
+}
+
+#infoProducto article footer{
+	width: 100%;
+	clear: bold;
+	margin: 20px;
+	background-color: rgba(51,51,51,0.8);
+}
+
+#infoProducto article footer .imagenesProducto{
+	text-align: center;
+	color: #9c0;
+	padding: 20px;
+}
+
+/*
+ * ------------------------------------------------------------------------------------------------------------
+ * 
+ * -----------------------------------------INFORMACION SERVICIOS  --------------------------------------------
+ * 
+ * ------------------------------------------------------------------------------------------------------------
+ */
+
+#infoServicio{
+	width: 100%;
+}
+
+#infoServicio article{
+	width: 80%;
+	margin: auto;
+}
+
+#infoServicio article header hgroup{
+	background-color: rgba(51,51,51,0.8);
+}
+
+#infoServicio article header hgroup h1{
+	padding: 10px;
+	text-align: center;
+	color: #9c0;
+}
+
+#infoServicio article section{
+	width: 30%;
+	display: inline-block;
+}
+
+#infoServicio article section .imagenServicio{
+	float: left;
+	margin: auto;
+}
+
+#infoServicio article aside{
+	width: 69%;
+	float: right;
+	background-color: rgba(51,51,51,0.8);
+	display: inline-block;
+}
+
+#infoServicio article aside .textoServicio{
+	color: #CCCCCC;
+	padding: 15px;
+}
+
+#infoServicio article footer{
+	width: 100%;
+	clear: bold;
+	margin: 20px;
+	background-color: rgba(51,51,51,0.8);
+}
+
+#infoServicio article footer .imagenesServicio{
+	text-align: center;
+	color: #9c0;
+	padding: 20px;
+}
+
+
+/*
+ * ------------------------------------------------------------------------------------------------------------
+ * 
+ * ----------------------------------------- LOGIN - ADMINISTRADOR  -------------------------------------------
  * 
  * ------------------------------------------------------------------------------------------------------------
  */
