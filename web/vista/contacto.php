@@ -40,15 +40,15 @@
 							
 							<aside>
 								<div id="map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.3061963384243!2d-75.673798750
-									00003!3d4.538790650000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5a97708046f%3A0xd9
-									f7d001201fc8d3!2sCarrera+21+%23+15-3!5e0!3m2!1ses-419!2s!4v1392822817407" 
-									 frameborder="0" style="border:0">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.3062351876547!2d-75.6737928!
+									3d4.5387836000000075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5a9829914bb%3A0xa831c1
+									ee1cd53b26!2sElite+Publicidad!5e0!3m2!1ses-419!2s!4v1393009853129" 
+									frameborder="0" style="border:0">
 									</iframe>
 								</div>
 								<div id="streetView">
-									<a href="https://www.google.com/maps/place/Carrera+21+%23+15-3/@4.53881,-75.67379,3a,90y,186h,90t/dat
-									a=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x8e38f5a97708046f:0xd9f7d001201fc8d3!6m1!1e1"
+									<a href="https://www.google.com/maps/place/Elite+Publicidad/@4.53881,-75.67379,3a,75y,186.59h,90t
+									/data=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x0:0xa831c1ee1cd53b26!6m1!1e1?hl=es-ES"
 									target="_blank">
 									Encuentranos en Google Street View</a>
 								</div>

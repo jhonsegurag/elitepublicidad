@@ -1,5 +1,6 @@
 <?php
     include_once ('mysql.php');
+    include_once ('funciones.php');
     session_start();
 	
 	if ($_SESSION['idusuario'])
@@ -26,12 +27,31 @@
 			{
         		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
     		}		
-		
+			
+			/*
+			 * Conectamos con la base de datos e insertamos
+			 */
 			$conexion=conectar();
 			$estado = getInsert("INSERT INTO producto (usuario_idusuario,nombre,descripcion,ruta,fechacreacion) VALUES
 								('$idusuario','".$nombre."','".$descripcion."','".$ruta."','".$fecha."')", $conexion);
-								
-			echo "<script type='text/javascript'>alert('El producto ha sido agregado con exito.'); document.location.href='../vista/agregarImagenesProducto.php';</script>";
+			/*
+			 * Consultamos el producto que acabmos de insertar
+			 */
+			$consulta=getConsulta("SELECT idproducto FROM producto ORDER BY idproducto DESC LIMIT 1");
+			/*
+			 * Extraemos el valor que nos interesa. el idproducto
+			 */
+			$idproducto = mysql_result ($consulta, 0); 
+			/*
+			 * Encriptamos el idproducto para enviar por $_GET
+			 */
+			$idproductoencrypt = encrypt($idproducto,"insertarProductoKey");
+			
+			$direccion= "../vista/agregarImagenesProducto.php?idproducto=".$idproductoencrypt;
+			echo "<script type='text/javascript'>
+			alert('El producto ha sido agregado con exito.'); 
+			document.location.href='".$direccion."';
+			</script>";
 	} else
 	{
 		

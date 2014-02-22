@@ -1,5 +1,4 @@
 <?php 
-
 	session_start();
 
 	if ($_SESSION['idusuario'])
@@ -15,6 +14,10 @@
 				<?php 
 					getHeader();
 					getMenu("administrador");
+					$direccion = "../controlador/cargarimagenesproductos.php?idproducto=".$_GET['idproducto'];
+					echo "<script type='text/javascript'>
+					alert('".$direccion."');
+					</script>";
 				?>
 			<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
 				<section id="gestionar">
@@ -24,7 +27,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_imagenes_producto">
-								<form action="../controlador/cargarimagenesproductos.php" class="dropzone" method="post" enctype="multipart/form-data">
+								<form action="<?php echo $direccion;?>" class="dropzone" method="post" enctype="multipart/form-data">
 									<div style="text-align: center;">
 										<input type="submit" value="Agregar Imagenes Al Producto" />
 									</div>
