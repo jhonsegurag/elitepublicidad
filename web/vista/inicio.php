@@ -31,7 +31,7 @@
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->	
 			<section id="slider">
 				<ul class="elitePublicidad">
-					<li> <img class="imagen" src="../../imagenes/slide/1.png"></li>
+					<li> <img class="imagen" src="../../imagenes/slide/1.jpg"></li>
 					<li> <img class="imagen" src="../../imagenes/slide/2.jpg"></li>
 					<li> <img class="imagen" src="../../imagenes/slide/3.jpg"></li>
 					<li> <img class="imagen" src="../../imagenes/slide/4.jpg"></li>

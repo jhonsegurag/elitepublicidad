@@ -82,48 +82,58 @@
 	margin: 20px auto 20px auto;
 }
 
-#contacto{
+#contacto article
+{
+	float:left;
+	width: 65%;
+	background-color: rgba(51,51,51,0.8);
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
+
+
+#contacto article  #map{
+	
+	width: 80%;
+	margin: auto;
+	
+}
+
+#contacto article  #map iframe
+{	
 	width: 100%;
+	height: 300px;
+	border-radius: 5px;
 }
 
-#contacto article aside #map{
-	float: right;
-	width: 48%;
-}
-
-#contacto article aside #map iframe{
-	float: right;
+#contacto article  #streetView
+{	
 	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-#contacto article aside #streetView{
-	margin: 20px;
-	clear: both;
-	width: 48%;
-	background-color: rgba(51,51,51, 0.8);
 	float: right;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
-#contacto article aside #streetView a{
+#contacto article  #streetView a{
+	padding: 2px 15px 2px 15px;
 	color:#99CC00;
 	text-decoration: none;
 	font-size: 23;
 }
 
-#contacto article #formularioContacto
+#contacto article  #streetView a:hover
 {
-	float:left;
-	width: 48%;
-	background-color: rgba(51,51,51,0.8);
+	
+	background: #99CC00;
+	color: #333;
 }
+
 
 #contacto article h1
 {
-	color: #9C0;
+	color:#9C0;
 	text-align: center;
+	
 }
 
 

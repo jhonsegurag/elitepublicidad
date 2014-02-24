@@ -20,6 +20,9 @@
 							<h1>Contáctenos</h1>
 						</header>
 						<section>
+							
+							
+							
 							<div id="formularioContacto">
 								<div class="etiqueta"><label>Nombre:</label></div>
 								<div class="componente"><input class="textField" type="text" name="nombre" required="required"/></div>
@@ -37,8 +40,23 @@
 									<input type="submit" value="Enviar" />
 								</div>
 							</div>
+						
 							
-							<aside>
+						</section>
+						
+					</article>
+					
+					<article>
+						
+						<section>
+								
+							
+								<div id="streetView">
+									<a href="https://www.google.com/maps/place/Elite+Publicidad/@4.53881,-75.67379,3a,75y,186.59h,90t
+									/data=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x0:0xa831c1ee1cd53b26!6m1!1e1?hl=es-ES"
+									target="_blank">
+									Ver en Google Street View</a>
+								</div>
 								<div id="map">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.3062351876547!2d-75.6737928!
 									3d4.5387836000000075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5a9829914bb%3A0xa831c1
@@ -46,19 +64,16 @@
 									frameborder="0" style="border:0">
 									</iframe>
 								</div>
-								<div id="streetView">
-									<a href="https://www.google.com/maps/place/Elite+Publicidad/@4.53881,-75.67379,3a,75y,186.59h,90t
-									/data=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x0:0xa831c1ee1cd53b26!6m1!1e1?hl=es-ES"
-									target="_blank">
-									Encuentranos en Google Street View</a>
-								</div>
-							</aside>
+								
+								
+							
 							
 						</section>
 						<footer>
 							
 						</footer>
 					</article>
+					
 				</section>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
 			<?php
