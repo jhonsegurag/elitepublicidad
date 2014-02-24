@@ -17,7 +17,7 @@
 			<section id="productos">
 				<?php
 					for ($i=0; $i < sizeof($productos); $i++) { 
-										
+								
 				?>
 				<article>
 					<hgroup>
@@ -30,37 +30,33 @@
 							</div>
 							<div id="textoInformacion">
 								<p>
-									<?php echo $productos[$i]['descripcion'] ?>
+									<?php echo $productos[$i]['descripcion']; ?>
 								</p>
 							</div>
 						</div>
+
 						<div id="imagenes">
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							
+							<?php 
+									$idproducto= $productos[$i]['idproducto'];
+									$imagenes = getImagenesProducto($idproducto);  		
+								for ($j=0; $j < sizeof($imagenes) ; $j++) {
+									$idimagen = $imagenes[$j]['idimagenproducto'];
+									$ruta = $imagenes[$j]['ruta'];
+								echo "<script type='text/javascript'>
+									alert('".$idimagen."');
+									</script>";
+								echo "<script type='text/javascript'>
+									alert('".$ruta."');
+									</script>";
+							?>
+								<div class="itemImagenes">
+									<img src="<?php echo $imagenes[$j]['ruta'] ?>" />
+								</div>
+							<?php 
+								}
+						 	?>
 						</div>
+						
 					</section>
 					<footer>
 						<div id="verMas">

@@ -11,7 +11,9 @@
 		return $decodificada;
 	}	
 	
-	
+	/*
+	 * Funcion que permite encriptar una cadena con una llave dada.
+	 */
 	function encrypt($string, $key) {
 		   $result = '';
 		   
@@ -24,6 +26,9 @@
   	 	return base64_encode($result);
 	}
 	
+	/*
+	 * Funcion que permite desencriptar una cadena con una llave dada.
+	 */  
 	function decrypt($string, $key) {
 		   $result = '';
 		   $string = base64_decode($string);
@@ -45,7 +50,6 @@
 	 /*
 	 * Funcion que permite obtener una lista de trabajos realizados
 	 */
-	
 	function getTrabajosRealizados()
 	{
 		$trabajosrealizados=array();
@@ -131,11 +135,23 @@
 			$producto['ruta']=$fila['ruta'];
 			$producto['descripcion']=$fila['descripcion'];
 			$producto['fechacreacion']=$fila['fechacreacion'];
-			
-			
 		return $producto;
 	}
-	
+	/*
+	 * Funcion que permite obtener las imagenes asociadas a un producto.
+	 */ 
+	function getImagenesProducto($idproducto){
+		$imagenesproducto=array();
+		$conexion= conectar();
+		
+		$resultado=mysql_query("SELECT idimagenproducto, ruta, descripcion FROM  imagenproducto WHERE producto_idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
+		$fila=mysql_fetch_array($resultado);
+		
+			$imagenesproducto['idimagenproducto']=$fila['idimagenproducto'];
+			$imagenesproducto['ruta']=$fila['ruta'];
+			$imagenesproducto['descripcion']=$fila['descripcion'];
+		return $imagenesproducto;
+	}
 	
 	/*
 	 * -------------------------------------------------------------------------------------------------------------------------------
