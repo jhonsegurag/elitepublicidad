@@ -38,7 +38,11 @@
 
 						<div id="imagenes">
 							<?php
-							$idProducto=$productos[$i]['idproducto'];							
+
+													
+
+							$idProducto= $productos[$i]['idproducto'];							
+
 							$imagenes = getImagenesProducto($idProducto);		  		
 							for ($j=0; $j < sizeof($imagenes) ; $j++) 
 							{			
