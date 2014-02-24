@@ -107,23 +107,21 @@
 					<section>
 						<div id="items">
 							<div class="itemNuestrosClientes">
-								
+								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/policia.png" />
 							</div>	
 							<div class="itemNuestrosClientes">
-								
+								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/ica.png" />
 							</div>
 							<div class="itemNuestrosClientes">
-								
+								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/hotelbailarinas.png" />
 							</div>
 							<div class="itemNuestrosClientes">
-								
+								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/tinto.png" />
 							</div>
 							<div class="itemNuestrosClientes">
-								
+								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/armenia.png" />
 							</div>
-							<div class="itemNuestrosClientes">
-								
-							</div>
+							
 						</div>
 					</section>
 				</article>

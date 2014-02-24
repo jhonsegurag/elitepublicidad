@@ -278,11 +278,10 @@ nav ul a{
 }
 
 #nuestrosClientes article .itemNuestrosClientes{
-	width: 130px;
-	height: 130px;
-	border: 2px solid #FFFFFF;
+	width: 100px;
+	height: 100px;
 	float: left;
-	margin-left: 5px;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
