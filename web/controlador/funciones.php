@@ -140,16 +140,23 @@
 	/*
 	 * Funcion que permite obtener las imagenes asociadas a un producto.
 	 */ 
-	function getImagenesProducto($idproducto){
+	function getImagenesProducto($idproducto)
+	{
 		$imagenesproducto=array();
 		$conexion= conectar();
 		
-		$resultado=mysql_query("SELECT idimagenproducto, ruta, descripcion FROM  imagenproducto WHERE producto_idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
-		$fila=mysql_fetch_array($resultado);
+		$resultado=mysql_query("SELECT idimagenproducto, ruta, descripcion FROM  imagenproducto 
+		WHERE producto_idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
 		
-			$imagenesproducto['idimagenproducto']=$fila['idimagenproducto'];
-			$imagenesproducto['ruta']=$fila['ruta'];
-			$imagenesproducto['descripcion']=$fila['descripcion'];
+		$i=0;
+		while ($fila=mysql_fetch_array($resultado))
+		{
+		
+			$imagenesproducto[$i]['idimagenproducto']=$fila['idimagenproducto'];
+			$imagenesproducto[$i]['ruta']=$fila['ruta'];
+			$imagenesproducto[$i]['descripcion']=$fila['descripcion'];
+			$i++;
+		}	
 		return $imagenesproducto;
 	}
 	

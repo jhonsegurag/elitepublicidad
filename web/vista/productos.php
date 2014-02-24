@@ -12,6 +12,7 @@
 				getHeader();
 				getMenu("inicio");
 				$productos = getProductos();
+				
 			?>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->		
 			<section id="productos">
@@ -36,25 +37,19 @@
 						</div>
 
 						<div id="imagenes">
-							<?php 
-									$idproducto= $productos[$i]['idproducto'];
-									$imagenes = getImagenesProducto($idproducto);  		
-								for ($j=0; $j < sizeof($imagenes) ; $j++) {
-									$idimagen = $imagenes[$j]['idimagenproducto'];
-									$ruta = $imagenes[$j]['ruta'];
-								echo "<script type='text/javascript'>
-									alert('".$idimagen."');
-									</script>";
-								echo "<script type='text/javascript'>
-									alert('".$ruta."');
-									</script>";
+							<?php
+							$idProducto=2;							
+							$imagenes = getImagenesProducto($idProducto);		  		
+							for ($j=0; $j < sizeof($imagenes) ; $j++) 
+							{			
 							?>
 								<div class="itemImagenes">
-									<img src="<?php echo $imagenes[$j]['ruta'] ?>" />
+									<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
 								</div>
 							<?php 
-								}
+							}
 						 	?>
+						 	
 						</div>
 						
 					</section>
