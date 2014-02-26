@@ -989,15 +989,16 @@ input[type="submit"]
 
 #contacto
 {
-	display: inline-block;
+	
 	width: 100%;
-	margin: 20px auto 20px auto;
+	display: inline-block;
+	
 }
 
 #contacto article
 {
 	float:left;
-	width: 65%;
+	width: 60%;
 	background-color: rgba(51,51,51,0.8);
 	margin: 10px auto 10px auto;
 	padding: 10px;
@@ -1048,6 +1049,56 @@ input[type="submit"]
 	
 }
 
+#contacto aside
+{
+	float:right;
+	width: 30%;
+	background-color: rgba(51,51,51,0.8);
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
+
+#contacto aside #infoContacto img
+{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+
+#contacto aside #infoContacto p
+{
+	color: #CCCCCC;
+}
+
+@media screen and (max-width:720px)
+{
+	
+	
+	#contacto article
+	{
+		float:none;
+		width: 80%;
+		margin: 10px auto 10px auto;
+	}
+	
+	.etiqueta
+	{
+   		float: none;
+   		width: 100%;
+	}
+
+	.componente
+	{
+   		float: none;
+   		width: 100%;
+	}
+	
+	#contacto aside
+	{
+		display: none;
+	}
+}
 
 /*
  * ----------------------------------------------------------------------------------------------------------------------------------

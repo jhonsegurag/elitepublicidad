@@ -15,6 +15,18 @@
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->		
 				<section id="contacto">
 					
+					<aside>
+						<div id="infoContacto">
+							<p><img  src="../../imagenes/contacto/email.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/movil.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/ubicacion.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/web.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/viber.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/line.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/whatsapp.png" /><span>elitepublicidad12@gmail.com</span></p>
+						</div>
+					</aside>
+					
 					<article>
 						<header>
 							<h1>Contáctenos</h1>
