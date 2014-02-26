@@ -26,16 +26,13 @@
 					
 					<section>
 						<div class="imagenProducto">
-							<img src="<?php echo $producto['ruta'] ?>" />
+							<img style="width: 100%; height: 100%;" src="<?php echo $producto['ruta'] ?>" />
 						</div>
-					</section>
-					
-					<aside>
 						<div class="textoProducto">
 							<p><?php echo $producto['descripcion'] ?> </p>
 						</div>
-					</aside>
-					
+					</section>
+				
 					<footer>
 						<div class="imagenesProducto">
 							Aquí irian las imagenes del producto Aquí irian las imagenes del producto Aquí irian las imagenes del producto 

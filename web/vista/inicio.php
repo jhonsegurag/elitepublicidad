@@ -8,6 +8,9 @@
 	$trabajosrealizados=getTrabajosRealizados();
 	getImports();
 	
+	$productos=getProductos();
+	$servicios=getServicios();
+	
 ?>
 	<body>
 		<div id="fb-root"></div>
@@ -29,7 +32,7 @@
 				getMenu("inicio");
 			?>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->	
-			<section id="slider">
+			<section id="slide">
 				<ul class="elitePublicidad">
 					<li> <img class="imagen" src="../../imagenes/slide/1.jpg"></li>
 					<li> <img class="imagen" src="../../imagenes/slide/2.jpg"></li>
@@ -48,9 +51,17 @@
 						</h1>
 					</hgroup>
 					<div>
+						<?php
+						for ($i=0; $i <sizeof($productos) ; $i++)
+						{ 
+						
+						?>
 							<a href="">
-								<li>TEXTO 1</li>
+								<li><?php echo $productos[$i]['nombre'] ?></li>
 							</a>
+						<?php
+						}	
+						?>	
 					</div>
 				</article>
 				
@@ -62,9 +73,17 @@
 						</h1>
 					</hgroup>
 					<div>
-							<a href="">
-								<li>TEXTO 1</li>
-							</a>
+							<?php
+							for ($i=0; $i <sizeof($servicios) ; $i++)
+							{ 
+							
+							?>
+								<a href="">
+									<li><?php echo $servicios[$i]['nombre'] ?></li>
+								</a>
+							<?php
+							}	
+							?>	
 					</div>
 				</article>
 				

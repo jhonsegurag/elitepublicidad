@@ -18,18 +18,18 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="../../favicon.ico">
-		<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 	</head>
 
 	<body>
 		<section>
 			<aside style="float:left; width:18%;">
-				<img style="width:100%; height: 100%; " src="../../imagenes/gearleft.png" />
+				<img style="width:100%; height: 100%; " src="../imagenes/gearleft.png" />
 			</aside>
 			
 			<aside style="float:right; width:18%;">
-				<img style="width:100%; height: 100%; " src="../../imagenes/gearrigth.png" />
+				<img style="width:100%; height: 100%; " src="../imagenes/gearrigth.png" />
 			</aside>
 			<article style="margin:auto; width: 60%;">
 				<header>
@@ -37,7 +37,7 @@
 				</header>
 				<section>
 					<div style="margin: auto; width: 200px; height: 200px;">
-						<img style="width:100%; height: 100%; " src="../../imagenes/error404.png" />
+						<img style="width:100%; height: 100%; " src="../imagenes/error404.png" />
 					</div>
 				
 					<div>

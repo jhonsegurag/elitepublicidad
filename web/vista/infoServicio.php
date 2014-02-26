@@ -26,7 +26,7 @@
 					
 					<section>
 						<div class="imagenServicio">
-							<img src="<?php echo $servicio['ruta'] ?>" />
+							<img style="width: 100%; height: 100%;" src="<?php echo $servicio['ruta'] ?>" />
 						</div>
 					</section>
 					

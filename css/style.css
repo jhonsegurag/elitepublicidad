@@ -1,9 +1,10 @@
-body{
-	
+body
+{	
+	font-family: Helvetica, Arial, FreeSans, sans-serif;
+	font-size: 12px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: url("../imagenes/city.jpg");
-	
+	background-image: url("../imagenes/city.jpg");	
 }
 
 article, aside, details, figcaption, figure, footer, header, nav, hgroup, section { display: block; }
@@ -23,17 +24,23 @@ article, aside, details, figcaption, figure, footer, header, nav, hgroup, sectio
     
 }
 
+#slide
+{
+	
+}
+
 .fixed {
     position:fixed;
+    margin-top:0px;
     top: 0;
     left:0;
-    width: 79.2%;
+    width: 79%;
     margin-left: 10.5%;
     z-index: 3000;
 }
 
 .fixed ul{
-	margin: auto;
+	margin: 0px auto;
 }
 
 nav{
@@ -41,7 +48,7 @@ nav{
 	background-color: #333;
 	display: inline-block;
 	margin-top:5px;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 
 nav ul {
@@ -50,27 +57,41 @@ nav ul {
 }
 
 nav ul li{
-	margin-top:2px;
-	margin-bottom:2px;
+	
 	display: inline-block;
 	color: #CCC;
-	padding: 5px 15px 5px 15px;
+	padding: 8px 20px 8px 20px;
 	transition: all 0.5s linear;
 	list-style: none;
+	border-right: 1px solid #555;
 }
 nav ul li:hover{
-	color: #000000;
-	background-color: #99CC00;
+	color: #333;
+	background-color: #9C0;
 
 }
 
 nav ul a{
 	text-decoration: none;
+	font-weight: bold;
 }
 
 #seleccionado{
-	color: #000000;
+	color: #333;
 	background-color: #99CC00;
+}
+
+@media screen and (max-width:720px)
+{
+	nav ul li
+	{	
+		display: inline-block;
+		color: #CCC;
+		padding: 4px 5px 4px 5px;
+		transition: all 0.5s linear;
+		list-style: none;
+		border-right: 1px solid #555;
+	}
 }
 /*
  * ------------------------------------------------------------------------------------------------------------
@@ -149,7 +170,7 @@ nav ul a{
 		margin: auto;	
 	}
 	
-	#slider
+	#slide
 	{
 		display: none;
 	}
@@ -201,19 +222,21 @@ nav ul a{
 
 #productosYServicios a{
 	text-decoration: none;
+	
 }
 
-#productosYServicios  li{
+#productosYServicios li{
 	color: #DDD;
 	list-style: none;
 	margin-top: 5px;
-	padding-left: 10px;
+	padding: 5px 5px 5px 10px;
 	border-radius: 5px;
+	background: #222;
 }
 
 #productosYServicios  li:hover{
-	background-color: #99CC00;
-	color: #000000;
+	background-color: #AAA;
+	color: #333;
 }
 
 #productosYServicios  aside{
@@ -253,7 +276,7 @@ nav ul a{
 	#productosYServicios article
 	{
 		float: none;
-		width: 80%;
+		width: 90%;
 		margin: 10px auto 10px auto;
 	}
 }
@@ -341,6 +364,8 @@ nav ul a{
 	margin-top: 15px; 
 }
 
+
+
 #nuestrosClientes article h1{
 	
 	padding: 5px 0px 5px 30px;
@@ -356,6 +381,12 @@ nav ul a{
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	
+}
+
+#nuestrosClientes article .itemNuestrosClientes:hover
+{
+	opacity: 0.8;
 }
 
 @media screen and (max-width:720px)
@@ -363,8 +394,8 @@ nav ul a{
 	
 	#nuestrosClientes article .itemNuestrosClientes
 	{
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	}
 }
 /*
@@ -378,6 +409,7 @@ nav ul a{
 #servicios{
 	width: 100%;
 	display: inline-block;
+	margin: 20px auto 20px auto;
 }
 
 #servicios article{
@@ -590,56 +622,67 @@ nav ul a{
 
 #infoProducto{
 	width: 100%;
+	display: inline-block;
+	margin: 20px auto 20px auto;
 }
 
 #infoProducto article{
-	width: 80%;
+	width: 60%;
 	margin: auto;
-}
-
-#infoProducto article header hgroup{
 	background-color: rgba(51,51,51,0.8);
+	padding: 20px;
 }
 
-#infoProducto article header hgroup h1{
+
+#infoProducto article h1{
 	padding: 10px;
 	text-align: center;
 	color: #9c0;
 }
 
-#infoProducto article section{
-	width: 30%;
-	display: inline-block;
-}
 
-#infoProducto article section .imagenProducto{
+#infoProducto article .imagenProducto
+{
 	float: left;
-	margin: auto;
+	width: 120px;
+	height: 120px;
+	position: absolute;
 }
 
-#infoProducto article aside{
-	width: 69%;
-	float: right;
-	background-color: rgba(51,51,51,0.8);
-	display: inline-block;
-}
-
-#infoProducto article aside .textoProducto {
+#infoProducto article .textoProducto
+{
+	margin-left: 150px;
+	width:50%;
 	color: #CCCCCC;
-	padding: 15px;
+	padding: 10px;
+	text-align: justify;
 }
 
-#infoProducto article footer{
-	width: 100%;
-	clear: bold;
-	margin: 20px;
-	background-color: rgba(51,51,51,0.8);
-}
 
-#infoProducto article footer .imagenesProducto{
+
+
+#infoProducto article .imagenesProducto{
 	text-align: center;
-	color: #9c0;
+	color: #9C0;
 	padding: 20px;
+}
+
+
+@media screen and (max-width:720px)
+{
+	#infoProducto article .imagenProducto
+	{
+		position:relative;
+		float: none;
+		margin: auto;
+	}
+	
+	#infoProducto article .textoProducto
+	{
+		float: none;
+		width:80%;
+		margin: auto;
+	}
 }
 
 /*
@@ -649,61 +692,70 @@ nav ul a{
  * 
  * ------------------------------------------------------------------------------------------------------------
  */
-
 #infoServicio{
 	width: 100%;
+	display: inline-block;
+	margin: 20px auto 20px auto;
 }
 
 #infoServicio article{
-	width: 80%;
+	width: 60%;
 	margin: auto;
-}
-
-#infoServicio article header hgroup{
 	background-color: rgba(51,51,51,0.8);
+	padding: 20px;
 }
 
-#infoServicio article header hgroup h1{
+
+#infoServicio article h1{
 	padding: 10px;
 	text-align: center;
 	color: #9c0;
 }
 
-#infoServicio article section{
-	width: 30%;
-	display: inline-block;
-}
 
-#infoServicio article section .imagenServicio{
+#infoServicio article .imagenServicio
+{
 	float: left;
-	margin: auto;
+	width: 120px;
+	height: 120px;
+	position: absolute;
 }
 
-#infoServicio article aside{
-	width: 69%;
-	float: right;
-	background-color: rgba(51,51,51,0.8);
-	display: inline-block;
-}
-
-#infoServicio article aside .textoServicio{
+#infoServicio article .textoServicio
+{
+	margin-left: 150px;
+	width:50%;
 	color: #CCCCCC;
-	padding: 15px;
+	padding: 10px;
+	text-align: justify;
 }
 
-#infoServicio article footer{
-	width: 100%;
-	clear: bold;
-	margin: 20px;
-	background-color: rgba(51,51,51,0.8);
-}
 
-#infoServicio article footer .imagenesServicio{
+
+
+#infoServicio article .imagenesServicio{
 	text-align: center;
-	color: #9c0;
+	color: #9C0;
 	padding: 20px;
 }
 
+
+@media screen and (max-width:720px)
+{
+	#infoServicio article .imagenServicio
+	{
+		position:relative;
+		float: none;
+		margin: auto;
+	}
+	
+	#infoServicio article .textoServicio
+	{
+		float: none;
+		width:80%;
+		margin: auto;
+	}
+}
 
 /*
  * ------------------------------------------------------------------------------------------------------------
@@ -899,7 +951,7 @@ input[type="submit"]
 {
 	display: inline-block;
 	width: 100%;
-	margin: 30px auto 30px auto;
+	margin: 20px auto 20px auto;
 }
 
 #empresa aside
@@ -957,6 +1009,7 @@ input[type="submit"]
 {
 	color: #CCC;
 	text-align: justify;
+	line-height: 1.5;
 }
 
 
@@ -1120,7 +1173,7 @@ input[type="submit"]
 
 .itemPanelFooter
 {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -1142,8 +1195,8 @@ input[type="submit"]
 .itemPanelFooter  .imgItemPanelFoter 
 {
 	float:left;
-	width: 12px;
-	height: 12px;
+	width: 20px;
+	height: 20px;
 	margin-right: 10px;
 }
 
@@ -1155,13 +1208,15 @@ input[type="submit"]
 .itemPanelFooter  .enlace .textItemPanelFooter:hover
 {
 	color: #9c0;
-	font-weight: bold;
+	
 }
 
 .itemPanelFooter  .textItemPanelFooter 
 {
 	color: #CCC;
 }
+
+
 
 .itemPanelFooter  .imgItemPanelFoter img
 {
@@ -1296,4 +1351,9 @@ input[type="submit"]
 	color: #000;
 	background-color: rgba(214,214,214,0.9);
 }
+
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
+
+
 

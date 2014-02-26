@@ -38,7 +38,7 @@
 								<img />
 							</div>
 							<div id="textoInfoEmpresa">
-								
+								<p>Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas.<br><br>Brindamos una atención integral en todos los niveles de complejidad, caracterizada por la calidad humana de un grupo multifuncional de profesionales con prestigio laboral, humano y ético; que responde a las expectativas de nuestros clientes y su entorno.</p>
 							</div>
 							
 						</section>
