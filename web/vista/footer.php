@@ -4,7 +4,7 @@
 		?>	
 			<footer>
 				<div id="contenedorFooter">
-					<div class="panelFooter">
+					<div id="panelFooterServiciosHide" class="panelFooter">
 						<div class="itemPanelFooter">
 							<h3>SERVICIOS</h3>
 							<p>Servicio</p>
@@ -14,7 +14,7 @@
 						
 					</div>
 					
-					<div class="panelFooter">
+					<div id="panelFooterNosotrosHide" class="panelFooter">
 						<div class="itemPanelFooter">
 							<h3>NOSOTROS</h3>
 							<p>Quienes Somos</p>
@@ -68,11 +68,11 @@
 				<div id="subFooter">
 					<div class="itemSubFooter">
 						<p>© 2014 Elite Publicidad. Todos los derechos reservados.</p>
-						<p></p>
+						
 					</div>
 					<div class="itemSubFooter">
 						<div id="logoSubFooter">
-							<img width="100%" src="../../imagenes/logo.png" />
+							<img style="width: 100%;" src="../../imagenes/logo.png" />
 						</div>
 					</div>
 					

@@ -40,7 +40,7 @@ nav{
 	width: 100%;
 	background-color: #333;
 	display: inline-block;
-	margin-top:2px;
+	margin-top:5px;
 	margin-bottom: 2px;
 }
 
@@ -133,6 +133,40 @@ nav ul a{
 	height: 100%;
 }
 
+
+@media screen and (max-width:720px)
+{
+	.panelHeader
+	{
+		width: 100%;
+		
+	}
+	
+	#logo
+	{
+		width: 250px;
+		
+		margin: auto;	
+	}
+	
+	#slider
+	{
+		display: none;
+	}
+	
+	#productosYServicios aside
+	{
+		display: none;
+	}
+	
+	#productosYServicios article
+	{
+		float: none;
+		width: 80%;
+		margin: auto;
+	}
+}
+
 /*
  * ------------------------------------------------------------------------------------------------------------
  * 
@@ -207,6 +241,23 @@ nav ul a{
 }
 
 
+@media screen and (max-width:720px)
+{
+	
+	
+	#productosYServicios aside
+	{
+		display: none;
+	}
+	
+	#productosYServicios article
+	{
+		float: none;
+		width: 80%;
+		margin: 10px auto 10px auto;
+	}
+}
+
 /*
  * ------------------------------------------------------------------------------------------------------------
  * 
@@ -215,15 +266,14 @@ nav ul a{
  * ------------------------------------------------------------------------------------------------------------
  */
 
-#trabajosRealizados #items{
-	width: 90%;
-	margin: auto;
-}
+
 
 #trabajosRealizados{
 	display: inline-block;
 	width: 100%;
 }
+
+
 
 #trabajosRealizados article{
 	margin-top: 15px; 
@@ -237,6 +287,11 @@ nav ul a{
 	border-radius: 5px;
 }
 
+#trabajosRealizados #items{
+	width: 90%;
+	margin: auto;
+}
+
 #trabajosRealizados article .itemTrabajosRealizados{
 	width: 130px;
 	height: 130px;
@@ -245,6 +300,23 @@ nav ul a{
 	margin-left: 5px;
 	margin-bottom:  5px;
 	border-radius: 5px;
+}
+
+@media screen and (max-width:720px)
+{
+	
+	#trabajosRealizados #items
+	{
+	width: 90%;
+	margin: auto;
+	}
+	
+	#trabajosRealizados article .itemTrabajosRealizados
+	{
+		width: 60px;
+		height: 60px;
+	}
+	
 }
 
 /*
@@ -286,7 +358,15 @@ nav ul a{
 	border-radius: 5px;
 }
 
-
+@media screen and (max-width:720px)
+{
+	
+	#nuestrosClientes article .itemNuestrosClientes
+	{
+	width: 80px;
+	height: 80px;
+	}
+}
 /*
  * ------------------------------------------------------------------------------------------------------------
  * 
@@ -328,7 +408,7 @@ nav ul a{
 
 #servicios #informacion #textoInformacion{
 	color:#CCCCCC;
-	width: 75%;
+	width: 50%;
 	margin-left: 120px;
 	text-align: justify;
 	height: 140px;
@@ -365,6 +445,33 @@ nav ul a{
 	color: #99CC00;
 }
 
+
+@media screen and (max-width:720px)
+{
+	
+	#servicios article
+	{
+		margin: 10px auto 10px auto;
+	}
+	
+	#servicios #informacion #imagenInformacion
+	{
+		width: 80px;
+		height: 80px;
+		margin: auto;
+		float: none;
+	}
+	
+	#servicios #informacion #textoInformacion
+	{
+		margin-left:  100px;
+	}
+	
+	#servicios article section #imagenes
+	{
+		display: none;
+	}
+}
 
 /*
  * ------------------------------------------------------------------------------------------------------------
@@ -443,6 +550,34 @@ nav ul a{
 
 #productos article footer #verMas a:hover{
 	color: #99CC00;
+}
+
+@media screen and (max-width:720px)
+{
+	
+	
+	#productos article
+	{
+		width: 80%;
+		margin: 10px auto 10px auto;
+		float: none;
+	}
+	
+	#productos #informacion #imagenInformacion
+	{
+		width: 80px;
+		height: 80px;
+	}
+	
+	#productos #informacion #textoInformacion
+	{
+		margin-left:  100px;
+	}
+	
+	#productos article section #imagenes
+	{
+		display: none;
+	}
 }
 
 /*
@@ -751,5 +886,363 @@ input[type="submit"]
 #gestionar article #formulario_agregar_servicio{
 	width: 90%;
 	margin: auto;
+}
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------EMPRESA---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+
+#empresa
+{
+	display: inline-block;
+	width: 100%;
+	margin: 30px auto 30px auto;
+}
+
+#empresa aside
+{
+	float: left;
+	width: 25%;
+	padding:20px;
+	background-color: rgba(51,51,51,0.8); 
+}
+
+#empresa aside li
+{
+	background:#222;
+	list-style: none;
+	color: #CCC;
+	padding: 5px 0px 5px 10px;
+	margin-bottom: 5px;
+	
+}
+
+#empresa aside h1
+{
+	margin-top: 0px;
+	color: #DDD;
+	border-bottom: 5px solid #9C0;
+	border-radius:5px;
+}
+
+#empresa aside li:hover
+{
+	background: #9C0;
+	color: #333;
+	border-radius:5px;
+	
+}
+
+#empresa article
+{
+	float: right;
+	width: 60%;
+	padding:20px;
+	margin-bottom: 20px;
+	background-color: rgba(51,51,51,0.8); 
+}
+
+#empresa article h1
+{
+	margin-top: 0px;
+	color: #DDD;
+	border-bottom: 5px solid #9C0;
+	border-radius:5px;
+}
+
+#empresa article p
+{
+	color: #CCC;
+	text-align: justify;
+}
+
+
+@media screen and (max-width:720px)
+{
+	
+	#empresa aside
+	{
+		float: none;
+		width: 80%;
+		margin:auto;
+	}
+	
+	#empresa article
+	{
+		float: none;
+		width: 80%;
+		margin: 10px auto;
+	}
+	
+}
+
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * ----------------------------------------------------FORMULARIO CONTACTO-----------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#contacto
+{
+	display: inline-block;
+	width: 100%;
+	margin: 20px auto 20px auto;
+}
+
+#contacto article
+{
+	float:left;
+	width: 65%;
+	background-color: rgba(51,51,51,0.8);
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
+
+
+#contacto article  #map{
+	
+	width: 80%;
+	margin: auto;
+	
+}
+
+#contacto article  #map iframe
+{	
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+}
+
+#contacto article  #streetView
+{	
+	width: 100%;
+	float: right;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#contacto article  #streetView a{
+	padding: 2px 15px 2px 15px;
+	color:#99CC00;
+	text-decoration: none;
+	font-size: 23;
+}
+
+#contacto article  #streetView a:hover
+{
+	
+	background: #99CC00;
+	color: #333;
+}
+
+
+#contacto article h1
+{
+	color:#9C0;
+	text-align: center;
+	
+}
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------FOOTER---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+#contenedorFooter
+{
+	width: 100%;
+	background-color: rgba(51,51,51,0.9); 
+	display: inline-block;
+}
+
+.panelFooter
+{
+	width: 30%;
+	float: left;
+}
+
+.itemPanelFooter
+{
+	width: 80%;
+	margin: auto;
+}
+
+.itemPanelFooter h3
+{
+	color: #CCC;
+}
+
+.itemPanelFooter h3:hover
+{
+	color: #9C0;
+}
+
+.itemPanelFooter p
+{
+	color: #CCC;
+}
+
+.itemPanelFooter  .imgItemPanelFoter 
+{
+	float:left;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+.itemPanelFooter .enlace 
+{
+	text-decoration: none;
+}
+
+.itemPanelFooter  .enlace .textItemPanelFooter:hover
+{
+	color: #9c0;
+	font-weight: bold;
+}
+
+.itemPanelFooter  .textItemPanelFooter 
+{
+	color: #CCC;
+}
+
+.itemPanelFooter  .imgItemPanelFoter img
+{
+	width: 100%;
+}
+
+#subFooter
+{
+	width: 100%;
+	background: #333;
+	margin-top:5px;
+	display: inline-block;
+}
+
+.itemSubFooter
+{
+	width: 48%;
+	float: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.itemSubFooter p
+{
+	color: #CCC;
+}
+
+.itemSubFooter #logoSubFooter
+{
+	float:right;
+	width: 200px;
+}
+
+
+@media screen and (max-width:720px)
+{
+	#panelFooterServiciosHide
+	{
+		display: none;
+	}
+	
+	#panelFooterNosotrosHide
+	{
+		display: none;
+	}
+	
+	.panelFooter
+	{
+		float: none;
+		width: 90%;
+		margin:auto;
+		text-align: center;
+	}
+	
+	.itemSubFooter
+	{
+		width: 80%;
+		float: none;
+		margin:auto;
+		padding: 5px 10px 5px 10px;
+	}
+	
+	.itemSubFooter p
+	{
+		text-align: center;
+	}
+	
+	.itemSubFooter #logoSubFooter
+	{
+		float: none;
+		width: 200px;
+		margin:auto,
+	}
+}
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------Perfil---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#administrador article #funciones
+{
+	width: 100%;
+	display: inline-block;
+}
+
+#administrador article .funcion
+{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	opacity: 0.7;
+}
+
+#administrador article .funcion:hover
+{
+	opacity: 1;
+}
+
+
+
+/*
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ * -------------------------------------------------------------LISTAR---------------------------------------------------------------
+ * ----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+#listar
+{
+	display: inline-block;
+	width: 100%;
+	margin: 30px auto 30px auto;
+}
+
+#listar article
+{
+	width: 80%;
+	margin: auto;
+	background: rgba(51,51,51,0.8);
+	padding: 20px;
+}
+
+#listar article h1
+{
+	color: #9C0;
+	text-align: center;
+}
+
+#listar table thead th
+{
+	color: #000;
+	background-color: rgba(214,214,214,0.9);
 }
 

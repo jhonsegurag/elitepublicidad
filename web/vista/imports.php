@@ -7,8 +7,8 @@
 		<head> 
 			<meta charset="utf-8">
 			
-			<link href="../../css/style1.css" rel="stylesheet">
-			<link href="../../css/style2.css" rel="stylesheet">
+			<link href="../../css/style.css" rel="stylesheet">
+			
 			<!-- Editor de texto. -->
 			<script src="../../libs/ckeditor/ckeditor.js"></script>
 			
