@@ -1,5 +1,4 @@
 <?php
-    
     include_once'mysql.php';
 	
 	/*
@@ -69,7 +68,7 @@
 	}
 	
 	/*
-	 * Funcion que permite obtener informacion de un producto
+	 * Funcion que permite obtener informacion de un trabajo realizado
 	 */
 	function getInformacionTrabajo($idtrabajorealizado)
 	{
@@ -84,8 +83,6 @@
 			$trabajo['descripcion']=$fila['descripcion'];
 			$trabajo['fechacreacion']=$fila['fechacreacion'];
 			
-			
-			
 		return $trabajo;
 	}
 	
@@ -98,7 +95,6 @@
 	/*
 	 * Funcion que permite obtener una lista de productos
 	 */
-	
 	function getProductos()
 	{
 		$productos=array();
@@ -126,7 +122,6 @@
 		$producto=array();
 		$conexion= conectar();
 		
-		
 		$resultado=mysql_query("SELECT idproducto,nombre,ruta,descripcion,fechacreacion FROM producto WHERE idproducto='".mysql_real_escape_string($idproducto)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
 		
@@ -137,6 +132,7 @@
 			$producto['fechacreacion']=$fila['fechacreacion'];
 		return $producto;
 	}
+	
 	/*
 	 * Funcion que permite obtener las imagenes asociadas a un producto.
 	 */ 
@@ -165,8 +161,10 @@
 	 * --------------------------------------------------------SERVICIOS--------------------------------------------------------------
 	 * -------------------------------------------------------------------------------------------------------------------------------
 	 */
-	
-	
+	 
+	/*
+	 * Funcion que permite obtener una lista de servicios
+	 */
 	function getServicios()
 	{
 		$servicios=array();
@@ -187,11 +185,13 @@
 		return $servicios;
 	}
 	
+	/*
+	 * Funcion que permite obtener informacion de un servicio
+	 */
 	function getInformacionServicio($idservicio)
 	{
 		$servicio=array();
 		$conexion= conectar();
-		
 		
 		$resultado=mysql_query("SELECT idservicio,nombre,ruta,descripcion,fechacreacion FROM servicio WHERE idservicio='".mysql_real_escape_string($idservicio)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
@@ -206,11 +206,37 @@
 	}
 	
 	/*
+	 * Funcion que permite obtener las imagenes asociadas a un servicio.
+	 */ 
+	function getImagenesServicio($idservicio)
+	{
+		$imagenesservicio=array();
+		$conexion= conectar();
+		
+		$resultado=mysql_query("SELECT idimagenservicio, ruta, descripcion FROM  imagenservicio 
+		WHERE servicio_idservicio='".mysql_real_escape_string($idservicio)."'",$conexion);
+		
+		$i=0;
+		while ($fila=mysql_fetch_array($resultado))
+		{
+		
+			$imagenesservicio[$i]['idimagenservicio']=$fila['idimagenservicio'];
+			$imagenesservicio[$i]['ruta']=$fila['ruta'];
+			$imagenesservicio[$i]['descripcion']=$fila['descripcion'];
+			$i++;
+		}	
+		return $imagenesservicio;
+	}
+	
+	/*
 	 * -------------------------------------------------------------------------------------------------------------------------------
 	 * ------------------------------------------------------------USUARIOS--------------------------------------------------------------
 	 * -------------------------------------------------------------------------------------------------------------------------------
 	 */
-
+	 
+	/*
+	 * Funcion que permite obtener una lista de usuarios
+	 */
 	function getUsuarios()
 	{
 		$usuarios=array();
@@ -229,12 +255,13 @@
 		return $usuarios;
 	}
 	
-
+	/*
+	 * Funcion que permite obtener informacion de un usuario
+	 */
 	function getInformacionUsuario($idusuario)
 	{
 		$usuario=array();
 		$conexion= conectar();
-		
 		
 		$resultado=mysql_query("SELECT idusuario,tipo_idtipo,nombre,apellido,fechacreacion FROM usuario WHERE idusuario='".mysql_real_escape_string($idusuario)."'",$conexion);
 		$fila=mysql_fetch_array($resultado);
@@ -247,14 +274,4 @@
 			
 		return $usuario;
 	}
-	
-	
-	
-	
-	
-	
-
-	
-
-
 ?>

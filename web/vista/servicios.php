@@ -18,7 +18,8 @@
 			<section id="servicios">
 						<?php 
 							for ($i=0; $i < sizeof($servicios) ; $i++) { 
-							?>
+							
+						?>
 				<article>
 					<hgroup>
 						<h1> <?php echo $servicios[$i]['nombre'] ?></h1>
@@ -35,31 +36,20 @@
 							</div>
 						</div>
 						<div id="imagenes">
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							<div class="itemImagenes">
-								
-							</div>
-							
+							<?php
+								$idServicio= $servicios[$i]['idservicio'];							
+								$imagenes = getImagenesServicio($idServicio);		  		
+								for ($j=0; $j < sizeof($imagenes) ; $j++) 
+								{			
+							?>
+							<a class="imagenesServicio" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+								<div class="itemImagenes">
+									<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
+								</div>	
+							</a>
+							<?php 
+								}
+						 	?>
 						</div>
 						
 					</section>

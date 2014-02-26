@@ -38,20 +38,18 @@
 
 						<div id="imagenes">
 							<?php
-
-													
-
-							$idProducto= $productos[$i]['idproducto'];							
-
-							$imagenes = getImagenesProducto($idProducto);		  		
-							for ($j=0; $j < sizeof($imagenes) ; $j++) 
-							{			
+								$idProducto= $productos[$i]['idproducto'];							
+								$imagenes = getImagenesProducto($idProducto);		  		
+								for ($j=0; $j < sizeof($imagenes) ; $j++) 
+								{			
 							?>
-								<div class="itemImagenes">
-									<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
-								</div>
+	                            <a class="imagenesProducto" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+									<div class="itemImagenes">
+										<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
+									</div>
+								</a>
 							<?php 
-							}
+								}
 						 	?>
 						 	
 						</div>

@@ -71,20 +71,45 @@
 			 <link rel="stylesheet" href="../../css/colorbox.css" />
 			 <!-- ColorBox file JS-->
 			<script src="../../js/jquery.colorbox.js"></script>
-			
+			<!-- Visor para los trabajos realizados. -->
 			 <script>
-			$(document).ready(function(){
-				//Examples of how to assign the Colorbox event to elements
-				$(".trabajo").colorbox({rel:'trabajo'});
-				
-				//Example of preserving a JavaScript event for inline calls.
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-					return false;
+				$(document).ready(function(){
+					//Examples of how to assign the Colorbox event to elements
+					$(".trabajo").colorbox({rel:'trabajo'});
+					
+					//Example of preserving a JavaScript event for inline calls.
+					$("#click").click(function(){ 
+						$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+						return false;
+					});
 				});
-			});
 			</script>
-			 
+			 <!-- Visor para las imagenes de un producto -->
+			 <script>
+				$(document).ready(function(){
+					//Examples of how to assign the Colorbox event to elements
+					$(".imagenesProducto").colorbox({rel:'imagenesProducto'});
+					
+					//Example of preserving a JavaScript event for inline calls.
+					$("#click").click(function(){ 
+						$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+						return false;
+					});
+				});
+			</script>
+			<!-- Visor para las imagenes de un servicio-->
+			<script>
+				$(document).ready(function(){
+					//Examples of how to assign the Colorbox event to elements
+					$(".imagenesServicio").colorbox({rel:'imagenesServicio'});
+					
+					//Example of preserving a JavaScript event for inline calls.
+					$("#click").click(function(){ 
+						$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+						return false;
+					});
+				});
+			</script>
 			<title> Elite Publicidad </title>
 		</head>
 	<?php

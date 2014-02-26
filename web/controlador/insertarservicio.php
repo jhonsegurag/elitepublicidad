@@ -1,5 +1,6 @@
 <?php
     include_once ('mysql.php');
+	include_once ('funciones.php');
     session_start();
 	
 	if ($_SESSION['idusuario'])
@@ -30,8 +31,32 @@
 			$conexion=conectar();
 			$estado = getInsert("INSERT INTO servicio (usuario_idusuario,nombre,descripcion,ruta,fechacreacion) VALUES
 								('$idusuario','".$nombre."','".$descripcion."','".$ruta."','".$fecha."')", $conexion);
-								
-			echo "<script type='text/javascript'>alert('El servicio ha sido agregado con exito.'); document.location.href='../vista/agregarProducto.php';</script>";
+			
+			
+			/*
+			 * Consultamos el servicio que acabmos de insertar
+			 */
+			$consulta=getConsulta("SELECT idservicio FROM servicio ORDER BY idservicio DESC LIMIT 1");
+			/*
+			 * Extraemos el valor que nos interesa. el idservicio
+			 */
+			$idservicio = mysql_result ($consulta, 0); 
+			/*
+			 * Encriptamos el idservicio para enviar por $_GET
+			 */
+			$idservicioencrypt = encrypt($idservicio,"insertarServicioKey");
+			
+			$direccion= "../vista/agregarImagenesServicio?idservicio=".$idservicioencrypt;
+			echo "<script type='text/javascript'>
+			alert('El servicio ha sido agregado con exito.'); 
+			document.location.href='".$direccion."';
+			</script>";
+			
+				
+			// echo "<script type='text/javascript'>
+			// alert('El servicio ha sido agregado con exito.');
+			 // document.location.href='../vista/agregarProducto.php';
+			 // </script>";
 	} else
 	{
 		

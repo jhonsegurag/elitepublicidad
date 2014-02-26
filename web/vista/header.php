@@ -6,7 +6,7 @@
 				<div id="contenedorHeader">
 					<div class="panelHeader">
 						<div id="logo">
-							<a href="inicio.php">
+							<a href="inicio">
 								<img style="width: 100%;" src="../../imagenes/logo.png">
 							</a>
 						</div>

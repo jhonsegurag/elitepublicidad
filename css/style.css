@@ -108,7 +108,6 @@ nav ul a{
 {
 	width: 48%;
 	float: left;
-	
 }
 
 #logo{
@@ -266,8 +265,6 @@ nav ul a{
 
 @media screen and (max-width:720px)
 {
-	
-	
 	#productosYServicios aside
 	{
 		display: none;
@@ -289,21 +286,16 @@ nav ul a{
  * ------------------------------------------------------------------------------------------------------------
  */
 
-
-
 #trabajosRealizados{
 	display: inline-block;
 	width: 100%;
 }
-
-
 
 #trabajosRealizados article{
 	margin-top: 15px; 
 }
 
 #trabajosRealizados article h1{
-	
 	padding: 5px 0px 5px 30px;
 	color: #333;
 	background-color: #9c0;
@@ -327,7 +319,6 @@ nav ul a{
 
 @media screen and (max-width:720px)
 {
-	
 	#trabajosRealizados #items
 	{
 	width: 90%;
@@ -339,7 +330,6 @@ nav ul a{
 		width: 60px;
 		height: 60px;
 	}
-	
 }
 
 /*
@@ -364,10 +354,7 @@ nav ul a{
 	margin-top: 15px; 
 }
 
-
-
 #nuestrosClientes article h1{
-	
 	padding: 5px 0px 5px 30px;
 	color: #333;
 	background-color: #9c0;
@@ -381,7 +368,6 @@ nav ul a{
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	
 }
 
 #nuestrosClientes article .itemNuestrosClientes:hover
@@ -391,7 +377,6 @@ nav ul a{
 
 @media screen and (max-width:720px)
 {
-	
 	#nuestrosClientes article .itemNuestrosClientes
 	{
 	width: 60px;
@@ -424,7 +409,6 @@ nav ul a{
 	color:#CCCCCC;
 	border-bottom: 5px solid #9c0;
 }
-
 
 #servicios article footer a p: hover{
 	color: #99CC00;
@@ -477,10 +461,8 @@ nav ul a{
 	color: #99CC00;
 }
 
-
 @media screen and (max-width:720px)
 {
-	
 	#servicios article
 	{
 		margin: 10px auto 10px auto;
@@ -586,8 +568,6 @@ nav ul a{
 
 @media screen and (max-width:720px)
 {
-	
-	
 	#productos article
 	{
 		width: 80%;
@@ -633,7 +613,6 @@ nav ul a{
 	padding: 20px;
 }
 
-
 #infoProducto article h1{
 	padding: 10px;
 	text-align: center;
@@ -658,15 +637,11 @@ nav ul a{
 	text-align: justify;
 }
 
-
-
-
 #infoProducto article .imagenesProducto{
 	text-align: center;
 	color: #9C0;
 	padding: 20px;
 }
-
 
 @media screen and (max-width:720px)
 {
@@ -705,7 +680,6 @@ nav ul a{
 	padding: 20px;
 }
 
-
 #infoServicio article h1{
 	padding: 10px;
 	text-align: center;
@@ -730,15 +704,11 @@ nav ul a{
 	text-align: justify;
 }
 
-
-
-
 #infoServicio article .imagenesServicio{
 	text-align: center;
 	color: #9C0;
 	padding: 20px;
 }
-
 
 @media screen and (max-width:720px)
 {
@@ -946,7 +916,6 @@ input[type="submit"]
  * ----------------------------------------------------------------------------------------------------------------------------------
  */
 
-
 #empresa
 {
 	display: inline-block;
@@ -969,7 +938,6 @@ input[type="submit"]
 	color: #CCC;
 	padding: 5px 0px 5px 10px;
 	margin-bottom: 5px;
-	
 }
 
 #empresa aside h1
@@ -985,7 +953,6 @@ input[type="submit"]
 	background: #9C0;
 	color: #333;
 	border-radius:5px;
-	
 }
 
 #empresa article
@@ -1015,7 +982,6 @@ input[type="submit"]
 
 @media screen and (max-width:720px)
 {
-	
 	#empresa aside
 	{
 		float: none;
@@ -1029,10 +995,7 @@ input[type="submit"]
 		width: 80%;
 		margin: 10px auto;
 	}
-	
 }
-
-
 
 /*
  * ----------------------------------------------------------------------------------------------------------------------------------
@@ -1042,10 +1005,8 @@ input[type="submit"]
 
 #contacto
 {
-	
 	width: 100%;
 	display: inline-block;
-	
 }
 
 #contacto article
@@ -1057,12 +1018,9 @@ input[type="submit"]
 	padding: 10px;
 }
 
-
 #contacto article  #map{
-	
 	width: 80%;
 	margin: auto;
-	
 }
 
 #contacto article  #map iframe
@@ -1089,17 +1047,14 @@ input[type="submit"]
 
 #contacto article  #streetView a:hover
 {
-	
 	background: #99CC00;
 	color: #333;
 }
-
 
 #contacto article h1
 {
 	color:#9C0;
 	text-align: center;
-	
 }
 
 #contacto aside
@@ -1118,7 +1073,6 @@ input[type="submit"]
 	margin-right: 10px;
 }
 
-
 #contacto aside #infoContacto p
 {
 	color: #CCCCCC;
@@ -1126,8 +1080,6 @@ input[type="submit"]
 
 @media screen and (max-width:720px)
 {
-	
-	
 	#contacto article
 	{
 		float:none;
@@ -1158,6 +1110,7 @@ input[type="submit"]
  * -------------------------------------------------------------FOOTER---------------------------------------------------------------
  * ----------------------------------------------------------------------------------------------------------------------------------
  */
+
 #contenedorFooter
 {
 	width: 100%;
@@ -1216,8 +1169,6 @@ input[type="submit"]
 	color: #CCC;
 }
 
-
-
 .itemPanelFooter  .imgItemPanelFoter img
 {
 	width: 100%;
@@ -1248,7 +1199,6 @@ input[type="submit"]
 	float:right;
 	width: 200px;
 }
-
 
 @media screen and (max-width:720px)
 {
@@ -1317,8 +1267,6 @@ input[type="submit"]
 	opacity: 1;
 }
 
-
-
 /*
  * ----------------------------------------------------------------------------------------------------------------------------------
  * -------------------------------------------------------------LISTAR---------------------------------------------------------------
@@ -1352,8 +1300,6 @@ input[type="submit"]
 	background-color: rgba(214,214,214,0.9);
 }
 
-
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
-
-
-
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { 
+	width: 100% !important; 
+}

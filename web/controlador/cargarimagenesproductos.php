@@ -24,7 +24,7 @@
 				/*
 				 * Conectamos con la base de datos e insertamos
 			 	*/
-			 	$descripcion= "cualquiera";
+			 	$descripcion= "cualquiera producto";
 				$conexion=conectar();
 				$estado = getInsert("INSERT INTO imagenproducto (producto_idproducto,ruta,descripcion) VALUES
 									('".$idproducto."','". $targetFile."','".$descripcion."')", $conexion);
@@ -34,6 +34,6 @@
 			alert('El producto ha sido agregado con exito.'); 
 			document.location.href='../vista/perfil.php';
 			</script>";
-		
+	
 	}
 ?>    

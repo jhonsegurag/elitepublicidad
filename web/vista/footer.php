@@ -72,7 +72,9 @@
 					</div>
 					<div class="itemSubFooter">
 						<div id="logoSubFooter">
-							<img style="width: 100%;" src="../../imagenes/logo.png" />
+							<a href="inicio">
+								<img style="width: 100%;" src="../../imagenes/logo.png" />
+							</a>
 						</div>
 					</div>
 					

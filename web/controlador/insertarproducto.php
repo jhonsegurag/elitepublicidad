@@ -47,7 +47,7 @@
 			 */
 			$idproductoencrypt = encrypt($idproducto,"insertarProductoKey");
 			
-			$direccion= "../vista/agregarImagenesProducto.php?idproducto=".$idproductoencrypt;
+			$direccion= "../vista/agregarImagenesProducto?idproducto=".$idproductoencrypt;
 			echo "<script type='text/javascript'>
 			alert('El producto ha sido agregado con exito.'); 
 			document.location.href='".$direccion."';
