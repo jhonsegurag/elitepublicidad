@@ -28,7 +28,7 @@
 			</script>
 		<div id="main" class="wrapper">
 			<?php 
-				getHeader();
+				getHeaderStart();
 				getMenu("inicio");
 			?>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->	

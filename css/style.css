@@ -113,6 +113,28 @@ nav ul a{
 #logo{
 	margin-top: 10px;
 	margin-left: 10px;
+	
+}
+
+
+#logoStart{
+	margin-top: 10px;
+	margin-left: 10px;
+	animation: animacionLogo 2s;
+	-webkit-animation: animacionLogo 2s;
+}
+
+@keyframes animacionLogo
+{
+	
+	
+	0% {opacity: 1; transform: rotateY(360deg);}
+}
+
+@-webkit-keyframes animacionLogo
+{
+	
+	0% {opacity: 1;-webkit-transform: rotateY(360deg);}
 }
 
 .itemSocialMedia{
