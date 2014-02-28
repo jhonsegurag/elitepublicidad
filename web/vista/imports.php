@@ -73,7 +73,7 @@
 				    
 				    var altura_del_menu = $('nav').outerHeight(true);
 				
-				    if (($(window).scrollTop() >= (altura_del_logo + 30)))
+				    if (($(window).scrollTop() >= (altura_del_logo + 15)))
 				    {
 				        $('nav').addClass('fixed');
 				        $('#main').css('margin-top', (altura_del_menu) + 'px');
