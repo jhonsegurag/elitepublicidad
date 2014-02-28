@@ -46,7 +46,7 @@
 								<div class="componente"><input class="textField" type="text" name="email" required="required"/></div>
 								
 								<div class="etiqueta"><label>Mensaje:</label></div>
-								<div class="componente"><input class="textField" type="text" name="mensaje" required="required"/></div>
+								<div class="componente"><textarea class="textField" name="descripcionProducto" required="required"></textarea></div>
 								
 								<div style="text-align: center;">
 									<input type="submit" value="Enviar" />

@@ -9,9 +9,6 @@
 	{
 		$idservicioencrypt = $_GET['idservicio'];
 		$idservicio=decrypt($idservicioencrypt,"insertarServicioKey");
-		echo "<script type='text/javascript'>
-			alert('".$idservicio."');
-			</script>";
 		if (!empty($_FILES)) {
 		     
 		    $tempFile = $_FILES['file']['tmp_name'];          //3             
@@ -30,7 +27,7 @@
 									('".$idservicio."','". $targetFile."','".$descripcion."')", $conexion);
 		}
 		echo "<script type='text/javascript'>
-			alert('El producto ha sido agregado con exito.'); 
+			alert('Las imagenes del servicio han sido agregadas con exito.'); 
 			document.location.href='../vista/perfil.php';
 			</script>";
 	}

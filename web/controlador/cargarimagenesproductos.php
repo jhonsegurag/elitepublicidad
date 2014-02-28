@@ -8,9 +8,6 @@
 	{
 		$idproductoencrypt = $_GET['idproducto'];
 		$idproducto=decrypt($idproductoencrypt,"insertarProductoKey");
-		echo "<script type='text/javascript'>
-			alert('".$idproducto."');
-			</script>";
 			if (!empty($_FILES)) {
 			     
 			    $tempFile = $_FILES['file']['tmp_name'];          //3             
@@ -31,7 +28,7 @@
 					
 			}
 			echo "<script type='text/javascript'>
-			alert('El producto ha sido agregado con exito.'); 
+			alert('Las imagenes del producto han sido agregadas con exito.'); 
 			document.location.href='../vista/perfil.php';
 			</script>";
 	
