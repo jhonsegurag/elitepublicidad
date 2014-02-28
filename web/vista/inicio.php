@@ -44,21 +44,26 @@
 			</section>
 		
 			<section id="productosYServicios">
+				
 				<article>
 					<hgroup>
 						<h1>
 							Productos
 						</h1>
 					</hgroup>
-					<div>
+					<div id="panel">
 						<?php
 						for ($i=0; $i <sizeof($productos) ; $i++)
 						{ 
 						
 						?>
-							<a href="">
-								<li><?php echo $productos[$i]['nombre'] ?></li>
-							</a>
+						<a href="<?php echo "infoProducto?idproducto=".$productos[$i]['idproducto'] ?>">
+							<div class="item">
+								
+									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>" /></div>
+									<div class="itemNombre"><?php echo $productos[$i]['nombre'] ?></div>
+							</div>
+						</a>
 						<?php
 						}	
 						?>	
@@ -72,18 +77,22 @@
 							Servicios
 						</h1>
 					</hgroup>
-					<div>
-							<?php
-							for ($i=0; $i <sizeof($servicios) ; $i++)
-							{ 
-							
-							?>
-								<a href="">
-									<li><?php echo $servicios[$i]['nombre'] ?></li>
-								</a>
-							<?php
-							}	
-							?>	
+					<div id="panel">
+						<?php
+						for ($i=0; $i <sizeof($servicios) ; $i++)
+						{ 
+						
+						?>
+						<a href="<?php echo "infoServicio?idservicio=".$servicios[$i]['idservicio'] ?>">
+							<div class="item">
+								
+									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="<?php echo $servicios[$i]['ruta'] ?>" /></div>
+									<div class="itemNombre"><?php echo $servicios[$i]['nombre'] ?></div>
+							</div>
+						</a>
+						<?php
+						}	
+						?>	
 					</div>
 				</article>
 				

@@ -8,8 +8,7 @@
 						<div class="itemPanelFooter">
 							<h3>SERVICIOS</h3>
 							<p>Servicio</p>
-							<p>Servicio</p>
-							<p>Servicio</p>
+							
 						</div>
 						
 					</div>
@@ -59,7 +58,25 @@
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/web.png" />
 								</div>
-								<div class="textItemPanelFooter"> www.elite-publicidad.com</div>	
+								<div class="textItemPanelFooter"> www.elitepublicidad.com.co</div>	
+							</p>
+							<p>
+								<div class="imgItemPanelFoter">
+									<img src="../../imagenes/contacto/viber.png" />
+								</div>
+								<div class="textItemPanelFooter"> 999-999-99-99</div>	
+							</p>
+							<p>
+								<div class="imgItemPanelFoter">
+									<img src="../../imagenes/contacto/line.png" />
+								</div>
+								<div class="textItemPanelFooter"> 999-999-99-99</div>	
+							</p>
+							<p>
+								<div class="imgItemPanelFoter">
+									<img src="../../imagenes/contacto/whatsapp.png" />
+								</div>
+								<div class="textItemPanelFooter"> 999-999-99-99</div>	
 							</p>
 						</div>
 					</div>

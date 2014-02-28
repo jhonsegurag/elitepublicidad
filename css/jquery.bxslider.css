@@ -15,6 +15,7 @@
 ===================================*/
 
 .bx-wrapper {
+	
 	position: relative;
 	margin: 0 auto 50px;
 	padding: 0;
@@ -22,6 +23,7 @@
 }
 
 .imagen{
+	
 	max-width: 100%;
     background-size: 100% 100%;
 	display: block;
@@ -32,7 +34,7 @@
 
 .bx-wrapper .bx-viewport {
 	
-	
+	background:#333;
 	
     
 }
@@ -60,6 +62,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	background: #333;
 	z-index: 1000;
 }
 

@@ -9,8 +9,25 @@
 			
 			<link href="../../css/style.css" rel="stylesheet">
 			
-			<!-- Editor de texto. -->
+			<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+			Remove this if you use the .htaccess -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			
+			<!-- Scala Sitio Web-->
+			<meta name="viewport" content="width=device-width,initial-scale=1"/>
+			
+			<!-- Palabras clave sitio web-->
+            <meta name="keywords" content="elite, publicidad, group, vallas, señalizacion, vial, avisos, impresion, digital, vinilos, polarizados, vehiculos, decoracion quindio, armenia, colombia, suramerica"/>
+			<!-- Descripcion sitio web-->
+			<meta name="descripcion" content="Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas"/>
+			
+            <!-- Autores Diseño Web.-->
+            <link rel="author" href="../../humans.txt" />
+			
+			
+			<!-- Editor de texto
 			<script src="../../libs/ckeditor/ckeditor.js"></script>
+			-->
 			
 			<!-- jQuery library (1.9.1) -->
             <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -52,13 +69,16 @@
 				});
 				
 				function posicionarMenu() {
-				    var altura_del_logo = $('#logo').outerHeight(true);
+				    var altura_del_logo = $('#contenedorHeader').outerHeight(true);
+				    
 				    var altura_del_menu = $('nav').outerHeight(true);
 				
-				    if ($(window).scrollTop() >= altura_del_logo + 30){
+				    if (($(window).scrollTop() >= (altura_del_logo + 30)))
+				    {
 				        $('nav').addClass('fixed');
 				        $('#main').css('margin-top', (altura_del_menu) + 'px');
-				    } else {
+				    }
+				     else {
 				        $('nav').removeClass('fixed');
 				        $('#main').css('margin-top', '0');
 				    }
@@ -75,7 +95,10 @@
 			 <script>
 				$(document).ready(function(){
 					//Examples of how to assign the Colorbox event to elements
-					$(".trabajo").colorbox({rel:'trabajo'});
+					$(".trabajo").colorbox({
+						rel:'trabajo',
+						width: "600px"
+						});
 					
 					//Example of preserving a JavaScript event for inline calls.
 					$("#click").click(function(){ 
@@ -87,21 +110,30 @@
 			 <!-- Visor para las imagenes de un producto -->
 			 <script>
 				$(document).ready(function(){
+					
 					//Examples of how to assign the Colorbox event to elements
-					$(".imagenesProducto").colorbox({rel:'imagenesProducto'});
+					$(".imagenesProducto").colorbox({
+						rel:'imagenesProducto',
+						width: "600px"
+						});
 					
 					//Example of preserving a JavaScript event for inline calls.
 					$("#click").click(function(){ 
 						$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 						return false;
 					});
+					
+					
 				});
 			</script>
 			<!-- Visor para las imagenes de un servicio-->
 			<script>
 				$(document).ready(function(){
 					//Examples of how to assign the Colorbox event to elements
-					$(".imagenesServicio").colorbox({rel:'imagenesServicio'});
+					$(".imagenesServicio").colorbox({
+					rel:'imagenesServicio',
+					width: "600px"
+					});
 					
 					//Example of preserving a JavaScript event for inline calls.
 					$("#click").click(function(){ 
@@ -110,6 +142,18 @@
 					});
 				});
 			</script>
+			
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			  ga('create', 'UA-47449603-2', 'elitepublicidad.com.co');
+			  ga('send', 'pageview');
+
+			</script>
+			
 			<title> Elite Publicidad </title>
 		</head>
 	<?php
