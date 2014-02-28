@@ -30,9 +30,9 @@
 								<img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>"/>
 							</div>
 							<div id="textoInformacion">
-								<p>
+								
 									<?php echo $productos[$i]['descripcion']; ?>
-								</p>
+								
 							</div>
 						</div>
 

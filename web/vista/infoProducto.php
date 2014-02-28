@@ -29,13 +29,26 @@
 							<img style="width: 100%; height: 100%;" src="<?php echo $producto['ruta'] ?>" />
 						</div>
 						<div class="textoProducto">
-							<p><?php echo $producto['descripcion'] ?> </p>
+							<?php echo $producto['descripcion'] ?>
 						</div>
 					</section>
 				
 					<footer>
-						<div class="imagenesProducto">
-							Aquí irian las imagenes del producto Aquí irian las imagenes del producto Aquí irian las imagenes del producto 
+						<div id="imagenes">
+							<?php
+								$idProducto= $producto['idproducto'];							
+								$imagenes = getImagenesProducto($idProducto);		  		
+								for ($j=0; $j < sizeof($imagenes) ; $j++) 
+								{			
+							?>
+	                            <a class="imagenesProducto" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+									<div class="itemImagenes">
+										<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
+									</div>
+								</a>
+							<?php 
+								}
+						 	?>
 						</div>
 					</footer>
 				</article>

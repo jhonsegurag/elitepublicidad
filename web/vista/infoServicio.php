@@ -32,13 +32,26 @@
 					
 					<aside>
 						<div class="textoServicio">
-							<p><?php echo $servicio['descripcion'] ?></p>
+							<?php echo $servicio['descripcion'] ?>
 						</div>
 					</aside>
 					
 					<footer>
-						<div class="imagenesServicio">
-							Aquí irian las imagenes del servicio Aquí irian las imagenes del servicio Aquí irian las imagenes del servicio 
+						<div id="imagenes">
+							<?php
+								$idServicio= $servicio['idservicio'];							
+								$imagenes = getImagenesServicio($idServicio);		  		
+								for ($j=0; $j < sizeof($imagenes) ; $j++) 
+								{			
+							?>
+							<a class="imagenesServicio" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+								<div class="itemImagenes">
+									<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
+								</div>	
+							</a>
+							<?php 
+								}
+						 	?>
 						</div>
 					</footer>
 				</article>

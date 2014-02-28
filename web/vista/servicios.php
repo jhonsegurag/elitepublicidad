@@ -32,7 +32,7 @@
 								<img style="width: 100%; height: 100%;" src="<?php echo $servicios[$i]['ruta'] ?>" />
 							</div>
 							<div id="textoInformacion">
-								<p> <?php echo $servicios[$i]['descripcion'] ?> </p>
+								<?php echo $servicios[$i]['descripcion'] ?>
 							</div>
 						</div>
 						<div id="imagenes">
