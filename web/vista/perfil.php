@@ -2,6 +2,7 @@
     session_start();
 /**
  * @author Jhon Segura
+ * @author Andres David Montoya.
  * @copyright 2013
  */
 
@@ -12,6 +13,8 @@
 		include_once('menu.php');
 		include_once('footer.php');
 		getImports();
+		$nombre = $_SESSION['nombre'];
+		$apellido = $_SESSION['apellido'];
 		?>
 		<body>
 			<div id="main" class="wrapper">
@@ -20,6 +23,11 @@
 					getMenu("administrador");
 				?>
 			<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
+				<header id="bienvenido">
+					<hgroup>
+						<h1>Bienvenido <?php  echo $nombre." ".$apellido ?> </h1>
+					</hgroup>
+				</header>
 				<section id="administrador">
 					
 					<article >
@@ -29,12 +37,12 @@
 						<section>
 							<div id="funciones">
 								<div class="funcion">
-									<a href="agregarUsuario.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="agregarUsuario" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/agregarusuario.png" title="Agregar Usuario" />
 									</a>
 								</div>
 								<div class="funcion">
-									<a href="listarUsuarios.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="listarUsuarios" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/buscarusuario.png" title="Buscar Usuario" />
 									</a>
 								</div>
@@ -49,12 +57,12 @@
 						<section>
 							<div id="funciones">
 								<div class="funcion">
-									<a href="agregarTrabajo.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="agregarTrabajo" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/agregartrabajo.png" title="Agregar Trabajo" />
 									</a>
 								</div>
 								<div class="funcion">
-									<a href="listarTrabajos.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="listarTrabajos" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/buscartrabajo.png" title="Buscar Trabajo" />
 									</a>
 								</div>
@@ -69,12 +77,12 @@
 						<section>
 							<div id="funciones">
 								<div class="funcion">
-									<a href="agregarProducto.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="agregarProducto" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/agregarproducto.png" title="Agregar Trabajo" />
 									</a>
 								</div>
 								<div class="funcion">
-									<a href="listarProductos.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="listarProductos" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/buscarproducto.png" title="Buscar Trabajo" />
 									</a>
 								</div>
@@ -89,12 +97,12 @@
 						<section>
 							<div id="funciones">
 								<div class="funcion">
-									<a href="agregarServicio.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="agregarServicio" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/agregarservicio.png" title="Agregar Servicio" />
 									</a>
 								</div>
 								<div class="funcion">
-									<a href="listarServicios.php" style="text-decoration: none; color: #66CC00 ">
+									<a href="listarServicios" style="text-decoration: none; color: #66CC00 ">
 										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/buscarservicio.png" title="Buscar Servicio" />
 									</a>
 								</div>

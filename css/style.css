@@ -6,7 +6,6 @@ body
 	margin-bottom: 0px;
 	background:#333;
 	background-image: url("../imagenes/city.jpg");
-	
 }
 
 article, aside, details, figcaption, figure, footer, header, nav, hgroup, section { display: block; }
@@ -53,12 +52,10 @@ nav{
 }
 
 nav ul {
-	
 	margin: auto;
 }
 
 nav ul li{
-	
 	display: inline-block;
 	color: #CCC;
 	padding: 8px 20px 8px 20px;
@@ -69,7 +66,6 @@ nav ul li{
 nav ul li:hover{
 	color: #333;
 	background-color: #9C0;
-
 }
 
 nav ul a{
@@ -116,9 +112,7 @@ nav ul a{
 #logo{
 	margin-top: 10px;
 	margin-left: 10px;
-	
 }
-
 
 #logoStart{
 	margin-top: 10px;
@@ -129,14 +123,11 @@ nav ul a{
 
 @keyframes animacionLogo
 {
-	
-	
 	0% {opacity: 1; transform: rotateY(360deg);}
 }
 
 @-webkit-keyframes animacionLogo
 {
-	
 	0% {opacity: 1;-webkit-transform: rotateY(360deg);}
 }
 
@@ -178,19 +169,16 @@ nav ul a{
 	height: 100%;
 }
 
-
 @media screen and (max-width:820px)
 {
 	.panelHeader
 	{
 		width: 100%;
-		
 	}
 	
 	#logo
 	{
 		width: 250px;
-		
 		margin: auto;	
 	}
 	
@@ -268,7 +256,6 @@ nav ul a{
 	float:left;
 	width: 30px;
 	height: 30px;
-	
 }
 
 #productosYServicios article #panel .item .itemNombre
@@ -276,10 +263,7 @@ nav ul a{
 	float:left;
 	margin-left: 10px;
 	padding: 7px;
-	
 }
-
-
 
 #productosYServicios  aside{
 	float: right;
@@ -296,8 +280,6 @@ nav ul a{
 	padding-bottom: 5px;
 	border-radius: 5px;
 }	
-
-
 
 @media screen and (max-width:820px)
 {
@@ -419,6 +401,7 @@ nav ul a{
 	height: 60px;
 	}
 }
+
 /*
  * ------------------------------------------------------------------------------------------------------------
  * 
@@ -488,7 +471,6 @@ nav ul a{
 	margin-left: 10px;
 	margin-bottom: 5px;
 	float: left;
-	
 }
 
 #servicios article footer #verMas{
@@ -552,7 +534,6 @@ nav ul a{
 }
 
 #productos article{
-	
 	width: 40%;
 	padding: 20px;
 	background-color: rgba(51,51,51,0.9);
@@ -567,13 +548,11 @@ nav ul a{
 	border-bottom: 5px solid #9c0;
 }
 
-
 #productos article footer a p: hover{
 	color: #99CC00;
 }
 
 #productos #informacion #imagenInformacion{
-	
 	width: 100px;
 	height: 100px;
 	border: 5px solid #222;
@@ -650,7 +629,6 @@ nav ul a{
 	{
 		width:100%;
 		margin: 10px auto 10px 0px;
-		
 	}
 	
 	#productos article section #imagenes
@@ -696,7 +674,6 @@ nav ul a{
 	height: 120px;
 	position: absolute;
 	border: 5px solid #222;
-	
 }
 
 #infoProducto article .textoProducto
@@ -774,7 +751,6 @@ nav ul a{
 	color: #CCC;
 	border-bottom: 5px solid #9C0;
 }
-
 
 #infoServicio article .imagenServicio
 {
@@ -944,6 +920,16 @@ input[type="submit"]
  * ------------------------------------------------------------------------------------------------------------
  */
 
+#bienvenido {
+	width: 100%;
+	display: inline-block;
+}
+
+#bienvenido hgroup{
+	color: #9c0;
+	text-align: center;
+}
+
 #administrador{
 	width: 100%;
 	display: inline-block;
@@ -1051,14 +1037,12 @@ input[type="submit"]
 	color: #DDD;
 	border-bottom: 5px solid #9C0;
 	border-radius:5px;
-	
 }
 
 #empresa aside li:hover
 {
 	background: #9C0;
 	color: #333;
-	
 }
 
 #empresa article
@@ -1267,7 +1251,6 @@ input[type="submit"]
 .itemPanelFooter  .enlace .textItemPanelFooter:hover
 {
 	color: #9c0;
-	
 }
 
 .itemPanelFooter  .textItemPanelFooter 
@@ -1404,6 +1387,11 @@ input[type="submit"]
 {
 	color: #000;
 	background-color: rgba(214,214,214,0.9);
+}
+
+#listar article section table td a{
+	text-decoration: none;
+	color: #9c0;
 }
 
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { 

@@ -21,7 +21,9 @@
 			<section id="listar">
 			<article>
 				<header>
-					<h1>Lista De Productos</h1>
+					<hgroup>
+						<h1>Lista De Productos</h1>
+					</hgroup>
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
@@ -51,7 +53,7 @@
 									<?php echo "".$productos[$i]['fechacreacion']; ?>
 								</td>
 								<td style="text-align: center;background:#222;  color: #CCC;">
-									<a href="<?php echo "editarProducto.php?idproducto=".$productos[$i]['idproducto']; ?>">Editar</a>
+									<a href="<?php echo "editarProducto?idproducto=".$productos[$i]['idproducto']; ?>">Editar</a>
 								</td>
 																
 							</tr>

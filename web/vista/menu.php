@@ -126,6 +126,9 @@
 								echo 'seleccionado';
 							}?>">Agregar Servicios</li>
 				</a>
+				<a href="../controlador/cerrarSesion"> 
+					<li>Cerrar Sesión</li>
+				</a>
 			</ul>
 		</nav>
 		<?php

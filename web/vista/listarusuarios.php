@@ -20,7 +20,9 @@
 			<section id="listar">
 			<article>
 				<header>
-					<h1>Lista De Usuarios</h2>
+					<hgroup>
+						<h1>Lista De Usuarios</h1>
+					</hgroup>
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
@@ -46,7 +48,7 @@
 									<?php echo "".$usuarios[$i]['apellido']; ?>
 								</td>
 								<td style="text-align: center; background:#222;  color: #CCC;">
-									<a href="<?php echo "editarUsuario.php?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
+									<a href="<?php echo "editarUsuario?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
 								</td>
 																
 							</tr>

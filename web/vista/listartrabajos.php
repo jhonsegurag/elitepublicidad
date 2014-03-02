@@ -1,5 +1,4 @@
 <?php
-    
 	include_once ("imports.php");
 	include_once ("header.php");
 	include_once ("menu.php");
@@ -21,7 +20,9 @@
 			<section id="listar">
 			<article>
 				<header>
-					<h1>Lista De Trabajos</h1>
+					<hgroup>
+						<h1>Lista De Trabajos</h1>
+					</hgroup>
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
@@ -47,7 +48,7 @@
 									<?php echo "".$trabajosrealizados[$i]['ruta']; ?>
 								</td>
 								<td style="text-align: center;background:#222;  color: #CCC;">
-									<a href="<?php echo "editarTrabajo.php?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
+									<a href="<?php echo "editarTrabajo?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
 								</td>
 																
 							</tr>
