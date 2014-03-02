@@ -23,12 +23,12 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_usuario">
-								<form action="../controlador/insertarusuario.php" method="post">
+								<form action="../controlador/insertarusuario" method="post">
 									<div class="etiqueta">
 										<label> Usuario: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="number" name="idusuario" placeholder="109499555" required="required" />
+										<input class="textField" type="number" min="0" name="idusuario" placeholder="109499555" required="required" />
 									</div>
 									
 									<div class="etiqueta">
@@ -45,7 +45,7 @@
 										<label> Nombre: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="text" name="nombreusuario"  placeholder="..." required="required" />
+										<input class="textField" type="text" name="nombreusuario"  placeholder="Luis Felipe" required="required" />
 									</div>
 									
 									
@@ -53,7 +53,7 @@
 										<label> Apellido: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="text" name="apellidousuario" placeholder="..." required="required" />
+										<input class="textField" type="text" name="apellidousuario" placeholder="Zapata Díaz" required="required" />
 									</div>
 
 									
@@ -61,7 +61,7 @@
 										<label> Contraseña: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="password" name="password"  m="required"/>
+										<input class="textField" type="password" name="password"  required="required"/>
 									</div>
 									
 									
@@ -69,7 +69,7 @@
 										<label> Repetir Contraseña: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="password" name="password" required="required"/>
+										<input class="textField" type="password" id="repeatPassword" name="repeatPassword" required="required"/>
 									</div>
 									
 									

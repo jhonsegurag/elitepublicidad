@@ -14,8 +14,10 @@
 			getUpdate(" UPDATE usuario SET nombre='".$nombre."', apellido='".$apellido."',
 			fechacreacion='".$fechacreacion."', tipo_idtipo='$tipo' WHERE idusuario='$idusuario' ",$conexion);
 			
-			echo "<script type='text/javascript'>alert('El Usuario ha sido actualizado con exito'); document.location.href='../vista/perfil.php';</script>";
-		
+			echo "<script type='text/javascript'>
+			alert('El Usuario ha sido actualizado con \u00E9xito'); 
+			document.location.href='../vista/perfil';
+			</script>";
 	} 
 	else
 	{

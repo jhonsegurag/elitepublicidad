@@ -24,10 +24,10 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_servicio">
-								<form action="../controlador/insertarservicio.php" method="post" enctype="multipart/form-data">
+								<form action="../controlador/insertarservicio" method="post" enctype="multipart/form-data">
 								
 									<div class="etiqueta">
-										<label> Imagen: </label>
+										<label> Imágen: </label>
 									</div>
 									<div class="componente">
 										<input class="textField" type="file" name="imagenServicio" required="required" />

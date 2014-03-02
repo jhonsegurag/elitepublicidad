@@ -8,7 +8,6 @@
 	
 	$productos=getProductos();
 	getImports();
-	
 ?>
 	<body>
 		

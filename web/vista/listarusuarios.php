@@ -7,7 +7,6 @@
 	
 	$usuarios=getUsuarios();
 	getImports();
-	
 ?>
 	<body>
 		

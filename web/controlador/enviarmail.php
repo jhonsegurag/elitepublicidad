@@ -105,11 +105,17 @@
     
     if ( $respuesta == true)
 	{
-    	echo "<script type='text/javascript'>alert('El formulario ha sido enviado correctamente. Gracias'); document.location.href='../vista/contacto.php';</script>";
+    	echo "<script type='text/javascript'>
+    	alert('El formulario ha sido enviado correctamente. Gracias'); 
+    	document.location.href='../vista/contacto';
+    	</script>";
 	}
     else
 	{
-        echo "<script type='text/javascript'>alert('Error al enviar el formulario. Por favor intente de nuevo. Gracias'); document.location.href='../vista/contacto.php';</script>";
+        echo "<script type='text/javascript'>
+        alert('Error al enviar el formulario. Por favor intente de nuevo. Gracias'); 
+        document.location.href='../vista/contacto';
+        </script>";
 		
     }
 

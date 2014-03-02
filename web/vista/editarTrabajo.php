@@ -28,7 +28,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_trabajo">
-								<form action="../controlador/actualizartrabajo.php" method="post">
+								<form action="../controlador/actualizartrabajo" method="post">
 									
 									<div class="etiqueta">
 										<label> Id: </label>

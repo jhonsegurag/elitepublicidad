@@ -19,7 +19,10 @@
 		}
 		else
 		{
-			echo "Parece ser que no estas registrado en la base de datos";
+			echo "<script type='text/javascript'>
+			alert('Parece ser que no est\u00E1s registrado en la base de datos'); 
+			document.location.href='../vista/administrador';
+			</script>";
 		}
 	} else {
 		

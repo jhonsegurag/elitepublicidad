@@ -28,8 +28,8 @@
 					
 			}
 			echo "<script type='text/javascript'>
-			alert('Las imagenes del producto han sido agregadas con exito.'); 
-			document.location.href='../vista/perfil.php';
+			alert('Las im\u00E1genes del producto han sido agregadas con \u00E9xito.'); 
+			document.location.href='../vista/perfil';
 			</script>";
 	
 	}

@@ -30,13 +30,13 @@
 			-->
 			
 			<!-- jQuery library (1.9.1) -->
-            <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
             <!-- jQuery library (served from Google) -->
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
             <!-- bxSlider Javascript file -->
-            <script src="../../js/jquery.bxslider.min.js"></script>
+            <script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
             <!-- bxSlider CSS file -->
-            <link href="../../css/jquery.bxslider.css" rel="stylesheet" />
+            <link type="text/css" href="../../css/jquery.bxslider.css" rel="stylesheet" />
             
             <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 			<link rel="shortcut icon" href="../../favicon.ico">
@@ -44,7 +44,7 @@
 			
 			<!-- Dropzonejs file - css -->
 			<link href="../../css/dropzone.css" type="text/css" rel="stylesheet" />
-			<script src="../../js/dropzone.min.js"></script>>
+			<script type="text/javascript" src="../../js/dropzone.min.js"></script>>
 			
 			<!-- Slider Javascript file -->
 			<script>
@@ -88,9 +88,9 @@
 			</script>
 			 
 			 <!-- VisorImagenes-ColorBox file CSS -->
-			 <link rel="stylesheet" href="../../css/colorbox.css" />
+			 <link type="text/css" rel="stylesheet" href="../../css/colorbox.css" />
 			 <!-- ColorBox file JS-->
-			<script src="../../js/jquery.colorbox.js"></script>
+			<script type="text/javascript" src="../../js/jquery.colorbox.js"></script>
 			<!-- Visor para los trabajos realizados. -->
 			 <script>
 				$(document).ready(function(){

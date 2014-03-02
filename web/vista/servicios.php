@@ -25,8 +25,6 @@
 						<h1> <?php echo $servicios[$i]['nombre'] ?></h1>
 					</hgroup>
 					<section>
-								
-							
 						<div id="informacion">
 							<div id="imagenInformacion">
 								<img style="width: 100%; height: 100%;" src="<?php echo $servicios[$i]['ruta'] ?>" />

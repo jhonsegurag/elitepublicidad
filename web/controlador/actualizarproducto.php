@@ -13,7 +13,10 @@
 			getUpdate(" UPDATE producto SET nombre='".$nombre."', descripcion='".$descripcion."',
 			fechacreacion='".$fechacreacion."' WHERE idproducto='$idproducto' ",$conexion);
 			
-			echo "<script type='text/javascript'>alert('El Producto ha sido actualizado con exito'); document.location.href='../vista/perfil.php';</script>";
+			echo "<script type='text/javascript'>
+			alert('El Producto ha sido actualizado con \u00E9xito'); 
+			document.location.href='../vista/perfil';
+			</script>";
 		
 	} 
 	else

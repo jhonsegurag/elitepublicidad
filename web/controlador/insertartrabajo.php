@@ -20,12 +20,12 @@
         		}
 				else
 				{
-            		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+            		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
         		}
     		} 
     		else
 			{
-        		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+        		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
     		}		
 			
 			
@@ -33,7 +33,9 @@
 			getInsert("INSERT INTO trabajorealizado (usuario_idusuario, descripcion, ruta, fechacreacion) 
 						VALUES ('$idusuario','".$descripcion."', '".$ruta."','".$fecha."' )" , $conexion);
 			
-			echo "<script type='text/javascript'>alert('El Articulo ha sido agregado con exito'); document.location.href='../vista/perfil.php';</script>";
+			echo "<script type='text/javascript'>
+			alert('El trabajo realizado ha sido agregado con \u00E9xito'); 
+			document.location.href='../vista/perfil';</script>";
 		
 	} 
 	else

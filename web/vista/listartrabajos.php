@@ -7,7 +7,6 @@
 	
 	$trabajosrealizados=getTrabajosRealizados();
 	getImports();
-	
 ?>
 	<body>
 		

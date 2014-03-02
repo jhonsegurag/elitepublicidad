@@ -10,7 +10,6 @@
 	
 	$productos=getProductos();
 	$servicios=getServicios();
-	
 ?>
 	<body>
 		<div id="fb-root"></div>

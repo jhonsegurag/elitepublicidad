@@ -27,7 +27,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_usuario">
-								<form action="../controlador/actualizarUsuario.php" method="post">
+								<form action="../controlador/actualizarUsuario" method="post">
 									<div class="etiqueta">
 										<label> Usuario: </label>
 									</div>
@@ -56,12 +56,18 @@
 										<input value="<?php echo $usuario['nombre']; ?>" class="textField" type="text" name="nombre"   required="required" />
 									</div>
 									
-									
 									<div class="etiqueta">
 										<label> Apellido: </label>
 									</div>
 									<div class="componente">
 										<input value="<?php echo $usuario['apellido']; ?>" class="textField" type="text" name="apellido"  required="required" />
+									</div>
+									
+									<div class="etiqueta">
+										<label> Contraseña: </label>
+									</div>
+									<div class="componente">
+										<input class="textField" type="password" name="password" required="required" />
 									</div>
 													
 									<div class="etiqueta">

@@ -23,7 +23,7 @@
 							<p><img  src="../../imagenes/contacto/web.png" /><span>www.elitepublicidad.com.co</span></p>
 							<p><img  src="../../imagenes/contacto/viber.png" /><span>999-999-99-99</span></p>
 							<p><img  src="../../imagenes/contacto/line.png" /><span>999-999-99-99</span></p>
-							<p><img  src="../../imagenes/contacto/whatsapp.png" /><span>999-999-99-99</span></p>
+							<p><img  src="../../imagenes/contacto/whatsapp.png" /><span>320-285-55-36</span></p>
 						</div>
 					</aside>
 					
@@ -32,9 +32,6 @@
 							<h1>Contáctenos</h1>
 						</header>
 						<section>
-							
-							
-							
 							<div id="formularioContacto">
 								<div class="etiqueta"><label>Nombre:</label></div>
 								<div class="componente"><input class="textField" type="text" name="nombre" required="required"/></div>
@@ -52,17 +49,11 @@
 									<input type="submit" value="Enviar" />
 								</div>
 							</div>
-						
-							
 						</section>
-						
 					</article>
 					
 					<article>
-						
 						<section>
-								
-							
 								<div id="streetView">
 									<a href="https://www.google.com/maps/place/Elite+Publicidad/@4.53881,-75.67379,3a,75y,186.59h,90t
 									/data=!3m4!1e1!3m2!1sGqfN2nvxwwYX65UQj8A59Q!2e0!4m2!3m1!1s0x0:0xa831c1ee1cd53b26!6m1!1e1?hl=es-ES"
@@ -76,10 +67,6 @@
 									frameborder="0" style="border:0">
 									</iframe>
 								</div>
-								
-								
-							
-							
 						</section>
 						<footer>
 							

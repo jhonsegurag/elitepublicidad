@@ -22,7 +22,7 @@
 								</a>
 							</div>
 							<div class="itemSocialMedia">
-								<a href="http://plus.google.com/118107453422634344244/posts" target="_blank">
+								<a href="https://plus.google.com/b/115668388773346280917/115668388773346280917/posts" target="_blank">
 									<img src="../../imagenes/socialMedia/google.png">
 								</a>
 							</div>
@@ -65,7 +65,7 @@
 								</a>
 							</div>
 							<div class="itemSocialMedia">
-								<a href="http://plus.google.com/118107453422634344244/posts" target="_blank">
+								<a href="https://plus.google.com/b/115668388773346280917/115668388773346280917/posts" target="_blank">
 									<img src="../../imagenes/socialMedia/google.png">
 								</a>
 							</div>

@@ -24,10 +24,10 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_producto">
-								<form action="../controlador/insertarproducto.php" method="post" enctype="multipart/form-data">
+								<form action="../controlador/insertarproducto" method="post" enctype="multipart/form-data">
 								
 									<div class="etiqueta">
-										<label> Imagen: </label>
+										<label> Imágen: </label>
 									</div>
 									<div class="componente">
 										<input class="textField" type="file" name="imagenProducto" maxlength="5" required="required" />

@@ -29,7 +29,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_servicio">
-								<form action="../controlador/actualizarServicio.php" method="post">
+								<form action="../controlador/actualizarServicio" method="post">
 								
 									<div class="etiqueta">
 										<label> Id: </label>

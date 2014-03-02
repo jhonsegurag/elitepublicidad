@@ -20,12 +20,12 @@
         		}
 				else
 				{
-            		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+            		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
         		}
     		} 
     		else
 			{
-        		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+        		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
     		}		
 			
 			/*
@@ -49,7 +49,7 @@
 			
 			$direccion= "../vista/agregarImagenesProducto?idproducto=".$idproductoencrypt;
 			echo "<script type='text/javascript'>
-			alert('El producto ha sido agregado con exito.'); 
+			alert('El producto ha sido agregado con \u00E9xito.'); 
 			document.location.href='".$direccion."';
 			</script>";
 	} else

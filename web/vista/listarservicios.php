@@ -7,7 +7,6 @@
 	
 	$servicios=getServicios();
 	getImports();
-	
 ?>
 	<body>
 		
@@ -29,7 +28,7 @@
 						<thead>
 							<th>Id</th>
 							<th>Nombre</th>
-							<th>Descripcion</th>
+							<th>Descripción</th>
 							<th>Fecha</th>
 							<th>Editar</th>
 						</thead>

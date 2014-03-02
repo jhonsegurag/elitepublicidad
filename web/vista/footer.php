@@ -16,7 +16,7 @@
 					<div id="panelFooterNosotrosHide" class="panelFooter">
 						<div class="itemPanelFooter">
 							<h3>NOSOTROS</h3>
-							<p>Quienes Somos</p>
+							<p>Quiénes Somos</p>
 							<p>Misión</p>
 							<p>Visión</p>
 						</div>
@@ -76,7 +76,7 @@
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/whatsapp.png" />
 								</div>
-								<div class="textItemPanelFooter"> 999-999-99-99</div>	
+								<div class="textItemPanelFooter"> 320-285-55-36</div>	
 							</p>
 						</div>
 					</div>

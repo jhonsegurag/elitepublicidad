@@ -20,12 +20,12 @@
         		}
 				else
 				{
-            		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+            		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
         		}
     		} 
     		else
 			{
-        		$status = "Error al subir el archivo, porfavor intentelo de nuevo.";
+        		$status = "Error al subir el archivo, porfavor int\u00E9ntalo de nuevo.";
     		}		
 		
 			$conexion=conectar();
@@ -48,15 +48,10 @@
 			
 			$direccion= "../vista/agregarImagenesServicio?idservicio=".$idservicioencrypt;
 			echo "<script type='text/javascript'>
-			alert('El servicio ha sido agregado con exito.'); 
+			alert('El servicio ha sido agregado con \u00E9xito.'); 
 			document.location.href='".$direccion."';
 			</script>";
 			
-				
-			// echo "<script type='text/javascript'>
-			// alert('El servicio ha sido agregado con exito.');
-			 // document.location.href='../vista/agregarProducto.php';
-			 // </script>";
 	} else
 	{
 		
