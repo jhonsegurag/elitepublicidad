@@ -30,6 +30,7 @@
 							<th>Nombre</th>
 							<th>Apellido</th>
 							<th>Editar</th>
+							<th>Eliminar</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($usuarios) ; $i++)
@@ -37,17 +38,33 @@
 						?>
 							<tr>
 								
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$usuarios[$i]['idusuario']; ?>
 								</td> 
-								<td style="text-align: center; background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$usuarios[$i]['nombre']; ?>
 								</td> 
-								<td style="text-align: center; background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$usuarios[$i]['apellido']; ?>
 								</td>
-								<td style="text-align: center; background:#222;  color: #CCC;">
+								<td >
 									<a href="<?php echo "editarUsuario?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
+								</td>
+								<td >
+									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<script>
+										function validarAccion()
+										{											
+											if(confirm("Estas Seguro de eliminar este Usuario"))
+											{
+												document.location.href= '../controlador/eliminarusuario?idusuario='+'<?php echo $usuarios[$i]['idusuario']; ?>';										
+											}
+											else
+											{
+												document.location.href= 'listarusuarios';
+											}										
+										} 
+									</script>
 								</td>
 																
 							</tr>

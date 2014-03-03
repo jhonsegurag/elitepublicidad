@@ -8,7 +8,7 @@
 		include_once('header.php');
 		include_once('menu.php');
 		include_once('footer.php');
-		getImports();
+		getImportsAdmin();
 		?>
 		<body>
 			<div id="main" class="wrapper">
@@ -46,7 +46,14 @@
 										<label> Descripción: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="text" name="descripcionServicio" required="required" />
+										<textarea id="texto" name="descripcionServicio"  class="textArea" required="required">
+	                						
+	            						</textarea>
+	            						<script>
+		    								CKEDITOR.replace( 'texto',{
+		                						filebrowserBrowseUrl : '../../libs/ckeditor/filemanager/index.php'
+		                					} );
+										</script>
 									</div>
 									
 									

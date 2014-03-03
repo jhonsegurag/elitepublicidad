@@ -10,7 +10,7 @@
 		include_once('footer.php');
 		include_once('../controlador/funciones.php');
 		
-		getImports();
+		getImportsAdmin();
 		$idservicio=$_GET['idservicio'];
 		$servicio=getInformacionServicio($idservicio);
 		
@@ -51,7 +51,15 @@
 										<label> Descripción: </label>
 									</div>
 									<div class="componente">
-										<input  value="<?php echo $servicio['descripcion']; ?>" class="textField" type="text" name="descripcion" required="required" />
+										<textarea id="texto" name="descripcion"  class="textArea" required="required">
+	                						<?php echo $servicio['descripcion']; ?>
+	            						</textarea>
+	            						<script>
+		    								CKEDITOR.replace( 'texto',{
+		                						filebrowserBrowseUrl : '../../libs/ckeditor/filemanager/index.php'
+		                					} );
+										</script>	
+										
 									</div>
 									
 									

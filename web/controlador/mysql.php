@@ -46,4 +46,14 @@
 		}
 	}
 	
+	function getDelete($consulta,$conexion)
+	{
+		if(mysql_query($consulta,$conexion)or die(mysql_error())){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 ?>

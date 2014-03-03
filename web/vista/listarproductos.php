@@ -32,6 +32,7 @@
 							<th>Descripción</th>
 							<th>Fecha</th>
 							<th>Editar</th>
+							<th>Eliminar</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($productos) ; $i++)
@@ -39,28 +40,46 @@
 						?>
 							<tr>
 								
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$productos[$i]['idproducto']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$productos[$i]['nombre']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$productos[$i]['descripcion']; ?>
 								</td>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$productos[$i]['fechacreacion']; ?>
 								</td>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<a href="<?php echo "editarProducto?idproducto=".$productos[$i]['idproducto']; ?>">Editar</a>
 								</td>
+								<td >
+									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<script>
+										function validarAccion()
+										{											
+											if(confirm("Estas Seguro de eliminar este producto"))
+											{
+												document.location.href= '../controlador/eliminarproducto?idproducto='+'<?php echo $productos[$i]['idproducto']; ?>';										
+											}
+											else
+											{
+												document.location.href= 'listarproductos';
+											}										
+										} 
+									</script>
+								</td>
+								
 																
 							</tr>
 						<?php	
 						}
 						?>
 						
-					</table>	
+					</table>
+					
 				</section>
 			</article>
 			</section>

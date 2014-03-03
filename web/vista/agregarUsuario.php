@@ -7,7 +7,7 @@
 		include_once('header.php');
 		include_once('menu.php');
 		include_once('footer.php');
-		getImports();
+		getImportsAdmin();
 		?>
 		<body>
 			<div id="main" class="wrapper">
@@ -28,7 +28,7 @@
 										<label> Usuario: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="number" min="0" name="idusuario" placeholder="109499555" required="required" />
+										<input class="textField" type="number" min="0" name="idusuario" placeholder="99999999" required="required" />
 									</div>
 									
 									<div class="etiqueta">
@@ -36,7 +36,7 @@
 									</div>
 									<div class="componente">
 										<select class="textField" name="tipousuario"> 
-											<option value="1">Super Admin</option>
+											<option value="1">ADMINISTRADOR</option>
 										</select>
 									</div>
 									
@@ -45,7 +45,7 @@
 										<label> Nombre: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="text" name="nombreusuario"  placeholder="Luis Felipe" required="required" />
+										<input class="textField" type="text" name="nombreusuario"  placeholder="Nombre" required="required" />
 									</div>
 									
 									
@@ -53,7 +53,7 @@
 										<label> Apellido: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="text" name="apellidousuario" placeholder="Zapata Díaz" required="required" />
+										<input class="textField" type="text" name="apellidousuario" placeholder="Apellido" required="required" />
 									</div>
 
 									
@@ -61,7 +61,7 @@
 										<label> Contraseña: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="password" name="password"  required="required"/>
+										<input class="textField" type="password" name="password" placeholder="password"  required="required"/>
 									</div>
 									
 									
@@ -69,7 +69,7 @@
 										<label> Repetir Contraseña: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="password" id="repeatPassword" name="repeatPassword" required="required"/>
+										<input class="textField" type="password" id="repeatPassword" placeholder="password" name="repeatPassword" required="required"/>
 									</div>
 									
 									

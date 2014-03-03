@@ -31,27 +31,45 @@
 							<th>Descripción</th>
 							<th>Fecha</th>
 							<th>Editar</th>
+							<th>Eliminar</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($servicios) ; $i++)
 						{ 
 						?>
 							<tr>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$servicios[$i]['idservicio']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$servicios[$i]['nombre']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$servicios[$i]['descripcion']; ?>
 								</td>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$servicios[$i]['fechacreacion']; ?>
 								</td>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<a href="<?php echo "editarServicio?idservicio=".$servicios[$i]['idservicio']; ?>">Editar</a>
 								</td>
+								<td >
+									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<script>
+										function validarAccion()
+										{											
+											if(confirm("Estas Seguro de eliminar este Servicio"))
+											{
+												document.location.href= '../controlador/eliminarservicio?idservicio='+'<?php echo $servicios[$i]['idservicio']; ?>';										
+											}
+											else
+											{
+												document.location.href= 'listarservicios';
+											}										
+										} 
+									</script>
+								</td>
+										
 																
 							</tr>
 						<?php	

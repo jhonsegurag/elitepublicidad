@@ -9,7 +9,7 @@
 		include_once('menu.php');
 		include_once('footer.php');
 		include_once ('../controlador/funciones.php');
-		getImports();
+		getImportsAdmin();
 		
 		$idtrabajorealizado=$_GET['idtrabajo'];
 		$trabajo=getInformacionTrabajo($idtrabajorealizado);
@@ -41,7 +41,15 @@
 										<label> Descripción: </label>
 									</div>
 									<div class="componente">
-										<input value="<?php echo $trabajo['descripcion']; ?>" class="textField" type="text" name="descripcion" required="required" />
+										<textarea id="texto" name="descripcion"  class="textArea" required="required">
+	                						<?php echo $trabajo['descripcion']; ?>
+	            						</textarea>
+	            						<script>
+		    								CKEDITOR.replace( 'texto',{
+		                						filebrowserBrowseUrl : '../../libs/ckeditor/filemanager/index.php'
+		                					} );
+										</script>	
+										
 									</div>
 									
 									<div class="etiqueta">

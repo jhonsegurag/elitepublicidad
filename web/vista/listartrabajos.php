@@ -30,6 +30,7 @@
 							<th>Descripción</th>
 							<th>Ruta</th>
 							<th>Editar</th>
+							<th>Eliminar</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($trabajosrealizados) ; $i++)
@@ -37,17 +38,33 @@
 						?>
 							<tr>
 								
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$trabajosrealizados[$i]['idtrabajorealizado']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$trabajosrealizados[$i]['descripcion']; ?>
 								</td> 
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<?php echo "".$trabajosrealizados[$i]['ruta']; ?>
 								</td>
-								<td style="text-align: center;background:#222;  color: #CCC;">
+								<td >
 									<a href="<?php echo "editarTrabajo?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
+								</td>
+								<td >
+									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<script>
+										function validarAccion()
+										{											
+											if(confirm("Estas Seguro de eliminar este Trabajo Realizado"))
+											{
+												document.location.href= '../controlador/eliminartrabajorealizado?idtrabajorealizado='+'<?php echo $trabajosrealizados[$i]['idtrabajorealizado']; ?>';										
+											}
+											else
+											{
+												document.location.href= 'listartrabajos';
+											}										
+										} 
+									</script>
 								</td>
 																
 							</tr>
