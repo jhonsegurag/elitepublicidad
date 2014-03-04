@@ -21,7 +21,7 @@
 				/*
 				 * Conectamos con la base de datos e insertamos
 			 	*/
-			 	$descripcion= "cualquiera producto";
+			 	$descripcion= "Imágen representativa del producto.";
 				$conexion=conectar();
 				$estado = getInsert("INSERT INTO imagenproducto (producto_idproducto,ruta,descripcion) VALUES
 									('".$idproducto."','". $targetFile."','".$descripcion."')", $conexion);
