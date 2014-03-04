@@ -61,12 +61,12 @@
                     	
                    		$("#mision").click(function(){
                     		$("#tituloInfoEmpresa").html('<h1>Misión</h1>');
-                    		$("#textoInfoEmpresa").html('<p>Elite Publicidad tiene como fin prestar servicios comprometidos que garanticen la satisfación de los clientes y el logro de los objetivos de la organización mediante la mejora continua de los procesos, la eficaz administración de los recursos y el mantenimiento d elos mismos</p>');
+                    		$("#textoInfoEmpresa").html('<p>Elite Publicidad tiene como fin prestar servicios comprometidos que garanticen la satisfación de los clientes y el logro de los objetivos de la organización mediante la mejora continua de los procesos, la eficaz administración de los recursos y el mantenimiento de los mismos</p>');
                    		});
                    		
                    		$("#vision").click(function(){
                     		$("#tituloInfoEmpresa").html('<h1>Visión</h1>');
-                    		$("#textoInfoEmpresa").html('<p>Para el año 2015 ser una institución líder en el eje cafetero en la promoción de la publicidad en todas sus disciplinas y ser modelo de responsabilidad social y empresaria, con un equipo humano de alta competencia y una cultura de permanente innovación y cercanía con nuestros usuarios.</p>');
+                    		$("#textoInfoEmpresa").html('<p>Para el año 2015 ser una institución líder en el eje cafetero en la promoción de la publicidad en todas sus disciplinas y ser modelo de responsabilidad social y empresarial, con un equipo humano de alta competencia y una cultura de permanente innovación y cercanía con nuestros usuarios.</p>');
                    		});
                     </script>
 				</section>
