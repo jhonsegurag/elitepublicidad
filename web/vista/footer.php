@@ -7,7 +7,7 @@
 					<div id="panelFooterServiciosHide" class="panelFooter">
 						<div class="itemPanelFooter">
 							<h3>SERVICIOS</h3>
-							<p>Servicio</p>
+							<p><a href="servicios">Servicios</a></p>
 							
 						</div>
 						
@@ -16,9 +16,15 @@
 					<div id="panelFooterNosotrosHide" class="panelFooter">
 						<div class="itemPanelFooter">
 							<h3>NOSOTROS</h3>
-							<p>Quiénes Somos</p>
-							<p>Misión</p>
-							<p>Visión</p>
+							<p>
+								<a href="empresa">Quiénes Somos</a>
+							</p>
+							<p>
+								<a href="empresa">Misión</a>
+							</p>
+							<p>
+								<a href="empresa">Visión</a>
+							</p>
 						</div>
 					</div>
 					
@@ -49,8 +55,8 @@
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/email.png" />
 								</div>
-								<a class="enlace" href="mailto:elitepublicidad12@gmail.com">
-									<div class="textItemPanelFooter"> elitepublicidad12@gmail.com</div>	
+								<a class="enlace" href="mailto:info@elitepublicidad.com.co">
+									<div class="textItemPanelFooter"> info@elitepublicidad.com.co</div>	
 								</a>
 							</p>
 							
@@ -64,19 +70,19 @@
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/viber.png" />
 								</div>
-								<div class="textItemPanelFooter"> 999-999-99-99</div>	
+								<div class="textItemPanelFooter"> 320-285-55-36 / 320 629 7474</div>	
 							</p>
 							<p>
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/line.png" />
 								</div>
-								<div class="textItemPanelFooter"> 999-999-99-99</div>	
+								<div class="textItemPanelFooter"> 320-285-55-36 / 320 629 7474</div>	
 							</p>
 							<p>
 								<div class="imgItemPanelFoter">
 									<img src="../../imagenes/contacto/whatsapp.png" />
 								</div>
-								<div class="textItemPanelFooter"> 320-285-55-36</div>	
+								<div class="textItemPanelFooter"> 320-285-55-36 / 320 629 7474</div>	
 							</p>
 						</div>
 					</div>

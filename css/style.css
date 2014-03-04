@@ -666,7 +666,6 @@ nav ul a{
 	border-bottom: 5px solid #9C0;
 }
 
-
 #infoProducto article .imagenProducto
 {
 	float: left;
@@ -685,8 +684,6 @@ nav ul a{
 	text-align: justify;
 	height: 120px;
 }
-
-
 
 #infoProducto article #imagenes{
 	width: 100%;
@@ -731,6 +728,7 @@ nav ul a{
  * 
  * ------------------------------------------------------------------------------------------------------------
  */
+
 #infoServicio{
 	width: 100%;
 	display: inline-block;
@@ -1243,9 +1241,15 @@ input[type="submit"]
 	color: #9C0;
 }
 
-.itemPanelFooter p
+.itemPanelFooter p a
 {
+	text-decoration: none;
 	color: #CCC;
+}
+
+.itemPanelFooter p a:hover
+{
+	color: #9c0;
 }
 
 .itemPanelFooter  .imgItemPanelFoter 

@@ -17,13 +17,13 @@
 					
 					<aside>
 						<div id="infoContacto">
-							<p><img  src="../../imagenes/contacto/email.png" /><span>elitepublicidad12@gmail.com</span></p>
+							<p><img  src="../../imagenes/contacto/email.png" /><span>info@elitepublicidad.com.co</span></p>
 							<p><img  src="../../imagenes/contacto/movil.png" /><span>731 9926 / 320 285 5536 / 320 629 7474</span></p>
 							<p><img  src="../../imagenes/contacto/ubicacion.png" /><span>Armenia - Quindío - Colombia</span></p>
 							<p><img  src="../../imagenes/contacto/web.png" /><span>www.elitepublicidad.com.co</span></p>
-							<p><img  src="../../imagenes/contacto/viber.png" /><span>999-999-99-99</span></p>
-							<p><img  src="../../imagenes/contacto/line.png" /><span>999-999-99-99</span></p>
-							<p><img  src="../../imagenes/contacto/whatsapp.png" /><span>320-285-55-36</span></p>
+							<p><img  src="../../imagenes/contacto/viber.png" /><span>320-285-55-36 / 320 629 7474</span></p>
+							<p><img  src="../../imagenes/contacto/line.png" /><span>320-285-55-36 / 320 629 7474</span></p>
+							<p><img  src="../../imagenes/contacto/whatsapp.png" /><span>320-285-55-36 / 320 629 7474</span></p>
 						</div>
 					</aside>
 					
