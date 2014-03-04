@@ -4,7 +4,7 @@
 	
 	if ($_SESSION['idusuario'])
 	{
-		$idproducto=$_GET['idservicio'];		
+		$idservicio=$_GET['idservicio'];		
 				
 				
 			$conexion=conectar();

@@ -5,7 +5,7 @@
 	if ($_POST['idusuario'])
 	{
 		$idusuario=$_POST['idusuario'];
-		$password=($_POST['password']);
+		$password=md5($_POST['password']);
 		
 		$conexion=conectar();
 		$resultado=getQuery("SELECT nombre,apellido,password FROM usuario WHERE idusuario='".mysql_real_escape_string($idusuario)."'");
