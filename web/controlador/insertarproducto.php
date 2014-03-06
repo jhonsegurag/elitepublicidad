@@ -12,10 +12,11 @@
 		$idusuario = $_SESSION['idusuario'];
 		$ruta="";
 		
-    		if ($archivo_imagen != "") {
+    		if ($archivo_imagen != "")
+			{
         		// guardamos el archivo a la carpeta files
         		$ruta =  "../../imagenes/productos/".$archivo_imagen;
-        		if (copy($_FILES['imagenProducto']['tmp_name'], $ruta)) {
+        		if (move_uploaded_file($_FILES['imagenProducto']['tmp_name'], $ruta)) {
             		$status = "Archivo subido: <b>".$archivo_imagen."</b>";
         		}
 				else

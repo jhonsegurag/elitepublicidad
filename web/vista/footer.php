@@ -1,30 +1,48 @@
 <?php
+
+	
+	
     function getFooter()
 	{
+		include_once '../controlador/funciones.php';
+		$productos=getProductos();
+		$servicios=getServicios();
 		?>	
 			<footer>
 				<div id="contenedorFooter">
 					<div id="panelFooterServiciosHide" class="panelFooter">
 						<div class="itemPanelFooter">
-							<h3>SERVICIOS</h3>
-							<p><a href="servicios">Servicios</a></p>
+							<h3>PRODUCTOS</h3>
+							<?php
 							
+							for ($i=0; $i < sizeof($productos); $i++)
+							{ 			
+							?>
+							<p>
+								<a href="infoProducto?idproducto=<?php echo $productos[$i]['idproducto']; ?>"><?php echo $productos[$i]['nombre']; ?></a>
+							</p>
+							<?php
+							}
+							?>
 						</div>
 						
 					</div>
 					
 					<div id="panelFooterNosotrosHide" class="panelFooter">
 						<div class="itemPanelFooter">
-							<h3>NOSOTROS</h3>
+							<h3>SERVICIOS</h3>
+							<?php
+							$servicios=getServicios();
+							for ($i=0; $i < sizeof($servicios); $i++)
+							{ 			
+							?>
 							<p>
-								<a href="empresa">Quiénes Somos</a>
+								<a href=""><?php echo $servicios[$i]['nombre']; ?></a>
 							</p>
-							<p>
-								<a href="empresa">Misión</a>
-							</p>
-							<p>
-								<a href="empresa">Visión</a>
-							</p>
+							<?php
+							}
+							?>
+							
 						</div>
 					</div>
 					

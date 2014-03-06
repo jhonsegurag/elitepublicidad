@@ -17,7 +17,7 @@
 			<meta name="viewport" content="width=device-width,initial-scale=1"/>
 			
 			<!-- Palabras clave sitio web-->
-            <meta name="keywords" content="elite, publicidad, group, vallas, señalizacion, vial, avisos, impresion, digital, vinilos, polarizados, vehiculos, decoracion quindio, armenia, colombia, suramerica"/>
+            <meta name="keywords" content="elite, publicidad, elite publicidad, elite publicidad armenia, calcomanias, avisos, señalizacion vial, pendones, impresion digital, vinilos, polarizados, decoracion vehiculos, quindio, armenia, colombia, suramerica"/>
 			<!-- Descripcion sitio web-->
 			<meta name="descripcion" content="Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas"/>
 			
@@ -154,7 +154,7 @@
 
 			</script>
 			
-			<title> Elite Publicidad </title>
+			<title>Elite Publicidad Armenia</title>
 		</head>
 	<?php
 	}
@@ -178,7 +178,8 @@
 			<meta name="viewport" content="width=device-width,initial-scale=1"/>
 			
 			<!-- Palabras clave sitio web-->
-            <meta name="keywords" content="elite, publicidad, group, vallas, señalizacion, vial, avisos, impresion, digital, vinilos, polarizados, vehiculos, decoracion quindio, armenia, colombia, suramerica"/>
+            <meta name="keywords" content="elite, publicidad, elite publicidad, elite publicidad armenia, calcomanias, avisos, señalizacion vial, pendones, impresion digital, vinilos, polarizados, decoracion vehiculos, quindio, armenia, colombia, suramerica"/>
+			
 			<!-- Descripcion sitio web-->
 			<meta name="descripcion" content="Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas"/>
 			
@@ -190,9 +191,9 @@
 			<script src="../../libs/ckeditor/ckeditor.js"></script>
 			
 			<!-- jQuery library (1.9.1) -->
-			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-			<!-- jQuery library (served from Google) -->
-            <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+            <!-- jQuery library (served from Google) -->
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 			
 			
             
@@ -246,7 +247,7 @@
 
 			</script>
 			
-			<title> Elite Publicidad </title>
+			<title>Elite Publicidad Armenia</title>
 		</head>
 	<?php
 	}

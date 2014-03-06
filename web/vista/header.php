@@ -6,11 +6,11 @@
 			<header>
 				<div id="contenedorHeader">
 					<div class="panelHeader">
-						<div id="logoStart">
+						<h1 id="logoStart">
 							<a href="inicio">
-								<img style="width: 100%;" src="../../imagenes/logo.png">
+								<img style="width: 100%;" src="../../imagenes/logo.png" alt="Elite Publicidad Armenia">
 							</a>
-						</div>
+						<h1>
 						
 					</div>
 					

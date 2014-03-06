@@ -40,7 +40,7 @@
 									</div>
 									<div class="componente">
 										<select class="textField" name="tipo"> 
-											<option value="1">Super Admin</option>
+											<option value="1">ADMINISTRADOR</option>
 										</select>
 										<script>
 	                        				var indice='<?php echo $articulo['tipo_idtipo']; ?>';
@@ -62,14 +62,7 @@
 									<div class="componente">
 										<input value="<?php echo $usuario['apellido']; ?>" class="textField" type="text" name="apellido"  required="required" />
 									</div>
-									
-									<div class="etiqueta">
-										<label> Contraseña: </label>
-									</div>
-									<div class="componente">
-										<input class="textField" type="password" name="password" required="required" />
-									</div>
-													
+																						
 									<div class="etiqueta">
 										<label> Fecha de Creación: </label>
 									</div>

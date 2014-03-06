@@ -34,13 +34,27 @@
 							</div>
 						</div>
 						<div id="imagenes">
+							<script>
+								$(document).ready(function(){
+								//Examples of how to assign the Colorbox event to elements
+									$(".visor<?php echo $i; ?>").colorbox({
+										rel:'visor<?php echo $i;  ?>',
+										width: "600px"
+										});							
+									//Example of preserving a JavaScript event for inline calls.
+									$("#click").click(function(){ 
+										$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+										return false;
+									});						
+								});
+							</script>
 							<?php
 								$idServicio= $servicios[$i]['idservicio'];							
 								$imagenes = getImagenesServicio($idServicio);		  		
 								for ($j=0; $j < sizeof($imagenes) ; $j++) 
 								{			
 							?>
-							<a class="imagenesServicio" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+							<a class="visor<?php echo $i; ?>" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
 								<div class="itemImagenes">
 									<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
 								</div>	

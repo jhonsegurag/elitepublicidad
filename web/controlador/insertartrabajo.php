@@ -15,7 +15,7 @@
     		if ($archivo_imagen != "") {
         		// guardamos el archivo a la carpeta files
         		$ruta =  "../../imagenes/trabajosRealizados/".$archivo_imagen;
-        		if (copy($_FILES['imagenTrabajo']['tmp_name'], $ruta)) {
+        		if (move_uploaded_file($_FILES['imagenTrabajo']['tmp_name'], $ruta)) {
             		$status = "Archivo subido: <b>".$archivo_imagen."</b>";
         		}
 				else

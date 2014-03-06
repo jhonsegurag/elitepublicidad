@@ -10,6 +10,7 @@
 	
 	$productos=getProductos();
 	$servicios=getServicios();
+
 ?>
 	<body>
 		<div id="fb-root"></div>
@@ -59,7 +60,7 @@
 						<a href="<?php echo "infoProducto?idproducto=".$productos[$i]['idproducto'] ?>">
 							<div class="item">
 								
-									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>" /></div>
+									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="../../imagenes/servicioproducto.png" /></div>
 									<div class="itemNombre"><?php echo $productos[$i]['nombre'] ?></div>
 							</div>
 						</a>
@@ -85,7 +86,7 @@
 						<a href="<?php echo "infoServicio?idservicio=".$servicios[$i]['idservicio'] ?>">
 							<div class="item">
 								
-									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="<?php echo $servicios[$i]['ruta'] ?>" /></div>
+									<div class="itemImagen"><img style="width: 100%; height: 100%;" src="../../imagenes/servicioproducto.png" /></div>
 									<div class="itemNombre"><?php echo $servicios[$i]['nombre'] ?></div>
 							</div>
 						</a>
@@ -156,7 +157,7 @@
 			</section>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
 			<?php
-				getFooter();
+				getFooter($productos,$servicios);
 			?>
 		</div>
 	</body>
