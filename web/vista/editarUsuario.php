@@ -62,6 +62,13 @@
 									<div class="componente">
 										<input value="<?php echo $usuario['apellido']; ?>" class="textField" type="text" name="apellido"  required="required" />
 									</div>
+									
+									<div class="etiqueta">
+										<label> Contraseña: </label>
+									</div>
+									<div class="componente">
+										<input value="" class="textField" type="password" name="password"/>
+									</div>
 																						
 									<div class="etiqueta">
 										<label> Fecha de Creación: </label>

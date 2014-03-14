@@ -69,11 +69,11 @@
 				});
 				
 				function posicionarMenu() {
-				    var altura_del_logo = $('#contenedorHeader').outerHeight(true);
+				    var altura_header = $('#contenedorHeader').outerHeight(true);
 				    
 				    var altura_del_menu = $('nav').outerHeight(true);
 				
-				    if (($(window).scrollTop() >= (altura_del_logo + 15)))
+				    if (($(window).scrollTop() >= (altura_header)))
 				    {
 				        $('nav').addClass('fixed');
 				        $('#main').css('margin-top', (altura_del_menu) + 'px');
