@@ -35,8 +35,7 @@
 						for ($i=0; $i <sizeof($trabajosrealizados) ; $i++)
 						{ 
 						?>
-							<tr>
-								
+							<tr>								
 								<td >
 									<div id="imagenProducto" style="width: 50px; height: 50px; margin: auto;">
 										<img style="width: 100%; height: 100%;" src="<?php echo "".$trabajosrealizados[$i]['ruta']; ?>" />
@@ -63,13 +62,11 @@
 											}										
 										} 
 									</script>
-								</td>
-																
+								</td>										
 							</tr>
 						<?php	
 						}
-						?>
-						
+						?>		
 					</table>	
 				</section>
 			</article>
