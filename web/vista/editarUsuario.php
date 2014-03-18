@@ -12,6 +12,7 @@
 		
 		$idusuario=$_GET['idusuario'];
 		$usuario=getInformacionUsuario($idusuario);
+			
 		?>
 		<body>
 			<div id="main" class="wrapper">
@@ -25,6 +26,9 @@
 						<header>
 							<h2>Editar Usuario</h2>
 						</header>
+						<?php 
+						if($_SESSION['idusuario'] == $idusuario){
+							?>
 						<section>
 							<div id="formulario_agregar_usuario">
 								<form action="../controlador/actualizarUsuario" method="post">
@@ -84,6 +88,17 @@
 								</form>
 							</div>		
 						</section>
+						<?php
+							}else{
+							?>
+							<section>
+								<div id="accesoRestringido">
+									 <h1>Acceso Restringido.</h1>
+								</div>
+							</section>
+							<?php 
+								}
+							?>
 					</article>
 				</section>
 			
@@ -95,7 +110,7 @@
 		</body>
 	</html>
 	<?php	
-	}
+		}
 	else
 	{
 		header('location:index.php');
