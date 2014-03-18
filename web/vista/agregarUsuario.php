@@ -77,7 +77,7 @@
 										<label> Fecha de Creación: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="date" placeholder="dd/ mm / aaaa" name="fechausuario" required="required"/>
+										<input class="textField" type="date" placeholder="dd/mm/aaaa" name="fechausuario" required="required"/>
 									</div>
 
 									
