@@ -1,4 +1,5 @@
 <?php
+ session_start();
 	include_once ("imports.php");
 	include_once ("header.php");
 	include_once ("menu.php");
@@ -47,7 +48,11 @@
 								<td >
 									<?php echo "".$usuarios[$i]['apellido']; ?>
 								</td>
-								<td >
+								<?php 
+									if($_SESSION['idusuario'] == $usuarios[$i]['idusuario'])
+									{
+								?>
+								<td>
 									<a href="<?php echo "editarUsuario?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
 								</td>
 								<td >
@@ -66,7 +71,15 @@
 										} 
 									</script>
 								</td>
-																
+								<?php 
+									}
+									else {
+										?>
+								<td>No posees permisos</td>
+								<td>No posees permisos</td>
+								<?php
+									}
+								?>								
 							</tr>
 						<?php	
 						}
