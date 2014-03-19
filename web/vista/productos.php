@@ -27,7 +27,24 @@
 					<section>
 						<div id="informacion">
 							<div id="imagenInformacion">
-								<img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>"/>
+								<script>
+								$(document).ready(function(){
+								//Examples of how to assign the Colorbox event to elements
+									$(".imagen<?php echo $i; ?>").colorbox({
+										rel:'imagen<?php echo $i;  ?>',
+										width: "600px"
+										});							
+									//Example of preserving a JavaScript event for inline calls.
+									$("#click").click(function(){ 
+										$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+										return false;
+									});						
+								});
+								</script>
+								
+								<a class="imagen<?php echo $i; ?>" href="<?php echo $productos[$i]['ruta'] ?>" title="Imágen principal del producto">
+									<img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>"/>
+								</a>
 							</div>
 							<div id="textoInformacion">
 									<?php echo $productos[$i]['descripcion']; ?>
