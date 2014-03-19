@@ -40,7 +40,7 @@
 									});						
 								});
 								</script>
-								<a class="imagen<?php echo $i; ?>" href="<?php echo $servicios[$i]['ruta'] ?>" title="Imágen princial del servicio">
+								<a class="imagen<?php echo $i; ?>" href="<?php echo $servicios[$i]['ruta'] ?>" title="Imágen princial del servicio: <?php echo $servicios[$i]['nombre'] ?>">
 										<img style="width: 100%; height: 100%;" src="<?php echo $servicios[$i]['ruta'] ?>" />
 								</a>
 							</div>

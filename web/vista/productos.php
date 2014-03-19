@@ -42,7 +42,7 @@
 								});
 								</script>
 								
-								<a class="imagen<?php echo $i; ?>" href="<?php echo $productos[$i]['ruta'] ?>" title="Imágen principal del producto">
+								<a class="imagen<?php echo $i; ?>" href="<?php echo $productos[$i]['ruta'] ?>" title="Imágen principal del producto: <?php echo $productos[$i]['nombre'] ?>">
 									<img style="width: 100%; height: 100%;" src="<?php echo $productos[$i]['ruta'] ?>"/>
 								</a>
 							</div>
