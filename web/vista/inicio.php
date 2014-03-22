@@ -100,6 +100,9 @@
 					<div>
 						<div class="fb-like-box" data-href="http://www.facebook.com/elitepublicidadgroup" data-width="80%" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 					</div>
+					<div>
+						<h1>Visitas: <?php echo contador()?></h1>
+					</div>
 				</aside>
 			</section>
 			
