@@ -38,7 +38,7 @@
 		getDelete("DELETE FROM servicio where idservicio=$idservicio",$conexion); //elimino el servicio de la BD	
 		echo "<script type='text/javascript'>
 		alert('El Servicio ha sido eliminado con \u00E9xito'); 
-		document.location.href='../vista/perfil';
+		document.location.href='../vista/listarServicios';
 		</script>";
 		
 	} 

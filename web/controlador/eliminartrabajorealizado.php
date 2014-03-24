@@ -18,7 +18,7 @@
 		getDelete("DELETE FROM trabajorealizado WHERE idtrabajorealizado=$idtrabajorealizado",$conexion);	
 		echo "<script type='text/javascript'>
 		alert('El Trabajo realizado ha sido eliminado con \u00E9xito'); 
-		document.location.href='../vista/perfil';
+		document.location.href='../vista/listarTrabajos';
 		</script>";
 		
 	} 
