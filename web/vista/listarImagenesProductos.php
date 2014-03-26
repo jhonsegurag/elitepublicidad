@@ -35,7 +35,6 @@
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
 							<th>Imagen</th>
-							
 							<th>Cambiar</th>
 						</thead>
 							<tr>
@@ -67,6 +66,7 @@
 							<th>Imágen</th>							
 							<th>Cambiar</th>
 							<th>Eliminar</th>
+							<th>ID ecrypt/ID</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($imagenes) ; $i++)
@@ -97,7 +97,7 @@
 										{											
 											if(confirm("Estas Seguro de eliminar este producto"))
 											{
-												document.location.href= '../controlador/eliminarimagenproducto?idimagenproducto=<?php echo $idimagenproductoencrypt[$i]; ?>';										
+												document.location.href= '../controlador/eliminarimagenproducto?idimagenproducto=<?php echo $imagenes[$i]['idimagenproducto']; ?>';										
 											}
 											else
 											{
@@ -106,7 +106,10 @@
 										} 
 									</script>
 								</td>
-																
+								<td>
+									<p> <?php echo $idimagenproductoencrypt[$i]; ?></p>
+									<p> <?php echo $imagenes[$i]['idimagenproducto']; ?></p>
+								</td>							
 							</tr>
 						<?php	
 						}
