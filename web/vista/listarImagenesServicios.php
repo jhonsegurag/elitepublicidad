@@ -35,23 +35,23 @@
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
 							<th>Imagen</th>
-							<th>Tipo</th>
+							
 							<th>Cambiar</th>
 						</thead>
 							<tr>
 								<td >
-									<div id="imagenServicio" style="width: 50px; height: 50px; margin: auto;">
+									<div id="imagenServicio" style="width: 150px; height: 150px; margin: auto;">
 										<img style="width: 100%; height: 100%;" src="<?php echo "".$servicio['ruta']; ?>" />
 									</div>
 								</td> 
-								<td>Imagen principal</td>
+								
 								<td >
 									<form action="../controlador/cambiarimagenservicio?orden=1&idservicio=<?php echo $idservicioencrypt ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenServicio" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
-											<input type="submit" value="Cambiar Imagen Principal" />
+											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
 										</div>
 									</form>
 								</td> 
@@ -64,7 +64,7 @@
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
 							<th>Imagen</th>
-							<th>Tipo</th>
+						
 							<th>Cambiar</th>
 							<th>Eliminar</th>
 						</thead>
@@ -79,21 +79,21 @@
 										<img style="width: 100%; height: 100%;" src="<?php echo "".$imagenes[$i]['ruta']; ?>" />
 									</div>
 								</td> 
-								<td >
-									Imagen secundaria
-								</td> 
+								
 								<td >
 									<form action="../controlador/cambiarimagenservicio?orden=2&idimagenservicio=<?php echo $idimagenservicioencrypt[$i] ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenSecundariaServicio" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
-											<input type="submit" value="Cambiar Imagen Secundaria" />
+											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
 										</div>
 									</form>
 								</td> 
 								<td >
-									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<a href="#" onclick="validarAccion();">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
+									</a>
 									<script>
 										function validarAccion()
 										{											

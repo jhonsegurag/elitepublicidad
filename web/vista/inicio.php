@@ -119,7 +119,7 @@
 							?>
 							<a class="trabajo" href="<?php echo $trabajosrealizados[$i]['ruta'] ?>" title="<?php echo $trabajosrealizados[$i]['descripcion'] ?>">
                             	<div class="itemTrabajosRealizados">
-									<img style="width: 100%; height:100%;" src="<?php echo $trabajosrealizados[$i]['ruta'] ?>" />
+									<img style="width: 100%; height: 100%; max-width: 200px;" src="<?php echo $trabajosrealizados[$i]['ruta'] ?>" />
 								</div>	
                             </a>
 							<?php

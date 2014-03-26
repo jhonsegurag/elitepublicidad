@@ -5,13 +5,16 @@
 	include_once ("footer.php");
 	include_once ("../controlador/funciones.php");
 	getImports();
+
+	
 ?>
 	<body>
-		<div id="main" class="wrapper">
+		<div id="main"  class="wrapper">
 			<?php 
 				getHeader();
 				getMenu("inicio");
 				$productos = getProductos();
+
 				
 			?>
 	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->		
@@ -76,15 +79,15 @@
 
 							?>
 								
-	                            <a class="visor<?php echo $i; ?>" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
+								<a class="visor<?php echo $i; ?>" href="<?php echo $imagenes[$j]['ruta'] ?>" title="<?php echo $imagenes[$j]['descripcion'] ?>">
 									<div class="itemImagenes">
 										<img style="width: 100%; height: 100%;" src="<?php echo $imagenes[$j]['ruta'] ?>" />
 									</div>
 								</a>
 							<?php 
 								}
-						 	?>
-						 	
+							?>
+							
 						</div>
 						
 						

@@ -4,3 +4,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ $1.php
+
+
+<ifmodule mod_expires.c>
+    <filesmatch "\.(jpg|JPG|gif|GIF|png|PNG|css|ico)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 31 days"
+    </filesmatch>
+</ifmodule>

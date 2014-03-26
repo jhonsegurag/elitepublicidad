@@ -53,10 +53,12 @@
 									<?php echo "".$productos[$i]['fechacreacion']; ?>
 								</td>
 								<td >
-									<a href="<?php echo "editarProducto?idproducto=".$productos[$i]['idproducto']; ?>">Editar</a>
+									<a href="<?php echo "editarProducto?idproducto=".$productos[$i]['idproducto']; ?>">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/editar.png" /></div>
+									</a>
 								</td>
 								<td >
-									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<a href="#" onclick="validarAccion();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									<script>
 										function validarAccion()
 										{											
@@ -75,7 +77,7 @@
 									<?php 
 										$idproductoencrypt = encrypt($productos[$i]['idproducto'],"listarImagenesProductosKey");
 									?>
-									<a href="<?php echo "listarImagenesProductos?idproducto=".$idproductoencrypt; ?>">Ver Imagenes</a>
+									<a href="<?php echo "listarImagenesProductos?idproducto=".$idproductoencrypt; ?>"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/listarimagenes.png" /></div></a>
 								</td>
 																
 							</tr>

@@ -52,10 +52,14 @@
 									<?php echo "".$servicios[$i]['fechacreacion']; ?>
 								</td>
 								<td >
-									<a href="<?php echo "editarServicio?idservicio=".$servicios[$i]['idservicio']; ?>">Editar</a>
+									<a href="<?php echo "editarServicio?idservicio=".$servicios[$i]['idservicio']; ?>">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/editar.png" /></div>
+									</a>
 								</td>
 								<td >
-									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<a href="#" onclick="validarAccion();">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div>
+									</a>
 									<script>
 										function validarAccion()
 										{											
@@ -74,7 +78,9 @@
 									<?php 
 										$idservicioencrypt = encrypt($servicios[$i]['idservicio'],"listarImagenesServiciosKey");
 									?>
-									<a href="<?php echo "listarImagenesServicios?idservicio=".$idservicioencrypt; ?>">Ver Imagenes</a>
+									<a href="<?php echo "listarImagenesServicios?idservicio=".$idservicioencrypt; ?>">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/listarimagenes.png" /></div>
+									</a>
 								</td>		
 							</tr>
 						<?php	

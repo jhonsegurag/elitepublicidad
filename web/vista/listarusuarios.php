@@ -75,8 +75,8 @@
 									}
 									else {
 										?>
-								<td>No posees permisos</td>
-								<td>No posees permisos</td>
+								<td>-----</td>
+								<td>-----</td>
 								<?php
 									}
 								?>								

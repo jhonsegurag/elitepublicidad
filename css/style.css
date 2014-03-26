@@ -1437,6 +1437,14 @@ input[type="submit"]
 	
 }
 
+#listar article table tr td .imagenAccion
+{
+	margin: auto;
+	width: 50px;
+}
+
+
+
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { 
 	width: 100% !important; 
 }
