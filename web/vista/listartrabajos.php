@@ -45,10 +45,14 @@
 									<?php echo "".$trabajosrealizados[$i]['descripcion']; ?>
 								</td> 
 								<td >
-									<a href="<?php echo "editarTrabajo?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">Editar</a>
+									<a href="<?php echo "editarTrabajo?idtrabajo=".$trabajosrealizados[$i]['idtrabajorealizado']; ?>">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/editar.png" /></div>
+									</a>
 								</td>
 								<td >
-									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<a href="#" onclick="validarAccion();">
+										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div>
+									</a>
 									<script>
 										function validarAccion()
 										{											

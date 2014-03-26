@@ -35,23 +35,23 @@
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
 							<th>Imagen</th>
-							<th>Tipo</th>
+							
 							<th>Cambiar</th>
 						</thead>
 							<tr>
 								<td >
-									<div id="imagenProducto" style="width: 50px; height: 50px; margin: auto;">
+									<div id="imagenProducto" style="width: 150px; height: 150px; margin: auto;">
 										<img style="width: 100%; height: 100%;" src="<?php echo "".$producto['ruta']; ?>" />
 									</div>
 								</td> 
-								<td>Imágen principal</td>
+							
 								<td >
 									<form action="../controlador/cambiarimagenproducto?orden=1&idproducto=<?php echo $idproductoencrypt ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
-											<input class="textField" type="file" name="imagenProducto" maxlength="5" required="required" />
+											<input class="textField" type="file" name="imagenProducto"  required="required" />
 										</div>
 										<div style="text-align: center;">
-											<input type="submit" value="Cambiar Imagen Principal" />
+											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
 										</div>
 									</form>
 								</td> 
@@ -64,8 +64,7 @@
 					<h1>Imágenes asociadas al producto</h1>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
-							<th>Imágen</th>
-							<th>Tipo</th>
+							<th>Imágen</th>							
 							<th>Cambiar</th>
 							<th>Eliminar</th>
 						</thead>
@@ -80,21 +79,19 @@
 										<img style="width: 100%; height: 100%;" src="<?php echo "".$imagenes[$i]['ruta']; ?>" />
 									</div>
 								</td> 
-								<td >
-									Imagen secundaria
-								</td> 
+								
 								<td >
 									<form action="../controlador/cambiarimagenproducto?orden=2&idimagenproducto=<?php echo $idimagenproductoencrypt[$i] ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
-											<input class="textField" type="file" name="imagenSecundariaProducto" maxlength="5" required="required" />
+											<input class="textField" type="file" name="imagenSecundariaProducto" required="required" />
 										</div>
 										<div style="text-align: center;">
-											<input type="submit" value="Cambiar Imagen Secundaria" />
+											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
 										</div>
 									</form>
 								</td> 
 								<td >
-									<a href="#" onclick="validarAccionEliminar();">Eliminar</a>
+									<a href="#" onclick="validarAccionEliminar();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									<script>
 										function validarAccionEliminar()
 										{											
