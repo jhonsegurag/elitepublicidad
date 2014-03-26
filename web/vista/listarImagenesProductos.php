@@ -47,8 +47,8 @@
 								<td>Imágen principal</td>
 								<td >
 									<form action="../controlador/cambiarimagenproducto?orden=1&idproducto=<?php echo $idproductoencrypt ?>" method="post" enctype="multipart/form-data">
-										<div class="componente">
-											<input class="textField" type="file" name="imagenProducto" maxlength="5" required="required" />
+										<div class="componenteListar">
+											<input class="textFieldListar" type="file" name="imagenProducto" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
 											<input type="submit" value="Cambiar Imagen Principal" />
@@ -86,7 +86,7 @@
 								<td >
 									<form action="../controlador/cambiarimagenproducto?orden=2&idimagenproducto=<?php echo $idimagenproductoencrypt[$i] ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
-											<input class="textField" type="file" name="imagenSecundariaProducto" maxlength="5" required="required" />
+											<input class="textFieldListar" type="file" name="imagenSecundariaProducto" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
 											<input type="submit" value="Cambiar Imagen Secundaria" />
