@@ -53,6 +53,14 @@
 						</footer>
 					</article>
 					
+					
+				</section>
+	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
+			<?php
+				getFooter();
+			?>
+			
+		</div>
 					<script>
                     	$("#quienessomos").click(function(){
                     		$("#tituloInfoEmpresa").html('<h1>Quiénes Somos</h1>');
@@ -69,11 +77,5 @@
                     		$("#textoInfoEmpresa").html('<p>Para el año 2015 ser una institución líder en el eje cafetero en la promoción de la publicidad en todas sus disciplinas y ser modelo de responsabilidad social y empresarial, con un equipo humano de alta competencia y una cultura de permanente innovación y cercanía con nuestros usuarios.</p>');
                    		});
                     </script>
-				</section>
-	<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
-			<?php
-				getFooter();
-			?>
-		</div>
 	</body>
 	</html>

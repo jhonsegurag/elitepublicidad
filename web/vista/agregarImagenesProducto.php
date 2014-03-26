@@ -24,11 +24,18 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_imagenes_producto">
-								<form action="<?php echo $direccion;?>" class="dropzone" method="post" enctype="multipart/form-data">
+								<form id="my-awesome-dropzone" action="<?php echo $direccion;?>"  class="dropzone" method="post" enctype="multipart/form-data">
 									<div style="text-align: center;">
-										<input type="submit" value="Agregar Imagenes Al Producto" />
+										<input type="submit" value="Agregar imagenes al producto" />
 									</div>
 								</form>
+								<script>
+									Dropzone.options.myAwesomeDropzone = 
+									{ 
+										maxFilesize: 1,
+										addRemoveLinks:true 
+									};
+								</script>
 							</div>		
 						</section>
 					</article>

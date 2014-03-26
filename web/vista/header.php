@@ -6,9 +6,10 @@
 			<header>
 				<div id="contenedorHeader">
 					<div class="panelHeader">
+						
 						<h1 id="logoStart">
 							<a href="inicio">
-								<img style="width: 100%;" src="../../imagenes/logo.png" alt="Elite Publicidad Armenia">
+								<img style="width: 100%;" src="../../imagenes/logo.png" alt="elite publicidad armenia" />
 							</a>
 						<h1>
 						
@@ -49,11 +50,11 @@
 			<header>
 				<div id="contenedorHeader">
 					<div class="panelHeader">
-						<div id="logo">
+						<h1 id="logo">
 							<a href="inicio">
-								<img style="width: 100%;" src="../../imagenes/logo.png">
+								<img style="width: 100%;" src="../../imagenes/logo.png" alt="elite publicidad" />
 							</a>
-						</div>
+						</h1>
 						
 					</div>
 					
