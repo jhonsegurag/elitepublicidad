@@ -32,6 +32,7 @@
 							<th>Fecha</th>
 							<th>Editar</th>
 							<th>Eliminar</th>
+							<th>Ver Imágenes</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($servicios) ; $i++)
@@ -69,8 +70,12 @@
 										} 
 									</script>
 								</td>
-										
-																
+								<td>
+									<?php 
+										$idservicioencrypt = encrypt($servicios[$i]['idservicio'],"listarImagenesServiciosKey");
+									?>
+									<a href="<?php echo "listarImagenesServicios?idservicio=".$idservicioencrypt; ?>">Ver Imagenes</a>
+								</td>		
 							</tr>
 						<?php	
 						}

@@ -33,13 +33,13 @@
 							<th>Fecha</th>
 							<th>Editar</th>
 							<th>Eliminar</th>
+							<th>Ver Imágenes</th>
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($productos) ; $i++)
 						{ 
 						?>
 							<tr>
-								
 								<td >
 									<?php echo "".$productos[$i]['idproducto']; ?>
 								</td> 
@@ -71,15 +71,18 @@
 										} 
 									</script>
 								</td>
-								
+								<td>
+									<?php 
+										$idproductoencrypt = encrypt($productos[$i]['idproducto'],"listarImagenesProductosKey");
+									?>
+									<a href="<?php echo "listarImagenesProductos?idproducto=".$idproductoencrypt; ?>">Ver Imagenes</a>
+								</td>
 																
 							</tr>
 						<?php	
 						}
 						?>
-						
 					</table>
-					
 				</section>
 			</article>
 			</section>

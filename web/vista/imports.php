@@ -18,6 +18,7 @@
 			
 			<!-- Palabras clave sitio web-->
             <meta name="keywords" content="elite publicidad armenia, elite publicidad,  calcomanias, avisos, señalizacion vial, pendones, impresion digital, vinilos, polarizados, decoracion vehiculos, quindio, armenia, colombia, suramerica, elite, publicidad,"/>
+
 			<!-- Descripcion sitio web-->
 			<meta name="descripcion" content="Somos una institución prestadora de servicios publicitarios comprometida con la promoción de las empresas del eje cafetero en todas sus etapas"/>
 			

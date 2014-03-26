@@ -37,7 +37,7 @@
 							{ 			
 							?>
 							<p>
-								<a href=""><?php echo $servicios[$i]['nombre']; ?></a>
+								<a href="infoServicio?idservicio=<?php echo $servicios[$i]['idservicio']; ?>"><?php echo $servicios[$i]['nombre']; ?></a>
 							</p>
 							<?php
 							}

@@ -61,7 +61,7 @@
 										<label> Fecha de Creación: </label>
 									</div>
 									<div class="componente">
-										<input class="textField" type="date" name="fechaServicio" required="required" />
+										<input class="textField" type="date" placeholder="dd/mm/aaaa" name="fechaServicio" required="required" />
 									</div>
 									
 									

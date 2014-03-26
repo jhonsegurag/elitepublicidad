@@ -1,6 +1,25 @@
 <?php
     include_once'mysql.php';
 	
+	
+	
+	function contador()
+	{
+		 // fichero donde se guardaran las visitas
+		 $fichero = "../../visitas.txt";
+		 
+		 $fptr = fopen($fichero,"r");
+		 
+		 // sumamos una visita
+		 $num = fread($fptr,filesize($fichero));
+		 $num++;
+		 
+		 $fptr = fopen($fichero,"w+");
+		 fwrite($fptr,$num);
+		 
+		 return $num;
+	}
+	
 	/*
 	 * Funcion que permite decodificar informacion en atributo URL
 	 */
@@ -155,6 +174,30 @@
 		}	
 		return $imagenesproducto;
 	}
+
+	/*
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 * ------------------------------------------------------IMAGENES PRODUCTOS-------------------------------------------------------
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 */
+	 
+	 /*
+	  * Funcion que permite obtener la información asociada una imagen de un producto.
+	  */ 
+	 function getInformacionImagenProducto($idimagenproducto)
+	 {
+		$imagenproducto=array();
+		$conexion= conectar();
+		
+		$resultado=mysql_query("SELECT idimagenproducto,producto_idproducto,ruta,descripcion FROM imagenproducto WHERE idimagenproducto='".mysql_real_escape_string($idimagenproducto)."'",$conexion);
+		$fila=mysql_fetch_array($resultado);
+		
+			$imagenproducto['idimagenproducto']=$fila['idimagenproducto'];
+			$imagenproducto['producto_idproducto']=$fila['producto_idproducto'];
+			$imagenproducto['ruta']=$fila['ruta'];
+			$imagenproducto['descripcion']=$fila['descripcion'];
+		return $imagenproducto;
+	 }
 	
 	/*
 	 * -------------------------------------------------------------------------------------------------------------------------------
@@ -230,7 +273,31 @@
 	
 	/*
 	 * -------------------------------------------------------------------------------------------------------------------------------
-	 * ------------------------------------------------------------USUARIOS--------------------------------------------------------------
+	 * ------------------------------------------------------IMAGENES SERVICIOS-------------------------------------------------------
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 */
+	 
+	 /*
+	  * Funcion que permite obtener la información asociada una imagen de un servicio.
+	  */ 
+	 function getInformacionImagenServicio($idimagenservicio)
+	 {
+		$imagenservicio=array();
+		$conexion= conectar();
+		
+		$resultado=mysql_query("SELECT idimagenservicio,servicio_idservicio,ruta,descripcion FROM imagenservicio WHERE idimagenservicio='".mysql_real_escape_string($idimagenservicio)."'",$conexion);
+		$fila=mysql_fetch_array($resultado);
+		
+			$imagenservicio['idimagenservicio']=$fila['idimagenservicio'];
+			$imagenservicio['servicio_idservicio']=$fila['servicio_idservicio'];
+			$imagenservicio['ruta']=$fila['ruta'];
+			$imagenservicio['descripcion']=$fila['descripcion'];
+		return $imagenservicio;
+	 }
+	
+	/*
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 * ------------------------------------------------------------USUARIOS-----------------------------------------------------------
 	 * -------------------------------------------------------------------------------------------------------------------------------
 	 */
 	 
