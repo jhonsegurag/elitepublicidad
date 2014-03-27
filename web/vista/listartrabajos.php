@@ -50,11 +50,11 @@
 									</a>
 								</td>
 								<td >
-									<a href="#" onclick="validarAccion();">
+									<a href="#" onclick="validarAccion<?php echo $i; ?>();">
 										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div>
 									</a>
 									<script>
-										function validarAccion()
+										function validarAccion<?php echo $i; ?>()
 										{											
 											if(confirm("Estas Seguro de eliminar este Trabajo Realizado"))
 											{

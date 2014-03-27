@@ -56,9 +56,9 @@
 									<a href="<?php echo "editarUsuario?idusuario=".$usuarios[$i]['idusuario']; ?>">Editar</a>
 								</td>
 								<td >
-									<a href="#" onclick="validarAccion();">Eliminar</a>
+									<a href="#" onclick="validarAccion<?php echo $i; ?>();">Eliminar</a>
 									<script>
-										function validarAccion()
+										function validarAccion<?php echo $i; ?>()
 										{											
 											if(confirm("Estas Seguro de eliminar este Usuario"))
 											{

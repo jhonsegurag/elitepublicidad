@@ -14,7 +14,7 @@
 				<?php 
 					getHeader();
 					getMenu("administrador");
-					$direccion = "../controlador/cargarimagenesservicios?idservicio=".$_GET['idservicio'];
+					$direccion = "../controlador/cargarImagenesServicios?idservicio=".$_GET['idservicio'];
 				?>
 			<!-- --------------------CÓDIGO HTML------------------------------------------------ -->
 				<section id="gestionar">

@@ -45,7 +45,7 @@
 								</td> 
 							
 								<td >
-									<form action="../controlador/cambiarimagenproducto?orden=1&idproducto=<?php echo $idproductoencrypt ?>" method="post" enctype="multipart/form-data">
+									<form action="../controlador/cambiarImagenProducto?orden=1&idproducto=<?php echo $idproductoencrypt ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenProducto"  required="required" />
 										</div>
@@ -66,7 +66,7 @@
 							<th>Imágen</th>							
 							<th>Cambiar</th>
 							<th>Eliminar</th>
-							<th>ID ecrypt/ID</th>
+							
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($imagenes) ; $i++)
@@ -81,7 +81,7 @@
 								</td> 
 								
 								<td >
-									<form action="../controlador/cambiarimagenproducto?orden=2&idimagenproducto=<?php echo $idimagenproductoencrypt[$i] ?>" method="post" enctype="multipart/form-data">
+									<form action="../controlador/cambiarImagenProducto?orden=2&idimagenproducto=<?php echo $idimagenproductoencrypt[$i] ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenSecundariaProducto" required="required" />
 										</div>
@@ -91,13 +91,13 @@
 									</form>
 								</td> 
 								<td >
-									<a href="#" onclick="validarAccionEliminar();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
+									<a href="#" onclick="validarAccionEliminar<?php echo $i; ?>();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									<script>
-										function validarAccionEliminar()
+										function validarAccionEliminar<?php echo $i; ?>()
 										{											
 											if(confirm("Estas Seguro de eliminar este producto"))
 											{
-												document.location.href= '../controlador/eliminarimagenproducto?idimagenproducto=<?php echo $imagenes[$i]['idimagenproducto']; ?>';										
+												document.location.href= '../controlador/eliminarImagenProducto?idimagenproducto=<?php echo $imagenes[$i]['idimagenproducto']; ?>';										
 											}
 											else
 											{
@@ -106,10 +106,7 @@
 										} 
 									</script>
 								</td>
-								<td>
-									<p> <?php echo $idimagenproductoencrypt[$i]; ?></p>
-									<p> <?php echo $imagenes[$i]['idimagenproducto']; ?></p>
-								</td>							
+														
 							</tr>
 						<?php	
 						}

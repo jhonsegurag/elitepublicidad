@@ -46,7 +46,7 @@
 								</td> 
 								
 								<td >
-									<form action="../controlador/cambiarimagenservicio?orden=1&idservicio=<?php echo $idservicioencrypt ?>" method="post" enctype="multipart/form-data">
+									<form action="../controlador/cambiarImagenServicio?orden=1&idservicio=<?php echo $idservicioencrypt ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenServicio" maxlength="5" required="required" />
 										</div>
@@ -81,7 +81,7 @@
 								</td> 
 								
 								<td >
-									<form action="../controlador/cambiarimagenservicio?orden=2&idimagenservicio=<?php echo $idimagenservicioencrypt[$i] ?>" method="post" enctype="multipart/form-data">
+									<form action="../controlador/cambiarImagenServicio?orden=2&idimagenservicio=<?php echo $idimagenservicioencrypt[$i] ?>" method="post" enctype="multipart/form-data">
 										<div class="componente">
 											<input class="textField" type="file" name="imagenSecundariaServicio" maxlength="5" required="required" />
 										</div>
@@ -91,22 +91,22 @@
 									</form>
 								</td> 
 								<td >
-									<a href="#" onclick="validarAccion();">
+									<a href="#" onclick="validarAccion<?php echo $i; ?>();">
 										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									</a>
 									<script>
-										function validarAccion()
+										function validarAccion<?php echo $i; ?>()
 										{											
 											if(confirm("Est\u00E1s seguro de eliminar la imagen"))
 											{
 												<?php 
 													$idimagenservicioencrypt = encrypt($imagenes[$i]['idimagenservicio'],"EliminarImagenesServiciosKey");
 												?>
-												document.location.href= '../controlador/eliminarimagenservicio?idimagenservicio='+'<?php echo $idimagenservicioencrypt; ?>';										
+												document.location.href= '../controlador/eliminarImagenServicio?idimagenservicio=<?php echo $imagenes[$i]['idimagenservicio']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listarImagenesServicios?idservicio'+'<?php echo $idservicioencrypt; ?>';
+												document.location.href= 'listarImagenesServicios?idservicio<?php echo $imagenes[$i]['idimagenservicio']; ?>';
 											}										
 										} 
 									</script>
