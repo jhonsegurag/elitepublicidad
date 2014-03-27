@@ -58,11 +58,11 @@
 										{											
 											if(confirm("Estas Seguro de eliminar este Trabajo Realizado"))
 											{
-												document.location.href= '../controlador/eliminartrabajorealizado?idtrabajorealizado='+'<?php echo $trabajosrealizados[$i]['idtrabajorealizado']; ?>';										
+												document.location.href= '../controlador/eliminarTrabajoRealizado?idtrabajorealizado='+'<?php echo $trabajosrealizados[$i]['idtrabajorealizado']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listartrabajos';
+												document.location.href= 'listarTrabajos';
 											}										
 										} 
 									</script>

@@ -24,7 +24,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_producto">
-								<form action="../controlador/insertarproducto" method="post" enctype="multipart/form-data">
+								<form action="../controlador/insertarProducto" method="post" enctype="multipart/form-data">
 								
 									<div class="etiqueta">
 										<label> Imágen: </label>

@@ -24,7 +24,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_trabajo">
-								<form action="../controlador/insertartrabajo" method="post" enctype="multipart/form-data">
+								<form action="../controlador/insertarTrabajo" method="post" enctype="multipart/form-data">
 									<div class="etiqueta">
 										<label> Imágen: </label>
 									</div>

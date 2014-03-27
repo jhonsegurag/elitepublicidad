@@ -23,7 +23,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_usuario">
-								<form action="../controlador/insertarusuario" method="post">
+								<form action="../controlador/insertarUsuario" method="post">
 									<div class="etiqueta">
 										<label> Usuario: </label>
 									</div>

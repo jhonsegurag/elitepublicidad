@@ -65,11 +65,11 @@
 										{											
 											if(confirm("Estas Seguro de eliminar este Servicio"))
 											{
-												document.location.href= '../controlador/eliminarservicio?idservicio='+'<?php echo $servicios[$i]['idservicio']; ?>';										
+												document.location.href= '../controlador/eliminarServicio?idservicio='+'<?php echo $servicios[$i]['idservicio']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listarservicios';
+												document.location.href= 'listarServicios';
 											}										
 										} 
 									</script>

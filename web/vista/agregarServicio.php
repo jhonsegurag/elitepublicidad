@@ -24,7 +24,7 @@
 						</header>
 						<section>
 							<div id="formulario_agregar_servicio">
-								<form action="../controlador/insertarservicio" method="post" enctype="multipart/form-data">
+								<form action="../controlador/insertarServicio" method="post" enctype="multipart/form-data">
 								
 									<div class="etiqueta">
 										<label> Imágen: </label>

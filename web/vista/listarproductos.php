@@ -64,11 +64,11 @@
 										{											
 											if(confirm("Estas Seguro de eliminar este producto"))
 											{
-												document.location.href= '../controlador/eliminarproducto?idproducto='+'<?php echo $productos[$i]['idproducto']; ?>';										
+												document.location.href= '../controlador/eliminarProducto?idproducto='+'<?php echo $productos[$i]['idproducto']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listarproductos';
+												document.location.href= 'listarProductos';
 											}										
 										} 
 									</script>

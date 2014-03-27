@@ -62,11 +62,11 @@
 										{											
 											if(confirm("Estas Seguro de eliminar este Usuario"))
 											{
-												document.location.href= '../controlador/eliminarusuario?idusuario='+'<?php echo $usuarios[$i]['idusuario']; ?>';										
+												document.location.href= '../controlador/eliminarUsuario?idusuario='+'<?php echo $usuarios[$i]['idusuario']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listarusuarios';
+												document.location.href= 'listarUsuarios';
 											}										
 										} 
 									</script>
