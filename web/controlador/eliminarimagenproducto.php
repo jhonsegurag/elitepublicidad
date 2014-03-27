@@ -5,8 +5,9 @@
 	
 	if ($_SESSION['idusuario'])
 	{
-			$idimagenproductoencrypt = $_GET['idimagenproducto'];
-			$idimagenproducto = decrypt($idimagenproductoencrypt,"ModificarImagenesProductosKey");
+			// $idimagenproductoencrypt = $_GET['idimagenproducto'];
+			// $idimagenproducto = decrypt($idimagenproductoencrypt,"ModificarImagenesProductosKey");
+			$idimagenproducto = $_GET['idimagenproducto'];
 			$conexion=conectar(); //conecto a la bd
 			$rutaImgPrincipal = getQuery("SELECT ruta,producto_idproducto FROM imagenproducto WHERE idimagenproducto=$idimagenproducto"); //obtengo la ruta de la img perteneciente al producto
 			$idproductoencrypt= encrypt($rutaImgPrincipal['producto_idproducto'],"listarImagenesProductosKey");
