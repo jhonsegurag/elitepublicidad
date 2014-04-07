@@ -110,6 +110,26 @@
 						</section>
 						
 					</article>
+					<article>
+						<header>
+							<h2>Gestión de Clientes</h2>
+						</header>
+						<section>
+							<div id="funciones">
+								<div class="funcion">
+									<a href="agregarCliente" style="text-decoration: none; color: #66CC00 ">
+										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/agregarusuario.png" title="Agregar Cliente" />
+									</a>
+								</div>
+								<div class="funcion">
+									<a href="listarClientes" style="text-decoration: none; color: #66CC00 ">
+										<img style="width: 100%; height: 100%;" src="../../imagenes/administrador/buscarusuario.png" title="Buscar Cliente" />
+									</a>
+								</div>
+							</div>
+						</section>
+						
+					</article>
 				</section>
 			
 			<!-- --------------------CÓDIGO HTML------------------------------------------------ -->

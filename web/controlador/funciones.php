@@ -3,7 +3,7 @@
 	
 	
 	
-	function contador()
+	function contadorVisitas()
 	{
 		 // fichero donde se guardaran las visitas
 		 $fichero = "../../visitas.txt";
@@ -341,4 +341,28 @@
 			
 		return $usuario;
 	}
+	
+	/*
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 * --------------------------------------------------------CLIENTES---------------------------------------------------------------
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 */
+	 
+	 /*
+	 * Funcion que permite obtener todos los clientes.
+	 */
+	 function getClientes(){
+	 	$clientes=array();
+		$conexion=conectar();
+		
+		$resultado=mysql_query("SELECT * FROM cliente");
+		$i=0;
+		while($fila=mysql_fetch_array($resultado)){
+			$clientes[$i]['idcliente']=$fila['idcliente'];
+			$clientes[$i]['nombre']=$fila['nombre'];
+			$clientes[$i]['ruta']=$fila['ruta'];
+			$i++;
+		}
+		return $clientes;		
+	 }
 ?>

@@ -1012,6 +1012,11 @@ input[type="submit"]
 	margin: auto;
 }
 
+#gestionar article #formulario_agregar_cliente{
+	width: 90%;
+	margin: auto;
+}
+
 #gestionar section #accesoRestringido{
 	margin: auto;
 }
