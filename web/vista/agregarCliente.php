@@ -32,7 +32,7 @@
 									</div>
 									
 									<div class="etiqueta">
-										<label> Imágen: </label>
+										<label> Imagen: </label>
 									</div>
 									<div class="componente">
 										<input class="textField" type="file" name="imagenCliente" maxlength="5" required="required" />
