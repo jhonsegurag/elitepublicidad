@@ -1,23 +1,32 @@
 <?php
     include_once'mysql.php';
 	
-	
-	
+	/*
+	 * Funcion que permite manejar la logica respecto a la cantidad de visitas de la pag.
+	 */
 	function contadorVisitas()
 	{
-		 // fichero donde se guardaran las visitas
-		 $fichero = "../../visitas.txt";
-		 
-		 $fptr = fopen($fichero,"r");
-		 
-		 // sumamos una visita
-		 $num = fread($fptr,filesize($fichero));
-		 $num++;
-		 
-		 $fptr = fopen($fichero,"w+");
-		 fwrite($fptr,$num);
-		 
-		 return $num;
+		//asigno el archivo a la variable $maestro
+		$maestro = fopen("../../contador.txt","r+");
+
+		//leo la primera linea y se la asigno a $leer
+		$leer = fgets($maestro,10);
+
+		//incremento la variable $leer en uno
+		++$leer;
+
+		//rebobino el archivo para poder sobre escribir su contenido
+		rewind($maestro);
+
+		//sobreescribo el contenido
+		fputs($maestro,$leer);
+
+		//cierro el archivo de texto
+		fclose($maestro);
+
+		//muestro en pantalla el valor acutal del archivo
+		//echo "Sos el visitante N°: $leer";
+		return $leer;
 	}
 	
 	/*
