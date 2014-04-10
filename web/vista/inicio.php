@@ -6,6 +6,7 @@
 	include_once ("../controlador/funciones.php");
 	
 	$trabajosrealizados=getTrabajosRealizados();
+	$clientes=getClientes();
 	getImports();
 	
 	$productos=getProductos();
@@ -100,6 +101,7 @@
 					<div>
 						<div class="fb-like-box" data-href="http://www.facebook.com/elitepublicidadgroup" data-width="80%" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 					</div>
+
 					
 					
 					<div id="contador">
@@ -107,6 +109,10 @@
 						<div id="imagenContador"><img src="../../imagenes/userscontador.png" /></div>
 						<div id="numeroContador"><?php echo contador()?></div>
 						
+
+					<div>
+						<h1>Visitas: <?php echo contadorVisitas()?></h1>
+
 					</div>
 				</aside>
 				
@@ -144,22 +150,17 @@
 					</hgroup>
 					<section>
 						<div id="items">
-							<div class="itemNuestrosClientes">
-								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/policia.png" />
-							</div>	
-							<div class="itemNuestrosClientes">
-								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/ica.png" />
-							</div>
-							<div class="itemNuestrosClientes">
-								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/hotelbailarinas.png" />
-							</div>
-							<div class="itemNuestrosClientes">
-								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/tinto.png" />
-							</div>
-							<div class="itemNuestrosClientes">
-								<img style="width: 100%; height: 100%;" src="../../imagenes/clientes/armenia.png" />
-							</div>
+							<?php
+							for($i=0; $i < sizeof($clientes); $i++){
+								?>	
 							
+							<div class="itemNuestrosClientes">
+								<img style="width: 100%; height: 100%;" src="<?php echo $clientes[$i]['ruta'] ?>" title="<?php echo $clientes[$i]['nombre'] ?>" />
+							</div>	
+							
+							<?php 	
+							}
+							?>
 						</div>
 					</section>
 				</article>

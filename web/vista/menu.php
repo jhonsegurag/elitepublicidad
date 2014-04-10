@@ -106,25 +106,31 @@
 					<li id="<?php 
 							if(strstr($_SERVER['REQUEST_URI'], 'agregarUsuario')){
 								echo 'seleccionado';
-							}?>">Agregar Administradores</li>
+							}?>">Crear Administrador</li>
 				</a>
 				<a href="agregarTrabajo" >
 					<li id="<?php 
 							if(strstr($_SERVER['REQUEST_URI'], 'agregarTrabajo')){
 								echo 'seleccionado';
-							}?>">Agregar Trabajos Realizados</li>
+							}?>">Crear Trabajo Realizado</li>
 				</a>
 				<a href="agregarProducto" >
 					<li id="<?php 
 							if(strstr($_SERVER['REQUEST_URI'], 'agregarProducto')){
 								echo 'seleccionado';
-							}?>">Agregar Productos</li>
+							}?>">Crear Producto</li>
 				</a>
 				<a href="agregarServicio" >
 					<li id="<?php 
 							if(strstr($_SERVER['REQUEST_URI'], 'agregarServicio')){
 								echo 'seleccionado';
-							}?>">Agregar Servicios</li>
+							}?>">Crear Servicio</li>
+				</a>
+				<a href="agregarCliente" >
+					<li id="<?php 
+							if(strstr($_SERVER['REQUEST_URI'], 'agregarCliente')){
+								echo 'seleccionado';
+							}?>">Crear Cliente</li>
 				</a>
 				<a href="../controlador/cerrarSesion"> 
 					<li>Cerrar Sesión</li>

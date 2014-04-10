@@ -1,10 +1,12 @@
 <?php
     include_once'mysql.php';
 	
-	
-	
-	function contador()
+	/*
+	 * Funcion que permite manejar la logica respecto a la cantidad de visitas de la pag.
+	 */
+	function contadorVisitas()
 	{
+
 		 // fichero donde se guardaran las visitas
 		 $fichero = "../../visitas.txt";
 		 
@@ -18,6 +20,29 @@
 		 fwrite($fptr,$num);
 		 
 		 return $num;
+
+		//asigno el archivo a la variable $maestro
+		$maestro = fopen("../../contador.txt","r+");
+
+		//leo la primera linea y se la asigno a $leer
+		$leer = fgets($maestro,10);
+
+		//incremento la variable $leer en uno
+		++$leer;
+
+		//rebobino el archivo para poder sobre escribir su contenido
+		rewind($maestro);
+
+		//sobreescribo el contenido
+		fputs($maestro,$leer);
+
+		//cierro el archivo de texto
+		fclose($maestro);
+
+		//muestro en pantalla el valor acutal del archivo
+		//echo "Sos el visitante N°: $leer";
+		return $leer;
+
 	}
 	
 	/*
@@ -341,4 +366,28 @@
 			
 		return $usuario;
 	}
+	
+	/*
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 * --------------------------------------------------------CLIENTES---------------------------------------------------------------
+	 * -------------------------------------------------------------------------------------------------------------------------------
+	 */
+	 
+	 /*
+	 * Funcion que permite obtener todos los clientes.
+	 */
+	 function getClientes(){
+	 	$clientes=array();
+		$conexion=conectar();
+		
+		$resultado=mysql_query("SELECT * FROM cliente");
+		$i=0;
+		while($fila=mysql_fetch_array($resultado)){
+			$clientes[$i]['idcliente']=$fila['idcliente'];
+			$clientes[$i]['nombre']=$fila['nombre'];
+			$clientes[$i]['ruta']=$fila['ruta'];
+			$i++;
+		}
+		return $clientes;		
+	 }
 ?>

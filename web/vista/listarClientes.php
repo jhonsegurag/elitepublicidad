@@ -6,7 +6,7 @@
 	include_once ("footer.php");
 	include_once ("../controlador/funciones.php");
 	
-	$usuarios=getUsuarios();
+	$clientes=getClientes();
 	getImports();
 ?>
 	<body>
@@ -21,67 +21,46 @@
 			<article>
 				<header>
 					<hgroup>
-						<h1>Lista De Usuarios</h1>
+						<h1>Lista De Clientes</h1>
 					</hgroup>
 				</header>
 				<section>
 					<table  style="border-radius: 5px; border: 1px solid #222; width: 100%;">
 						<thead>
-							<th>Id</th>
+							<th>Imagen</th>
 							<th>Nombre</th>
-							<th>Apellido</th>
-							<th>Editar</th>
 							<th>Eliminar</th>
 						</thead>
 						<?php
-						for ($i=0; $i <sizeof($usuarios) ; $i++)
+						for ($i=0; $i <sizeof($clientes) ; $i++)
 						{ 
 						?>
 							<tr>
 								
 								<td >
-									<?php echo "".$usuarios[$i]['idusuario']; ?>
+									<div id="imagenCliente" style="width: 150px; height: 150px; margin: auto;">
+										<img style="width: 100%; height: 100%;" src="<?php echo "".$clientes[$i]['ruta']; ?>" />
+									</div>
 								</td> 
 								<td >
-									<?php echo "".$usuarios[$i]['nombre']; ?>
+									<?php echo "".$clientes[$i]['nombre']; ?>
 								</td> 
-								<td >
-									<?php echo "".$usuarios[$i]['apellido']; ?>
-								</td>
-								<?php 
-									if($_SESSION['idusuario'] == $usuarios[$i]['idusuario'])
-									{
-								?>
-								<td>
-									<a href="<?php echo "editarUsuario?idusuario=".$usuarios[$i]['idusuario']; ?>">
-										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/editar.png" /></div>
-									</a>
-								</td>
 								<td >
 									<a href="#" onclick="validarAccion<?php echo $i; ?>();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									<script>
 										function validarAccion<?php echo $i; ?>()
 										{											
-											if(confirm("Estas Seguro de eliminar este Usuario"))
+											if(confirm("Estas Seguro de eliminar este Cliente"))
 											{
-												document.location.href= '../controlador/eliminarUsuario?idusuario='+'<?php echo $usuarios[$i]['idusuario']; ?>';										
+												document.location.href= '../controlador/eliminarCliente?idcliente='+'<?php echo $clientes[$i]['idcliente']; ?>';										
 											}
 											else
 											{
-												document.location.href= 'listarUsuarios';
+												document.location.href= 'listarClientes';
 											}										
 										} 
 									</script>
 								</td>
-								<?php 
-									}
-									else {
-										?>
-								<td>-----</td>
-								<td>-----</td>
-								<?php
-									}
-								?>								
 							</tr>
 						<?php	
 						}
