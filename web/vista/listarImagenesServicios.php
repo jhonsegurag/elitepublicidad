@@ -47,8 +47,8 @@
 								
 								<td >
 									<form action="../controlador/cambiarImagenServicio?orden=1&idservicio=<?php echo $idservicioencrypt ?>" method="post" enctype="multipart/form-data">
-										<div class="componente">
-											<input class="textField" type="file" name="imagenServicio" maxlength="5" required="required" />
+										<div class="componenteDark">
+											<input class="fileField" type="file" name="imagenServicio" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
 											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
@@ -82,8 +82,8 @@
 								
 								<td >
 									<form action="../controlador/cambiarImagenServicio?orden=2&idimagenservicio=<?php echo $idimagenservicioencrypt[$i] ?>" method="post" enctype="multipart/form-data">
-										<div class="componente">
-											<input class="textField" type="file" name="imagenSecundariaServicio" maxlength="5" required="required" />
+										<div class="componenteDark">
+											<input class="fileField" type="file" name="imagenSecundariaServicio" maxlength="5" required="required" />
 										</div>
 										<div style="text-align: center;">
 											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
@@ -118,8 +118,8 @@
 						?>
 						
 					</table>
-					<div style="text-align: center;">
-						<a href="<?php echo $direccioninsertar ?>"> Agregar imágenes al servicio</a>
+					<div style="text-align: center; padding: 10px 20px 10px 20px; background: #9C0; width: 200px; margin: 20px auto 20px auto; border-radius:5px; ">
+						<a style="color: #333; font-size:16px; text-decoration: none;" href="<?php echo $direccioninsertar ?>"> Agregar más imagenes...</a>
 					</div>
 				</section>
 			</article>

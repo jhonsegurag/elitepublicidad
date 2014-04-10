@@ -82,10 +82,10 @@
 								
 								<td >
 									<form action="../controlador/cambiarImagenProducto?orden=2&idimagenproducto=<?php echo $idimagenproductoencrypt[$i] ?>" method="post" enctype="multipart/form-data">
-										<div class="componente">
-											<input class="textField" type="file" name="imagenSecundariaProducto" required="required" />
+										<div class="componenteDark">
+											<input class="fileField" type="file" name="imagenSecundariaProducto" required="required" />
 										</div>
-										<div style="text-align: center;">
+										<div style="text-align: center; width: 100px; float: left; margin: 5px;">
 											<input type="image" value="" src="../../imagenes/administrador/cambiar.png" style="width: 50px;" />
 										</div>
 									</form>
@@ -112,8 +112,8 @@
 						}
 						?>
 					</table>
-					<div style="text-align: center;">
-						<a href="<?php echo $direccioninsertar ?>"> Agregar imágenes al producto</a>
+					<div style="text-align: center; padding: 10px 20px 10px 20px; background: #9C0; width: 200px; margin: 20px auto 20px auto; border-radius:5px; ">
+						<a style="color: #333; font-size:16px; text-decoration: none;" href="<?php echo $direccioninsertar ?>"> Agregar más imagenes...</a>
 					</div>
 				</section>
 			</article>

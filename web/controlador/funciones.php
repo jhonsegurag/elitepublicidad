@@ -14,7 +14,7 @@
 		 $num = fread($fptr,filesize($fichero));
 		 $num++;
 		 
-		 $fptr = fopen($fichero,"w+");
+		 $fptr = fopen($fichero,"w");
 		 fwrite($fptr,$num);
 		 
 		 return $num;

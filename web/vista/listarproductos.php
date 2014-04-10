@@ -32,8 +32,9 @@
 							<th>Descripción</th>
 							<th>Fecha</th>
 							<th>Editar</th>
-							<th>Eliminar</th>
 							<th>Ver Imágenes</th>
+							<th>Eliminar</th>
+							
 						</thead>
 						<?php
 						for ($i=0; $i <sizeof($productos) ; $i++)
@@ -57,6 +58,14 @@
 										<div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/editar.png" /></div>
 									</a>
 								</td>
+								
+								<td>
+									<?php 
+										$idproductoencrypt = encrypt($productos[$i]['idproducto'],"listarImagenesProductosKey");
+									?>
+									<a href="<?php echo "listarImagenesProductos?idproducto=".$idproductoencrypt; ?>"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/listarimagenes.png" /></div></a>
+								</td>
+								
 								<td >
 									<a href="#" onclick="validarAccion<?php echo $i; ?>();"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/eliminar.png" /></div></a>
 									<script>
@@ -74,12 +83,7 @@
 										} 
 									</script>
 								</td>
-								<td>
-									<?php 
-										$idproductoencrypt = encrypt($productos[$i]['idproducto'],"listarImagenesProductosKey");
-									?>
-									<a href="<?php echo "listarImagenesProductos?idproducto=".$idproductoencrypt; ?>"><div class="imagenAccion"><img style="width: 50px;" src="../../imagenes/administrador/listarimagenes.png" /></div></a>
-								</td>
+								
 																
 							</tr>
 						<?php	

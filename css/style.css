@@ -1,3 +1,5 @@
+
+
 body
 {	
 	font-family: Helvetica, Arial, FreeSans, sans-serif;
@@ -280,6 +282,35 @@ nav ul a{
 	padding-bottom: 5px;
 	border-radius: 5px;
 }	
+
+#productosYServicios aside #contador
+{
+	width: 80%;
+	margin: 20px auto 20px auto;
+	background: #222;
+	border-radius:5px;
+	padding: 10px 5px 10px 5px;
+}
+
+#productosYServicios aside #contador #mensajeContador
+{
+	color: #9C0;
+	text-align: center;
+}
+
+#productosYServicios aside #contador #imagenContador
+{
+	width: 150px;
+	height: 50px;
+	margin: auto;
+}
+
+#productosYServicios aside #contador #numeroContador
+{
+	color: #9C0;
+	font-size: 25px;
+	text-align: center;
+}
 
 @media screen and (max-width:820px)
 {
@@ -849,6 +880,25 @@ nav ul a{
    width: 60%;
    margin: 5px;
    display: block;
+}
+
+.componenteDark{
+   float: left;
+   width: 60%;
+   margin: 5px;
+   display: block;
+}
+
+.fileField
+{
+	font-size: 15;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;   
+    color: #999;
 }
 
 .textfield
