@@ -1,5 +1,8 @@
 <?php
  session_start();
+
+	if ($_SESSION['idusuario'])
+	{
 	include_once ("imports.php");
 	include_once ("header.php");
 	include_once ("menu.php");
@@ -98,3 +101,10 @@
 		</div>
 	</body>
 	</html>
+	<?php	
+		}
+	else
+	{
+		header('location:index.php');
+	}
+	?>

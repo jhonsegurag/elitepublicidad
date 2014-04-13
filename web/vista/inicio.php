@@ -107,13 +107,12 @@
 					<div id="contador">
 						<div id="mensajeContador">Eres el visitante: </div>
 						<div id="imagenContador"><img src="../../imagenes/userscontador.png" /></div>
-						<div id="numeroContador"><?php echo contador()?></div>
+						<h1>Visitas: <?php echo contadorVisitas();?></h1>
+					</div>
+					
 						
 
-					<div>
-						<h1>Visitas: <?php echo contadorVisitas()?></h1>
-
-					</div>
+					
 				</aside>
 				
 				
@@ -152,7 +151,7 @@
 						<div id="items">
 							<?php
 							for($i=0; $i < sizeof($clientes); $i++){
-								?>	
+							?>	
 							
 							<div class="itemNuestrosClientes">
 								<img style="width: 100%; height: 100%;" src="<?php echo $clientes[$i]['ruta'] ?>" title="<?php echo $clientes[$i]['nombre'] ?>" />
