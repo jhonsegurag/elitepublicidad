@@ -107,7 +107,7 @@
 					<div id="contador">
 						<div id="mensajeContador">Eres el visitante: </div>
 						<div id="imagenContador"><img src="../../imagenes/userscontador.png" /></div>
-						<h1>Visitas: <?php echo contadorVisitas();?></h1>
+						<h1>Nº <?php echo contadorVisitas();?></h1>
 					</div>
 					
 						
